@@ -2,7 +2,6 @@
 builtins = ["ic"]
 fix = true
 show-fixes = true
-target-version = "py312"
 
 [format]
 docstring-code-format = true
@@ -52,6 +51,7 @@ allow-star-arg-any = true
 "array_typing.numpy" = "atn"
 "array_typing.torch" = "att"
 "asyncio.subprocess" = "asp"
+"boltons" = "bt"
 "jax.numpy" = "jnp"
 "jax.typing" = "jxt"
 "matplotlib" = "mpl"
@@ -61,6 +61,7 @@ allow-star-arg-any = true
 "open3d" = "o3d"
 "pandas" = "pd"
 "polars" = "pl"
+"pydantic_settings" = "ps"
 "pyvista" = "pv"
 "seaborn" = "sns"
 "subprocess" = "sp"
@@ -74,6 +75,7 @@ allow-star-arg-any = true
 "toolkit.validation" = "tv"
 "trimesh" = "tm"
 "trimesh.transformations" = "tf"
+"ubelt" = "ub"
 
 [lint.flake8-type-checking]
 runtime-evaluated-base-classes = [

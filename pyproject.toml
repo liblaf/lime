@@ -1,3 +1,7 @@
+#:schema https://json.schemastore.org/pyproject.json
+# vim: syntax=toml
+# https://packaging.python.org/en/latest/specifications/pyproject-toml/
+
 [build-system]
 build-backend = "hatchling.build"
 requires = ["hatchling"]
@@ -12,19 +16,21 @@ authors = [
 dependencies = [
   "gitpython>=3.1.43",
   "hishel>=0.1.1",
-  "httpx[socks]>=0.27.2",
+  "httpx[socks]>=0.28.1",
   "lazy-loader>=0.4",
-  "litellm>=1.52.12",
-  "loguru>=0.7.2",
-  "pydantic-settings>=2.6.1",
-  "pydantic>=2.10.1",
+  "litellm>=1.56.4",
+  "loguru>=0.7.3",
+  "pydantic-settings>=2.7.0",
+  "pydantic>=2.10.4",
   "python-dotenv>=1.0.1",
   "rich>=13.9.4",
-  "transformers>=4.46.3",
+  "transformers>=4.47.1",
   "typer-di>=0.1.2",
-  "typer>=0.13.1",
+  "typer>=0.15.1",
 ]
 description = "🚀 AI CLI - A powerful and versatile command-line interface for AI-driven code commit messages, repository descriptions, and topic generation, designed to enhance productivity and collaboration."
+keywords = []
+license = "MIT"
 name = "liblaf-ai-cli"
 readme = "README.md"
 requires-python = ">=3.12"

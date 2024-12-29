@@ -1,5 +1,6 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: f3ce1f6
+# prettier-ignore
+_commit: 6892b55
 _src_path: gh:liblaf/copier-share
 copyright_holder: liblaf
 license: MIT
