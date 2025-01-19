@@ -18,8 +18,6 @@ jobs:
       - id: build
         name: Build and Inspect a Python Package
         uses: hynek/build-and-inspect-python-package@v2
-        with:
-          attest-build-provenance-github: true
 
   publish:
     name: Publish
