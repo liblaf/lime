@@ -2,7 +2,6 @@ import asyncio.subprocess as asp
 import string
 
 import git
-import litellm
 import typer
 
 from liblaf import lime
@@ -17,8 +16,7 @@ async def main(path: list[str], *, verify: bool = True) -> None:
     diff: str = repo.git.diff("--cached", "--no-ext-diff", *path)
     files: str = repo.git.ls_files()
     prompt: str = prompt_template.substitute({"GIT_DIFF": diff, "GIT_FILES": files})
-    resp: litellm.ModelResponse = await lime.live(prompt, prefix=PREFIX)
-    message: str = lime.get_content(resp, prefix=PREFIX)
+    message: str = await lime.live(prompt, prefix=PREFIX)
     proc: asp.Process = await lime.run(
         [
             "git",

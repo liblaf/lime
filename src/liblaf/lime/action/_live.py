@@ -14,7 +14,7 @@ async def live(
     prefix: str | None = None,
     sanitizer: Callable[[str], str] | None = lime.extract_between_tags,
     title: RenderableType | None = None,
-) -> litellm.ModelResponse:
+) -> str:
     cfg: lime.Config = lime.get_config()
     router: litellm.Router = cfg.router.build()
     messages: list[litellm.AllMessageValues] = [{"role": "user", "content": prompt}]
@@ -32,12 +32,15 @@ async def live(
         async for chunk in stream:
             chunks.append(chunk)
             response: litellm.ModelResponse = litellm.stream_chunk_builder(chunks)  # pyright: ignore[reportAssignmentType]
-            content: str = _get_content(response, prefix=prefix, sanitizer=sanitizer)
+            content: str = lime.get_content(
+                response, prefix=prefix, sanitizer=sanitizer
+            )
             rich_content: RenderableType = _rich_content(
                 content, response=response, title=title
             )
             live.update(rich_content)
-    return response
+    content: str = lime.get_content(response, prefix=prefix, sanitizer=sanitizer)
+    return content
 
 
 def _rich_content(
@@ -55,17 +58,3 @@ def _rich_content(
         renderables.append(title)
     renderables.append(content)
     return Group(*renderables)
-
-
-def _get_content(
-    response: litellm.ModelResponse,
-    *,
-    prefix: str | None = None,
-    sanitizer: Callable[[str], str] | None = lime.extract_between_tags,
-) -> str:
-    content: str = litellm.get_content_from_model_response(response)
-    if prefix and (not content.startswith(prefix)):
-        content = prefix + content
-    if sanitizer:
-        content = sanitizer(content)
-    return content
