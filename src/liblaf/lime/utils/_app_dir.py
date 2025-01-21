@@ -1,7 +1,7 @@
 from pathlib import Path
 
-import typer
+import platformdirs
 
 
 def app_dir() -> Path:
-    return Path(typer.get_app_dir("lime"))
+    return Path(platformdirs.user_config_dir("liblaf/lime"))

@@ -21,6 +21,7 @@
     "mypy",
     "numpy",
     "pipenv",
+    "platformdirs",
     "pybuilder",
     "pycache",
     "pydantic",

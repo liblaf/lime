@@ -11,7 +11,7 @@ from . import RouterConfig
 
 
 class Config(ps.BaseSettings):
-    model_config = ps.SettingsConfigDict(toml_file=lime.app_dir())
+    model_config = ps.SettingsConfigDict(toml_file=lime.app_dir() / "config.toml")
     completion: litellm.CompletionRequest = pydantic.Field(
         default_factory=lambda: litellm.CompletionRequest(model="deepseek-chat")
     )
