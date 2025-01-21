@@ -26,7 +26,6 @@ async def main(path: list[str], *, verify: bool = True) -> None:
             f"--message={message}",
             "--verify" if verify else "--no-verify",
             "--edit",
-            *path,
         ],
         check=False,
     )
