@@ -1,5 +1,3 @@
-# vim: syntax=just
-
 default: gen-init lint
 
 build:
@@ -17,5 +15,3 @@ lint-python:
 
 lint-toml:
     sort-toml .ruff.toml pyproject.toml
-
-# 
