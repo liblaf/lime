@@ -447,6 +447,22 @@ wheels = [
 ]
 
 [[package]]
+name = "githubkit"
+version = "0.12.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "hishel" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d3/b6/9df221e07fbfe1f5fd66ed1d1d8bbbdd1679cf37953e248c69e1e559425a/githubkit-0.12.5.tar.gz", hash = "sha256:d465a8a117c51e53213a6cffca2208f00596c889c3feacd8ad66842ba652ba2d", size = 1842691 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/79/ce/a23d4cd771c546379a9e13f2f9db7215a1f8846bc174cf142cb04116a270/githubkit-0.12.5-py3-none-any.whl", hash = "sha256:9a5c00591a4218ae311ad5797b215143fbd6a34079f1c8aa6d4db7a80e5b530f", size = 5266887 },
+]
+
+[[package]]
 name = "gitpython"
 version = "3.1.44"
 source = { registry = "https://pypi.org/simple" }
@@ -835,6 +851,7 @@ name = "liblaf-lime"
 version = "0.0.0"
 source = { editable = "." }
 dependencies = [
+    { name = "githubkit" },
     { name = "gitpython" },
     { name = "hishel" },
     { name = "httpx", extra = ["socks"] },
@@ -866,6 +883,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "githubkit", specifier = ">=0.12.5" },
     { name = "gitpython", specifier = ">=3.1.44,<4" },
     { name = "hishel", specifier = ">=0.1.1,<0.2" },
     { name = "httpx", extras = ["socks"], specifier = ">=0.27.2,<0.28" },
@@ -878,7 +896,7 @@ requires-dist = [
     { name = "pydantic-settings", specifier = ">=2.7.1,<3" },
     { name = "python-frontmatter", specifier = ">=1.1.0,<2" },
     { name = "rich", specifier = ">=13.9.4,<14" },
-    { name = "typer", specifier = ">=0.15.1" },
+    { name = "typer", specifier = ">=0.15.1,<0.16" },
     { name = "typer-di", specifier = ">=0.1.2,<0.2" },
 ]
 
