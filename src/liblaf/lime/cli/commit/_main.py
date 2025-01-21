@@ -2,7 +2,6 @@ import asyncio.subprocess as asp
 import string
 
 import git
-import git.diff
 import litellm
 import typer
 
