@@ -1,3 +1,4 @@
+import copy
 from collections.abc import Callable
 
 import litellm
@@ -9,7 +10,7 @@ from liblaf import lime
 
 
 async def live(
-    prompt: str,
+    prompt: list[litellm.AllMessageValues],
     *,
     prefix: str | None = None,
     sanitizer: Callable[[str], str] | None = lime.extract_between_tags,
@@ -17,7 +18,7 @@ async def live(
 ) -> str:
     cfg: lime.Config = lime.get_config()
     router: litellm.Router = cfg.router.build()
-    messages: list[litellm.AllMessageValues] = [{"role": "user", "content": prompt}]
+    messages: list[litellm.AllMessageValues] = copy.deepcopy(prompt)
     if prefix:
         messages.append({"role": "assistant", "content": prefix, "prefix": True})  # pyright: ignore[reportArgumentType]
     stream: litellm.CustomStreamWrapper = await router.acompletion(

@@ -15,6 +15,7 @@ from .utils import (
     get_content,
     init_logging,
     prompt,
+    prompt_template_substitute,
     run,
     shared_options,
 )
@@ -37,6 +38,7 @@ __all__ = [
     "live",
     "plugin",
     "prompt",
+    "prompt_template_substitute",
     "run",
     "shared_options",
     "utils",

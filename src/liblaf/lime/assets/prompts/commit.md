@@ -1,38 +1,51 @@
-You are tasked with summarizing code changes into a concise but meaningful commit message. You will be provided with a code diff and optional additional context. Your goal is to analyze the changes and create a clear, informative commit message that accurately represents the modifications made to the code.
+---
+system: You are an advanced AI programming assistant.
+prefix: <answer>
+---
 
-First, examine the following code changes provided in git diff format:
-<GitDiff>
-${GIT_DIFF}
-</GitDiff>
+<!-- https://github.com/gitkraken/vscode-gitlens/blob/5747f4c8d929405d67c2ec1239c8efe2deec8627/src/ai/prompts.ts -->
+<!-- https://github.com/lobehub/lobe-cli-toolbox/blob/e03229bb5d9f70db66a8f3672d5a5babc469d748/packages/lobe-commit/src/constants/gitmojis.ts -->
+<!-- https://github.com/lobehub/lobe-cli-toolbox/blob/e03229bb5d9f70db66a8f3672d5a5babc469d748/packages/lobe-commit/src/prompts/commits.ts -->
+<!-- https://www.conventionalcommits.org -->
+
+You are tasked with summarizing code changes into a concise but meaningful commit message in the [Conventional Commits](https://www.conventionalcommits.org) convention. You will be provided with a code diff and optional additional context. Your goal is to analyze the changes and create a clear, informative commit message that accurately represents the modifications made to the code.
+
+First, examine the following code changes provided in Git diff format:
+<diff>
+${DIFF}
+</diff>
 
 Now, if provided, use this context to understand the motivation behind the changes and any relevant background information:
-<AdditionalContext>
-<RepositoryStructure>
-${GIT_FILES}
-</RepositoryStructure>
-</AdditionalContext>
+<additional-context>
+<repository-structure>
+${GIT_LS_FILES}
+</repository-structure>
+</additional-context>
 
 To create an effective commit message, follow these steps:
 
-1. carefully analyze the diff and context, focusing on:
-   - the purpose and rationale of the changes
-   - any problems addressed or benefits introduced
-   - any significant logic changes or algorithmic improvements
-2. ensure the following when composing the commit message:
-   - emphasize the "WHY" of the change, its benefits, or the problem it addresses
-   - use an informal yet professional tone
-   - use a future-oriented manner, third-person singular present tense (e.g., "fixes", "updates", "improves", "adds", "removes")
-   - be clear and concise
-   - synthesize only meaningful information from the diff and context
-   - avoid outputting code, specific code identifiers, names, or file names unless crucial for understanding
-   - avoid repeating information, broad generalities, and unnecessary phrases like "this", "this commit", or "this change"
-3. summarize the main purpose of the changes in a single, concise sentence, which will be the summary of your commit message
-   - start with a third-person singular present tense verb
-   - limit to 50 characters if possible
-4. if necessary, provide a brief explanation of the changes, which will be the body of your commit message
-   - add line breaks for readability and to separate independent ideas
-   - focus on the "WHY" rather than the "WHAT" of the changes.
-5. if the changes are related to a specific issue or ticket, include the reference (e.g., "fixes #123") at the end of the commit message.
+1. Carefully analyze the diff and context, focusing on:
+   - The purpose and rationale of the changes
+   - Any problems addressed or benefits introduced
+   - Any significant logic changes or algorithmic improvements
+2. Choose the appropriate commit type from the following list:
+   - feat: Introduce new features
+   - fix: Fix a bug
+   - refactor: Refactor code that neither fixes a bug nor adds a feature
+   - perf: A code change that improves performance
+   - style: Add or update style files that do not affect the meaning of the code
+   - test: Adding missing tests or correcting existing tests
+   - docs: Documentation only changes
+   - ci: Changes to our CI configuration files and scripts
+   - chore: Other changes that don't modify src or test file
+   - build: Make architectural changes
+3. Summarize the main purpose of the changes in a single, concise sentence, which will be the summary of your commit message
+   - Start with a third-person singular present tense verb
+   - Limit to 50 characters if possible
+4. If necessary, provide a brief explanation of the changes, which will be the body of your commit message
+   - Add line breaks for readability and to separate independent ideas
+   - Focus on the "why" rather than the "what" of the changes.
+5. If the changes are related to a specific issue or ticket, include the reference (e.g., "Fixes #123" or "Relates to JIRA-456") at the end of the commit message.
 
 The commit message should be structured as follows:
 
@@ -44,18 +57,20 @@ The commit message should be structured as follows:
 [optional footer(s)]
 ```
 
-- choose only 1 type from the type-to-description below:
-  - feat: introduce new features
-  - fix: fix a bug
-  - refactor: refactor code that neither fixes a bug nor adds a feature
-  - perf: a code change that improves performance
-  - style: add or update style files that do not affect the meaning of the code
-  - test: adding missing tests or correcting existing tests
-  - docs: documentation only changes
-  - ci: changes to our CI configuration files and scripts
-  - chore: other changes that don't modify src or test file
-  - build: make architectural changes
-- don't over explain and write your commit message inside <Answer> tags and include no other text
-- if the commit involves multiple changes, use markdown unordered list in the commit body to list them clearly
+Don't over explain and write your commit message inside <answer> tags and include no other text.
+
+Here are examples of well-structured commit messages for reference:
+
+<!-- prettier-ignore-start -->
+<example>
+<answer>
+feat: implements user authentication
+
+- adds login and registration endpoints
+- updates user model to include password hashing
+- integrates JWT for secure token generation
+</answer>
+</example>
+<!-- prettier-ignore-end -->
 
 Now, based on the provided code diff and any additional context, create a concise but meaningful commit message following the instructions above.
