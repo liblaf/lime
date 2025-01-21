@@ -57,6 +57,5 @@ The commit message should be structured as follows:
   - build: make architectural changes
 - don't over explain and write your commit message inside <Answer> tags and include no other text
 - if the commit involves multiple changes, use markdown unordered list in the commit body to list them clearly
-- lines must not be longer than 74 characters
 
 Now, based on the provided code diff and any additional context, create a concise but meaningful commit message following the instructions above.
