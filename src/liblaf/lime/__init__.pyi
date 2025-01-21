@@ -9,13 +9,13 @@ from .config import (
     get_router,
 )
 from .utils import (
+    Prompt,
     add_command,
     app_dir,
     extract_between_tags,
     get_content,
+    get_prompt,
     init_logging,
-    prompt,
-    prompt_template_substitute,
     run,
     shared_options,
 )
@@ -23,6 +23,7 @@ from .utils import (
 __all__ = [
     "Config",
     "ModelConfig",
+    "Prompt",
     "RouterConfig",
     "action",
     "add_command",
@@ -33,12 +34,11 @@ __all__ = [
     "extract_between_tags",
     "get_config",
     "get_content",
+    "get_prompt",
     "get_router",
     "init_logging",
     "live",
     "plugin",
-    "prompt",
-    "prompt_template_substitute",
     "run",
     "shared_options",
     "utils",

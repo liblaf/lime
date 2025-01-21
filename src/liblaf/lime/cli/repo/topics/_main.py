@@ -2,6 +2,6 @@ from liblaf import lime
 
 
 async def main() -> None:
-    instruction: str = lime.prompt("topics")
-    prompt: str = await lime.plugin.repomix(instruction)
-    await lime.live(prompt)
+    instruction: lime.Prompt = lime.get_prompt("topics")
+    prompt: str = await lime.plugin.repomix(instruction.prompt)
+    await lime.live([{"role": "user", "content": prompt}])

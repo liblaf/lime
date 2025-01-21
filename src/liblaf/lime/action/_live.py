@@ -1,4 +1,3 @@
-import copy
 from collections.abc import Callable
 
 import litellm
@@ -10,17 +9,13 @@ from liblaf import lime
 
 
 async def live(
-    prompt: list[litellm.AllMessageValues],
+    messages: list[litellm.AllMessageValues],
     *,
-    prefix: str | None = None,
     sanitizer: Callable[[str], str] | None = lime.extract_between_tags,
     title: RenderableType | None = None,
 ) -> str:
     cfg: lime.Config = lime.get_config()
     router: litellm.Router = cfg.router.build()
-    messages: list[litellm.AllMessageValues] = copy.deepcopy(prompt)
-    if prefix:
-        messages.append({"role": "assistant", "content": prefix, "prefix": True})  # pyright: ignore[reportArgumentType]
     stream: litellm.CustomStreamWrapper = await router.acompletion(
         messages=messages,
         stream=True,
@@ -34,13 +29,13 @@ async def live(
             chunks.append(chunk)
             response: litellm.ModelResponse = litellm.stream_chunk_builder(chunks)  # pyright: ignore[reportAssignmentType]
             content: str = lime.get_content(
-                response, prefix=prefix, sanitizer=sanitizer
+                response, messages=messages, sanitizer=sanitizer
             )
             rich_content: RenderableType = _rich_content(
                 content, response=response, title=title
             )
             live.update(rich_content)
-    content: str = lime.get_content(response, prefix=prefix, sanitizer=sanitizer)
+    content: str = lime.get_content(response, messages=messages, sanitizer=sanitizer)
     return content
 
 

@@ -1,4 +1,4 @@
-def extract_between_tags(content: str | None, tag: str = "Answer") -> str:
+def extract_between_tags(content: str | None, tag: str = "answer") -> str:
     if content is None:
         return ""
     opening_tag: str = f"<{tag}>".lower()
