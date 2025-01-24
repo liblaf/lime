@@ -23,6 +23,7 @@ authors = [
   { email = "30631553+liblaf@users.noreply.github.com", name = "liblaf" },
 ]
 dependencies = [
+  "githubkit>=0.12.5",
   "gitpython>=3.1.44,<4",
   "hishel>=0.1.1,<0.2",
   "httpx[socks]>=0.27.2,<0.28",
@@ -37,7 +38,6 @@ dependencies = [
   "rich>=13.9.4,<14",
   "typer-di>=0.1.2,<0.2",
   "typer>=0.15.1,<0.16",
-  "githubkit>=0.12.5",
 ]
 description = "Add your description here"
 keywords = []

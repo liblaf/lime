@@ -30,8 +30,7 @@ When creating a topic:
 
 <material href="https://docs.github.com/en/search-github/searching-on-github/searching-topics">
 
-topics that are featured on <https://github.com/topics/>:
-
+Topics that are featured on <https://github.com/topics/>:
 3d, ajax, algorithm, amphp, android, angular, ansible, api, arduino, aspnet, awesome, aws, azure, babel, bash, bitcoin, bootstrap, bot, c, chrome, chrome-extension, cli, clojure, code-quality, code-review, compiler, continuous-integration, cpp, cryptocurrency, crystal, csharp, css, data-structures, data-visualization, database, deep-learning, dependency-management, deployment, django, docker, documentation, dotnet, electron, elixir, emacs, ember, emoji, emulator, eslint, ethereum, express, firebase, firefox, flask, font, framework, frontend, game-engine, git, github-api, go, google, gradle, graphql, gulp, hacktoberfest, haskell, homebrew, homebridge, html, http, icon-font, ios, ipfs, java, javascript, jekyll, jquery, json, julia, jupyter-notebook, koa, kotlin, kubernetes, laravel, latex, library, linux, localization, lua, machine-learning, macos, markdown, mastodon, material-design, matlab, maven, minecraft, mobile, monero, mongodb, mongoose, monitoring, mvvmcross, mysql, nativescript, nim, nlp, nodejs, nosql, npm, objective-c, opengl, operating-system, p2p, package-manager, parsing, perl, phaser, php, pico-8, pixel-art, postgresql, project-management, publishing, pwa, python, qt, r, rails, raspberry-pi, ratchet, react, react-native, reactiveui, redux, rest-api, ruby, rust, sass, scala, scikit-learn, sdn, security, server, serverless, shell, sketch, spacevim, spring-boot, sql, storybook, support, swift, symfony, telegram, tensorflow, terminal, terraform, testing, twitter, typescript, ubuntu, unity, unreal-engine
 
 </material>

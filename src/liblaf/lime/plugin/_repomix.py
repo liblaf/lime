@@ -19,6 +19,7 @@ async def repomix(instruction: str | None = None) -> str:
                     "**/.*",
                     "**/.*/**",
                     "**/*-lock.*",
+                    "**/*.ipynb",
                     "**/*.lock",
                     "**/CHANGELOG.md",
                     "**/pyrightconfig.json",
