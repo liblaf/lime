@@ -1,14 +1,14 @@
 <div align="center"><a name="readme-top"></a>
 
-<img height="160" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Lime/3D/lime_3d.png">
+<img height="160" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Lime/3D/lime_3d.png" />
 
 <h1>Lime</h1>
 
 Lime is an AI-powered CLI tool for generating high-quality commit messages, repository descriptions, and GitHub topics. It leverages advanced language models to automate repository management tasks with precision and efficiency.
 
-[![][github-release-shield]][github-release-link]
-[![][github-releasedate-shield]][github-releasedate-link]
-[![][github-action-release-shield]][github-action-release-link]<br/>
+[![][pypi-version-shield]][pypi-project-link]
+[![][pypi-download-shield]][pypi-project-link]
+[![][pypi-python-version-shield]][pypi-project-link] <br />
 [![][github-contributors-shield]][github-contributors-link]
 [![][github-forks-shield]][github-forks-link]
 [![][github-stars-shield]][github-stars-link]
@@ -21,22 +21,20 @@ Lime is an AI-powered CLI tool for generating high-quality commit messages, repo
 
 </div>
 
-[github-release-shield]: https://img.shields.io/github/v/release/liblaf/lime?color=369eff&logo=github&style=flat
-[github-release-link]: https://github.com/liblaf/lime/releases
-[github-releasedate-shield]: https://img.shields.io/github/release-date/liblaf/lime?style=flat
-[github-releasedate-link]: https://github.com/liblaf/lime/releases
-[github-action-release-shield]: https://img.shields.io/github/actions/workflow/status/liblaf/lime/release.yml?label=release&logo=githubactions&logoColor=white&style=flat
-[github-action-release-link]: https://github.com/liblaf/lime/actions/workflows/release.yml
-[github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/lime?color=c4f042&style=flat
 [github-contributors-link]: https://github.com/liblaf/lime/graphs/contributors
-[github-forks-shield]: https://img.shields.io/github/forks/liblaf/lime?color=8ae8ff&style=flat
-[github-forks-link]: https://github.com/liblaf/lime/network/members
-[github-stars-shield]: https://img.shields.io/github/stars/liblaf/lime?color=ffcb47&style=flat
-[github-stars-link]: https://github.com/liblaf/lime/network/stargazers
-[github-issues-shield]: https://img.shields.io/github/issues/liblaf/lime?color=ff80eb&style=flat
+[github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/lime
+[github-forks-link]: https://github.com/liblaf/lime/forks
+[github-forks-shield]: https://img.shields.io/github/forks/liblaf/lime
 [github-issues-link]: https://github.com/liblaf/lime/issues
-[github-license-shield]: https://img.shields.io/github/license/liblaf/lime?color=white&style=flat
+[github-issues-shield]: https://img.shields.io/github/issues/liblaf/lime
 [github-license-link]: https://github.com/liblaf/lime/blob/main/LICENSE
+[github-license-shield]: https://img.shields.io/github/license/liblaf/lime
+[github-stars-link]: https://github.com/liblaf/lime/stargazers
+[github-stars-shield]: https://img.shields.io/github/stars/liblaf/lime
+[pypi-download-shield]: https://img.shields.io/pypi/dm/liblaf-lime?logo=PyPI&logoColor=3775A9
+[pypi-project-link]: https://pypi.org/project/liblaf-lime/
+[pypi-python-version-shield]: https://img.shields.io/pypi/pyversions/liblaf-lime?logo=Python&logoColor=3776AB&label=Python
+[pypi-version-shield]: https://img.shields.io/pypi/v/liblaf-lime?logo=PyPI&logoColor=3775A9&label=PyPI
 
 ## ✨ Features
 
