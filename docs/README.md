@@ -38,14 +38,16 @@ Lime is an AI-powered CLI tool for generating high-quality commit messages, repo
 
 ## ✨ Features
 
-- [x] 🤖 **AI-Powered Commit Messages**: Automatically generates high-quality commit messages using advanced language models, saving time and improving consistency;
-- [x] 🚀 **One-Click Repository Management**: Simplifies repository tasks like generating descriptions, READMEs, and topics with a single command;
-- [x] 📝 **Customizable Prompts**: Offers flexible and customizable prompts for generating commit messages, descriptions, and topics tailored to your repository;
-- [x] 🔗 **GitHub Integration**: Seamlessly integrates with GitHub to update repository descriptions and topics directly from the CLI;
-- [x] 🛠️ **Extensible Architecture**: Built with a modular design, allowing for easy extension and customization of functionality;
-- [x] 📊 **Real-Time Feedback**: Provides live, real-time feedback during the generation process, ensuring accuracy and relevance;
-- [x] 🧠 **Context-Aware Generation**: Analyzes repository content and context to produce highly relevant and accurate outputs;
-- [x] 🎨 **Rich CLI Experience**: Features a visually appealing and user-friendly CLI interface powered by Rich, enhancing the user experience.
+- 🤖 **AI-Powered Commit Messages:** Automatically generates meaningful commit messages using AI, following conventional commit standards;
+- 🛠️ **GitHub Integration:** Seamlessly integrates with GitHub to manage repository descriptions, topics, and README files;
+- 📝 **Prompt Engineering:** Provides powerful prompt templates for generating high-quality content, including README descriptions and features;
+- 🚀 **CLI Tooling:** Offers a comprehensive command-line interface for managing repository metadata and AI-assisted workflows;
+- 🔧 **Configurable AI Models:** Supports multiple AI models and configurations through a flexible settings system;
+- 📚 **Documentation Generation:** Automates the creation of repository documentation, including README files and feature lists;
+- 🔄 **Repository Analysis:** Analyzes repository content to suggest improvements and generate relevant metadata;
+- 🧩 **Plugin System:** Extensible architecture allows for custom plugins to enhance functionality;
+- 🛡️ **Error Handling:** Robust error handling and logging ensure smooth operation and easy debugging;
+- 🌐 **Cross-Platform Support:** Works across multiple platforms, ensuring compatibility with various development environments.
 
 <div align="right">
 
@@ -68,7 +70,6 @@ uv tool install liblaf-lime
 [![][back-to-top]](#readme-top)
 
 </div>
-
 
 ## ⌨️ Local Development
 
@@ -95,7 +96,7 @@ uv sync
 
 ## 🤝 Contributing
 
-Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] to get stuck in to show us what you’re made of.
+Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] to get stuck in to show us what you're made of.
 
 [![][pr-welcome-shield]][pr-welcome-link]
 

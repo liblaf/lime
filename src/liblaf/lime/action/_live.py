@@ -5,6 +5,7 @@ import rich
 import rich.markup
 from rich.console import Group, RenderableType
 from rich.live import Live
+from rich.markdown import Markdown
 from rich.text import Text
 
 from liblaf import lime
@@ -13,6 +14,7 @@ from liblaf import lime
 async def live(
     messages: list[litellm.AllMessageValues],
     *,
+    markdown: bool = False,
     sanitizer: Callable[[str], str] | None = lime.extract_between_tags,
     temperature: float | None = None,
     title: RenderableType | None = None,
@@ -37,7 +39,7 @@ async def live(
                 response, messages=messages, sanitizer=sanitizer
             )
             rich_content: RenderableType = _rich_content(
-                content, response=response, title=title
+                content, markdown=markdown, response=response, title=title
             )
             live.update(rich_content)
     content: str = lime.get_content(response, messages=messages, sanitizer=sanitizer)
@@ -47,6 +49,7 @@ async def live(
 def _rich_content(
     content: str,
     *,
+    markdown: bool = False,
     response: litellm.ModelResponse | None = None,
     title: RenderableType | None = None,
 ) -> RenderableType:
@@ -57,5 +60,8 @@ def _rich_content(
         if isinstance(title, str):
             title = Text(title, style="bold cyan")
         renderables.append(title)
-    renderables.append(rich.markup.escape(content))
+    if markdown:
+        renderables.append(Markdown(content))
+    else:
+        renderables.append(rich.markup.escape(content))
     return Group(*renderables)

@@ -6,6 +6,7 @@ import typer_di
 
 from liblaf import lime
 
+# https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-generator
 META_PROMPT: str = """Today you will be writing instructions to an eager, helpful, but inexperienced and unworldly AI assistant who needs careful instruction and examples to understand how best to behave. I will explain a task to you. You will write instructions that will direct the assistant on how best to accomplish the task consistently, accurately, and correctly. Here are some examples of tasks and instructions.
 
 <Task Instruction Example>
@@ -494,6 +495,7 @@ async def async_main(task: str, variables: list[str]) -> None:
         ],
         sanitizer=None,
         temperature=0.0,
+        transient=True,
     )
     print(message)
 
