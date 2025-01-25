@@ -10,7 +10,7 @@ To generate suggested topics, follow these rules:
 3. Do not suggest more than 20 topics.
 4. Refer to the list of featured topics provided in the supplementary materials for inspiration, but do not limit yourself to only those topics.
 
-Analyze the repository content carefully and generate a list of suggested topics. Write your response inside <answer> tags, listing each topic on a new line.
+Analyze the repository content carefully and generate a list of suggested topics. Write your response inside <answer> tags, separating each topic with a comma.
 
 Example:
 <answer>

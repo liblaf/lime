@@ -12,12 +12,14 @@ async def live(
     messages: list[litellm.AllMessageValues],
     *,
     sanitizer: Callable[[str], str] | None = lime.extract_between_tags,
+    temperature: float | None = None,
     title: RenderableType | None = None,
 ) -> str:
     cfg: lime.Config = lime.get_config()
     router: litellm.Router = cfg.router.build()
     stream: litellm.CustomStreamWrapper = await router.acompletion(
         messages=messages,
+        temperature=temperature,
         stream=True,
         stream_options={"include_usage": True},
         **cfg.completion_kwargs,

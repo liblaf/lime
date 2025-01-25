@@ -1,7 +1,6 @@
 import asyncio
 from typing import Annotated
 
-import litellm
 import typer
 import typer_di
 
@@ -479,31 +478,22 @@ Note: If you want the AI to output its entire response or parts of its response 
 
 
 async def async_main(task: str, variables: list[str]) -> None:
-    cfg: lime.Config = lime.get_config()
-    router: litellm.Router = cfg.router.build()
-
     variable_string: str = ""
     for variable in variables:
         variable_string += "\n{$" + variable.upper() + "}"
-    print(variable_string)
 
     prompt: str = META_PROMPT.replace("{{TASK}}", task)
     assistant_partial: str = "<Inputs>"
     if variable_string:
         assistant_partial += variable_string + "\n</Inputs>\n<Instructions Structure>"
 
-    response: litellm.ModelResponse = router.completion(
-        messages=[
+    await lime.live(
+        [
             {"role": "user", "content": prompt},
             {"role": "assistant", "content": assistant_partial, "prefix": True},
         ],
         temperature=0.0,
-        **cfg.completion_kwargs,
-    )  # pyright: ignore[reportAssignmentType]
-    message: str = litellm.get_content_from_model_response(response)
-    if not message.startswith(assistant_partial):
-        message = assistant_partial + message
-    print(message)
+    )
 
 
 app = typer_di.TyperDI()

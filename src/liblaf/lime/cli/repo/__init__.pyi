@@ -1,4 +1,4 @@
-from . import topics
+from . import description, topics
 from ._app import app
 
-__all__ = ["app", "topics"]
+__all__ = ["app", "description", "topics"]
