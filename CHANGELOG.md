@@ -1,5 +1,47 @@
 # Changelog
 
+## [0.1.0](https://github.com/liblaf/lime/compare/v0.0.0...v0.1.0) (2025-01-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* next ([#15](https://github.com/liblaf/lime/issues/15))
+
+### ✨ Features
+
+* enhance README generation with AI-powered features and descriptions ([d9fe575](https://github.com/liblaf/lime/commit/d9fe575120335e3d020d539d8427173be328f55d))
+* **live:** add transient option to live action ([dfd597a](https://github.com/liblaf/lime/commit/dfd597ad4e7996b6060d37b92a19df5e54014df8))
+* next ([#15](https://github.com/liblaf/lime/issues/15)) ([99e128e](https://github.com/liblaf/lime/commit/99e128eefa52fa4b07ad9a404a892eca728b48a0))
+* **repo:** add GitHub repository description generation and update functionality ([28acafc](https://github.com/liblaf/lime/commit/28acafcdd5dcd2a814b34bfb3978ae390e00b8f7))
+
+
+### ⬆️ Dependencies
+
+* **deps:** update astral-sh/setup-uv action to v5 ([#13](https://github.com/liblaf/lime/issues/13)) ([1515cf6](https://github.com/liblaf/lime/commit/1515cf62ff3270211e09e299e85b46f714b7507d))
+* **deps:** update dependency httpx to &gt;=0.28.1,&lt;0.29 ([#16](https://github.com/liblaf/lime/issues/16)) ([922266a](https://github.com/liblaf/lime/commit/922266ab523672eabfc2d5a963fb36b5912cb7a9))
+
+
+### 🐛 Bug Fixes
+
+* clear logging handlers for LiteLLM to prevent duplicate logs ([418effd](https://github.com/liblaf/lime/commit/418effd5caa375abc7f4dff2883be84c2e1e9b82))
+
+
+### 📝 Documentation
+
+* update CLI command references to use 'ai' instead of 'ai-cli' ([06bc78a](https://github.com/liblaf/lime/commit/06bc78a861c91bd06c5050e146075684b80d186c))
+* update GitHub links in README ([b704a54](https://github.com/liblaf/lime/commit/b704a54f11dd769af19a95a07b744ea5e26cf524))
+* update README and pyproject.toml with improved URLs and badges ([954ad5f](https://github.com/liblaf/lime/commit/954ad5f6b0d321e49689f530e36ce0fdb5ab92e1))
+* update README and utility function for consistency ([59e20ee](https://github.com/liblaf/lime/commit/59e20ee575057d7b5f75c84bb3810e4b93066d21))
+* update README badge links and formatting ([fb02378](https://github.com/liblaf/lime/commit/fb0237827bf5243369fb99dbfdba96c559179a29))
+* update README badges to use PyPI release info ([fc05511](https://github.com/liblaf/lime/commit/fc0551153817065c7e35c9c9759005b4f0a3ff96))
+
+
+### ♻ Code Refactoring
+
+* rename LLM CLI to AI CLI for broader applicability ([53b7d9d](https://github.com/liblaf/lime/commit/53b7d9d9ad2e4e25703df9e0e0cce5f3ffbed7c0))
+* rename project and related references to 'ai-cli' ([ea2baaf](https://github.com/liblaf/lime/commit/ea2baaf45ac5bac8e3c1cd20afe24cca42ffe573))
+* streamline CLI and logging initialization ([9e04a97](https://github.com/liblaf/lime/commit/9e04a97e14bacda010ea0cda02d0684938637902))
+
 ## 0.0.0 (2025-01-25)
 
 
