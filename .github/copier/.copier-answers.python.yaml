@@ -4,7 +4,7 @@ _src_path: gh:liblaf/copier-python
 author: liblaf
 email: 30631553+liblaf@users.noreply.github.com
 license: MIT
-name: liblaf-ai-cli
+name: liblaf-lime
 owner: liblaf
-package_manager: pixi
-repo: ai-cli
+package_manager: uv
+repo: lime
