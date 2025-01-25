@@ -60,7 +60,7 @@ Lime is an AI-powered CLI tool for generating high-quality commit messages, repo
 To install `liblaf-lime`, run the following command:
 
 ```bash
-$ uv tool install liblaf-lime
+uv tool install liblaf-lime
 ```
 
 <div align="right">
@@ -69,9 +69,6 @@ $ uv tool install liblaf-lime
 
 </div>
 
-[bun-shield]: https://img.shields.io/badge/-speedup%20with%20bun-black?logo=bun&style=for-the-badge
-[bun-link]: https://bun.sh
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ## ⌨️ Local Development
 
@@ -82,9 +79,9 @@ You can use Github Codespaces for online development:
 Or clone it for local development:
 
 ```bash
-$ git clone https://github.com/liblaf/lime.git
-$ cd lime
-$ uv sync
+git clone https://github.com/liblaf/lime.git
+cd lime
+uv sync
 ```
 
 <div align="right">
@@ -95,7 +92,6 @@ $ uv sync
 
 [github-codespace-shield]: https://github.com/codespaces/badge.svg
 [github-codespace-link]: https://codespaces.new/liblaf/lime
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ## 🤝 Contributing
 
@@ -111,12 +107,10 @@ Contributions of all types are more than welcome, if you are interested in contr
 
 </div>
 
-[github-issues-link]: https://github.com/liblaf/lime/issues
 [pr-welcome-shield]: https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
 [pr-welcome-link]: https://github.com/liblaf/lime/pulls
 [github-contrib-shield]: https://contrib.rocks/image?repo=liblaf%2Flime
 [github-contrib-link]: https://github.com/liblaf/lime/graphs/contributors
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ---
 
