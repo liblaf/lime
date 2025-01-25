@@ -16,6 +16,7 @@ async def live(
     sanitizer: Callable[[str], str] | None = lime.extract_between_tags,
     temperature: float | None = None,
     title: RenderableType | None = None,
+    transient: bool = False,
 ) -> str:
     cfg: lime.Config = lime.get_config()
     router: litellm.Router = cfg.router.build()
@@ -28,7 +29,7 @@ async def live(
     )
     chunks: list[litellm.ModelResponseStream] = []
     response = litellm.ModelResponse()
-    with Live() as live:
+    with Live(transient=transient) as live:
         async for chunk in stream:
             chunks.append(chunk)
             response: litellm.ModelResponse = litellm.stream_chunk_builder(chunks)  # pyright: ignore[reportAssignmentType]
