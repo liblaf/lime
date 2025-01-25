@@ -1,6 +1,8 @@
 from collections.abc import Callable
 
 import litellm
+import rich
+import rich.markup
 from rich.console import Group, RenderableType
 from rich.live import Live
 from rich.text import Text
@@ -54,5 +56,5 @@ def _rich_content(
         if isinstance(title, str):
             title = Text(title, style="bold cyan")
         renderables.append(title)
-    renderables.append(content)
+    renderables.append(rich.markup.escape(content))
     return Group(*renderables)

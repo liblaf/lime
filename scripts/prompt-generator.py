@@ -487,13 +487,15 @@ async def async_main(task: str, variables: list[str]) -> None:
     if variable_string:
         assistant_partial += variable_string + "\n</Inputs>\n<Instructions Structure>"
 
-    await lime.live(
+    message: str = await lime.live(
         [
             {"role": "user", "content": prompt},
             {"role": "assistant", "content": assistant_partial, "prefix": True},
         ],
+        sanitizer=None,
         temperature=0.0,
     )
+    print(message)
 
 
 app = typer_di.TyperDI()
