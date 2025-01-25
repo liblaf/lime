@@ -1,9 +1,13 @@
-default: gen-init lint
+default: docs-help gen-init lint
 
 build:
     pyproject-build
     check-wheel-contents dist/*.whl
     twine check --strict dist/*
+
+docs-help:
+    typer liblaf.lime.cli utils docs --output docs/help.md
+    prettier --write docs/help.md
 
 gen-init:
     ./scripts/gen-init.sh
