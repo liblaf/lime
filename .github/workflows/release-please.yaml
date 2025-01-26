@@ -1,0 +1,89 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  release-please:
+    name: Release Please
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    outputs:
+      created: ${{ steps.release-please.outputs.release_created }}
+      pr: ${{ steps.release-please.outputs.pr }}
+      tag: ${{ steps.release-please.outputs.tag_name }}
+    steps:
+      - id: release-please
+        name: Release Please
+        uses: googleapis/release-please-action@v4
+        with:
+          config-file: .github/release-please/config.json
+          manifest-file: .github/release-please/.manifest.json
+          token: ${{ secrets.PAT || github.token }}
+
+  changelog-pr:
+    name: Changelog (PR)
+    permissions:
+      contents: write
+    needs:
+      - release-please
+    if: ${{ needs.release-please.outputs.pr }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ fromJson(needs.release-please.outputs.pr).headBranchName }}
+          token: ${{ secrets.PAT || github.token }}
+          fetch-depth: 0
+      - id: tag
+        name: Parse Tag
+        run: |-
+          title="${{ fromJson(needs.release-please.outputs.pr).title }}"
+          version=$(echo "$title" | awk '{ print $NF }')
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+      - name: Changelog
+        uses: liblaf/actions/changelog@main
+        with:
+          args: --tag "${{ steps.tag.outputs.tag }}"
+          output: CHANGELOG.md
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(docs): update CHANGELOG.md"
+          file_pattern: CHANGELOG.md
+
+  changelog-release:
+    name: Changelog (Release)
+    permissions:
+      actions: write
+      contents: write
+    needs:
+      - release-please
+    if: ${{ needs.release-please.outputs.created }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.release-please.outputs.tag }}
+          fetch-depth: 0
+      - id: changelog
+        name: Changelog
+        uses: liblaf/actions/changelog@main
+        with:
+          args: --current --strip all
+      - name: Update Release
+        run: gh release edit "${{ needs.release-please.outputs.tag }}" --notes-file "${{ steps.changelog.outputs.changelog }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Trigger Release Workflow
+        run: gh workflow run "release.yaml" --ref "${{ needs.release-please.outputs.tag }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+        continue-on-error: true
