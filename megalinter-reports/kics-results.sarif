@@ -45,6 +45,16 @@
 							}
 						},
 						{
+							"name": "Observability",
+							"id": "CAT010",
+							"shortDescription": {
+								"text": "Logging and Monitoring"
+							},
+							"fullDescription": {
+								"text": "Logging and Monitoring"
+							}
+						},
+						{
 							"name": "Supply-Chain",
 							"id": "CAT013",
 							"shortDescription": {
@@ -55,23 +65,13 @@
 							}
 						},
 						{
-							"name": "Structure and Semantics",
-							"id": "CAT014",
+							"name": "Backup",
+							"id": "CAT003",
 							"shortDescription": {
-								"text": "Malformed document structure or inadequate semantics"
+								"text": "Survivability and Recovery"
 							},
 							"fullDescription": {
-								"text": "Malformed document structure or inadequate semantics"
-							}
-						},
-						{
-							"name": "Access Control",
-							"id": "CAT001",
-							"shortDescription": {
-								"text": "Service permission and identity management"
-							},
-							"fullDescription": {
-								"text": "Service permission and identity management"
+								"text": "Survivability and Recovery"
 							}
 						},
 						{
@@ -82,6 +82,26 @@
 							},
 							"fullDescription": {
 								"text": "Metadata management"
+							}
+						},
+						{
+							"name": "Build Process",
+							"id": "CAT005",
+							"shortDescription": {
+								"text": "Insecure configurations when building/deploying"
+							},
+							"fullDescription": {
+								"text": "Insecure configurations when building/deploying"
+							}
+						},
+						{
+							"name": "Structure and Semantics",
+							"id": "CAT014",
+							"shortDescription": {
+								"text": "Malformed document structure or inadequate semantics"
+							},
+							"fullDescription": {
+								"text": "Malformed document structure or inadequate semantics"
 							}
 						},
 						{
@@ -135,6 +155,16 @@
 							}
 						},
 						{
+							"name": "Access Control",
+							"id": "CAT001",
+							"shortDescription": {
+								"text": "Service permission and identity management"
+							},
+							"fullDescription": {
+								"text": "Service permission and identity management"
+							}
+						},
+						{
 							"name": "Availability",
 							"id": "CAT002",
 							"shortDescription": {
@@ -142,36 +172,6 @@
 							},
 							"fullDescription": {
 								"text": "Reliability and Scalability"
-							}
-						},
-						{
-							"name": "Build Process",
-							"id": "CAT005",
-							"shortDescription": {
-								"text": "Insecure configurations when building/deploying"
-							},
-							"fullDescription": {
-								"text": "Insecure configurations when building/deploying"
-							}
-						},
-						{
-							"name": "Observability",
-							"id": "CAT010",
-							"shortDescription": {
-								"text": "Logging and Monitoring"
-							},
-							"fullDescription": {
-								"text": "Logging and Monitoring"
-							}
-						},
-						{
-							"name": "Backup",
-							"id": "CAT003",
-							"shortDescription": {
-								"text": "Survivability and Recovery"
-							},
-							"fullDescription": {
-								"text": "Survivability and Recovery"
 							}
 						},
 						{
