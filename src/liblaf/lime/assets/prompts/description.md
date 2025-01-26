@@ -124,7 +124,7 @@ Follow these steps to create the description:
 Here is an example of what your output might look like:
 <example>
 <answer>
-🚀 A blazing-fast, open-source headless CMS built with JavaScript/TypeScript. Fully customizable, developer-first, and packed with features to power modern web applications.
+😎 Awesome lists about all kinds of interesting topics.
 </answer>
 </example>
 

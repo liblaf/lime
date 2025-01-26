@@ -38,16 +38,14 @@ Lime is an AI-powered CLI tool for generating high-quality commit messages, repo
 
 ## ✨ Features
 
-- 🤖 **AI-Powered Commit Messages:** Automatically generates meaningful commit messages using AI, following conventional commit standards;
-- 🛠️ **GitHub Integration:** Seamlessly integrates with GitHub to manage repository descriptions, topics, and README files;
-- 📝 **Prompt Engineering:** Provides powerful prompt templates for generating high-quality content, including README descriptions and features;
-- 🚀 **CLI Tooling:** Offers a comprehensive command-line interface for managing repository metadata and AI-assisted workflows;
-- 🔧 **Configurable AI Models:** Supports multiple AI models and configurations through a flexible settings system;
-- 📚 **Documentation Generation:** Automates the creation of repository documentation, including README files and feature lists;
-- 🔄 **Repository Analysis:** Analyzes repository content to suggest improvements and generate relevant metadata;
-- 🧩 **Plugin System:** Extensible architecture allows for custom plugins to enhance functionality;
-- 🛡️ **Error Handling:** Robust error handling and logging ensure smooth operation and easy debugging;
-- 🌐 **Cross-Platform Support:** Works across multiple platforms, ensuring compatibility with various development environments.
+- 🤖 **AI-Powered Commit Messages:** Automatically generates meaningful and conventional commit messages based on code changes, saving time and ensuring consistency;
+- 🛠️ **Repository Management:** Provides tools to manage repository descriptions, README files, and topics with AI assistance, making repository maintenance effortless;
+- 🚀 **Quick Setup:** Easy to install and configure, with a simple CLI interface that integrates seamlessly into your development workflow;
+- 📚 **Documentation Generation:** Automatically generates help documentation and README sections, ensuring your project is well-documented and easy to understand;
+- 🔄 **Git Integration:** Deep integration with Git, allowing you to manage commits, repositories, and GitHub interactions directly from the CLI;
+- 🧠 **Customizable Prompts:** Supports custom prompt templates for generating commit messages, descriptions, and other content, tailored to your project's needs;
+- 🌐 **GitHub API Integration:** Seamlessly interacts with GitHub to update repository descriptions and topics, ensuring your project is always up-to-date;
+- 📦 **Modular Design:** Built with a modular architecture, allowing you to extend and customize functionality to fit your specific requirements;
 
 <div align="right">
 

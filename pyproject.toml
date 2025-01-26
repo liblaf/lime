@@ -17,6 +17,18 @@ dev = ["icecream>=2.1.4,<3", "ipykernel>=6.29.5,<7", "ipython>=8.31.0,<9"]
 authors = [
   { email = "30631553+liblaf@users.noreply.github.com", name = "liblaf" },
 ]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
 dependencies = [
   "emoji>=2.14.1,<3",
   "githubkit>=0.12.5",
@@ -24,8 +36,8 @@ dependencies = [
   "hishel>=0.1.1,<0.2",
   "httpx[socks]>=0.27.2,<0.28",
   "lazy-loader>=0.4,<0.5",
-  "liblaf-grapes>=0.0.1,<0.0.2",
-  "litellm>=1.59.7,<2",
+  "liblaf-grapes>=0.0.2,<0.0.3",
+  "litellm>=1.59.8,<2",
   "loguru>=0.7.3,<0.8",
   "platformdirs>=4.3.6,<5",
   "pydantic-settings>=2.7.1,<3",
@@ -35,8 +47,29 @@ dependencies = [
   "typer-di>=0.1.2,<0.2",
   "typer>=0.15.1,<0.16",
 ]
-description = "Add your description here"
-keywords = []
+description = "🤖 Lime: AI-powered CLI for GitHub repository management. Automate commits, generate READMEs, and manage topics with ease. Supports conventional commits, markdown generation, and GitHub API integration."
+keywords = [
+  "ai",
+  "automation",
+  "cli",
+  "code-quality",
+  "code-review",
+  "commit-messages",
+  "developer-tools",
+  "documentation",
+  "git",
+  "github-api",
+  "markdown",
+  "open-source",
+  "productivity",
+  "project-management",
+  "python",
+  "readme-generation",
+  "repository-management",
+  "software-development",
+  "topic-management",
+  "version-control",
+]
 license = "MIT"
 name = "liblaf-lime"
 readme = "docs/README.md"
