@@ -115,7 +115,7 @@ Follow these steps to create the description:
    - Identify the main technologies, frameworks, or tools used.
    - Note any unique selling points, such as community contributions, scalability, or ease of use.
 2. **Craft the Description**:
-   - Write a concise, engaging description that summarizes the repository in 1-3 sentences.
+   - Write a concise, engaging description that summarizes the repository in 1-2 sentences.
    - Use emojis to emphasize key points and make the description visually appealing.
    - Ensure the tone is professional yet approachable.
 3. **Output the Description**:
