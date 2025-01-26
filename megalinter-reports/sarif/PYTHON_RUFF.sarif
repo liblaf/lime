@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "megalinter": {
+          "docUrl": "https://megalinter.io/8.3.0/descriptors/python_ruff",
+          "linterKey": "PYTHON_RUFF",
+          "linterVersion": "0.8.0"
+        }
+      },
+      "results": [],
+      "tool": {
+        "driver": {
+          "informationUri": "https://github.com/astral-sh/ruff",
+          "name": "ruff (MegaLinter PYTHON_RUFF)",
+          "rules": [],
+          "version": "0.8.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

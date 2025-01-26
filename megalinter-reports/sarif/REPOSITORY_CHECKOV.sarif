@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "megalinter": {
+          "docUrl": "https://megalinter.io/8.3.0/descriptors/repository_checkov",
+          "linterKey": "REPOSITORY_CHECKOV",
+          "linterVersion": "3.2.311"
+        }
+      },
+      "results": [],
+      "tool": {
+        "driver": {
+          "informationUri": "https://checkov.io",
+          "name": "Checkov (MegaLinter REPOSITORY_CHECKOV)",
+          "organization": "bridgecrew",
+          "rules": [],
+          "version": "3.2.311"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.6.json",
+  "runs": [
+    {
+      "columnKind": "utf16CodeUnits",
+      "properties": {
+        "megalinter": {
+          "docUrl": "https://megalinter.io/8.3.0/descriptors/repository_devskim",
+          "linterKey": "REPOSITORY_DEVSKIM",
+          "linterVersion": "1.0.44"
+        }
+      },
+      "results": [],
+      "tool": {
+        "driver": {
+          "fullName": "Microsoft DevSkim Command Line Interface",
+          "informationUri": "https://github.com/microsoft/DevSkim/",
+          "name": "devskim (MegaLinter REPOSITORY_DEVSKIM)",
+          "version": "1.0.44+10b85ce690"
+        }
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "release-please--branches--main",
+          "repositoryUri": "https://github.com/liblaf/lime",
+          "revisionId": "427011667193bec10f433a8b2403bb40ceaee242"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///github/workspace/"
+        }
+      },
+      "properties": {
+        "megalinter": {
+          "docUrl": "https://megalinter.io/8.3.0/descriptors/repository_trivy",
+          "linterKey": "REPOSITORY_TRIVY",
+          "linterVersion": "0.57.1"
+        }
+      },
+      "results": [],
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy (MegaLinter REPOSITORY_TRIVY)",
+          "rules": [],
+          "version": "0.57.1"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

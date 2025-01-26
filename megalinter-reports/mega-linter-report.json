@@ -1,0 +1,3264 @@
+{
+    "file_extensions": [
+        ".py",
+        ".yml",
+        ".yaml",
+        ".json",
+        "",
+        ".sh",
+        ".bash",
+        ".dash",
+        ".ksh",
+        ".bicep",
+        ".c",
+        ".h",
+        ".clj",
+        ".cljs",
+        ".cljc",
+        ".edn",
+        ".coffee",
+        ".cpp",
+        ".cc",
+        ".hpp",
+        ".cxx",
+        ".cu",
+        ".hxx",
+        ".c++",
+        ".hh",
+        ".h++",
+        ".cuh",
+        ".cs",
+        ".csproj",
+        ".css",
+        ".scss",
+        ".saas",
+        ".dart",
+        ".env",
+        ".feature",
+        ".go",
+        ".graphql",
+        ".groovy",
+        ".gvy",
+        ".gradle",
+        ".nf",
+        ".html",
+        ".htm",
+        ".java",
+        ".kt",
+        ".kts",
+        ".tex",
+        ".lua",
+        ".md",
+        ".mdx",
+        ".pl",
+        ".pm",
+        ".t",
+        ".php",
+        ".ps1",
+        ".psm1",
+        ".psd1",
+        ".ps1xml",
+        ".pssc",
+        ".psrc",
+        ".cdxml",
+        ".proto",
+        ".pp",
+        ".r",
+        ".R",
+        ".Rmd",
+        ".RMD",
+        ".raku",
+        ".rakumod",
+        ".rakutest",
+        ".pm6",
+        ".pl6",
+        ".p6",
+        ".rst",
+        ".rb",
+        ".rs",
+        ".scala",
+        ".smk",
+        ".markdown",
+        ".txt",
+        ".jsonc",
+        ".json5",
+        ".sql",
+        ".tf",
+        ".hcl",
+        ".vb",
+        ".xml",
+        ".xsd"
+    ],
+    "file_names_regex": [
+        "Containerfile",
+        "Dockerfile",
+        "Jenkinsfile",
+        "Snakefile"
+    ],
+    "flavor_suggestions": [
+        {
+            "flavor": "cupcake",
+            "flavor_info": {
+                "descriptors": [
+                    "BASH",
+                    "CLOJURE",
+                    "GO",
+                    "JAVA",
+                    "KOTLIN",
+                    "PHP",
+                    "TYPESCRIPT"
+                ],
+                "label": "MegaLinter for the most commonly used languages",
+                "linters": [
+                    "ACTION_ACTIONLINT",
+                    "ANSIBLE_ANSIBLE_LINT",
+                    "BASH_EXEC",
+                    "BASH_SHELLCHECK",
+                    "BASH_SHFMT",
+                    "C_CPPLINT",
+                    "CLOJURE_CLJ_KONDO",
+                    "CLOUDFORMATION_CFN_LINT",
+                    "COPYPASTE_JSCPD",
+                    "CPP_CPPLINT",
+                    "CSS_STYLELINT",
+                    "DOCKERFILE_HADOLINT",
+                    "EDITORCONFIG_EDITORCONFIG_CHECKER",
+                    "ENV_DOTENV_LINTER",
+                    "GO_GOLANGCI_LINT",
+                    "GO_REVIVE",
+                    "GRAPHQL_GRAPHQL_SCHEMA_LINTER",
+                    "GROOVY_NPM_GROOVY_LINT",
+                    "HTML_DJLINT",
+                    "HTML_HTMLHINT",
+                    "JAVA_CHECKSTYLE",
+                    "JAVA_PMD",
+                    "JAVASCRIPT_ES",
+                    "JAVASCRIPT_STANDARD",
+                    "JAVASCRIPT_PRETTIER",
+                    "JSON_JSONLINT",
+                    "JSON_V8R",
+                    "JSON_PRETTIER",
+                    "JSON_NPM_PACKAGE_JSON_LINT",
+                    "JSX_ESLINT",
+                    "KOTLIN_KTLINT",
+                    "KOTLIN_DETEKT",
+                    "KUBERNETES_KUBECONFORM",
+                    "KUBERNETES_HELM",
+                    "KUBERNETES_KUBESCAPE",
+                    "MARKDOWN_MARKDOWNLINT",
+                    "MARKDOWN_MARKDOWN_LINK_CHECK",
+                    "MARKDOWN_MARKDOWN_TABLE_FORMATTER",
+                    "PHP_PHPCS",
+                    "PHP_PHPSTAN",
+                    "PHP_PSALM",
+                    "PHP_PHPLINT",
+                    "PHP_PHPCSFIXER",
+                    "PYTHON_PYLINT",
+                    "PYTHON_BLACK",
+                    "PYTHON_FLAKE8",
+                    "PYTHON_ISORT",
+                    "PYTHON_MYPY",
+                    "PYTHON_PYRIGHT",
+                    "PYTHON_RUFF",
+                    "REPOSITORY_CHECKOV",
+                    "REPOSITORY_GIT_DIFF",
+                    "REPOSITORY_GITLEAKS",
+                    "REPOSITORY_GRYPE",
+                    "REPOSITORY_KICS",
+                    "REPOSITORY_LS_LINT",
+                    "REPOSITORY_SECRETLINT",
+                    "REPOSITORY_SEMGREP",
+                    "REPOSITORY_TRIVY",
+                    "REPOSITORY_TRIVY_SBOM",
+                    "REPOSITORY_TRUFFLEHOG",
+                    "RST_RST_LINT",
+                    "RST_RSTCHECK",
+                    "RST_RSTFMT",
+                    "RUBY_RUBOCOP",
+                    "RUST_CLIPPY",
+                    "SPELL_CSPELL",
+                    "SPELL_PROSELINT",
+                    "SPELL_LYCHEE",
+                    "SQL_SQLFLUFF",
+                    "SWIFT_SWIFTLINT",
+                    "TERRAFORM_TFLINT",
+                    "TERRAFORM_TERRASCAN",
+                    "TERRAFORM_TERRAGRUNT",
+                    "TERRAFORM_TERRAFORM_FMT",
+                    "TSX_ESLINT",
+                    "TYPESCRIPT_ES",
+                    "TYPESCRIPT_STANDARD",
+                    "TYPESCRIPT_PRETTIER",
+                    "XML_XMLLINT",
+                    "YAML_PRETTIER",
+                    "YAML_YAMLLINT",
+                    "YAML_V8R"
+                ]
+            },
+            "linters_number": 83
+        }
+    ],
+    "has_updated_sources": 0,
+    "linters": [
+        {
+            "descriptor_id": "ACTION",
+            "descriptor_type": "tooling_format",
+            "elapsed_time_s": 0.0283110889999989,
+            "files": [
+                ".github/workflows/auto-pr.yaml",
+                ".github/workflows/auto-repo.yaml",
+                ".github/workflows/mega-linter.yaml",
+                ".github/workflows/release-please.yaml",
+                ".github/workflows/release.yaml"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-pr.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-repo.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release-please.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 5,
+            "is_active": true,
+            "linter_name": "actionlint",
+            "name": "ACTION_ACTIONLINT",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "BASH",
+            "descriptor_type": "language",
+            "elapsed_time_s": 0.008850344999984827,
+            "files": [
+                ".envrc",
+                "scripts/gen-init.sh"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": 1,
+                    "file": ".envrc",
+                    "fixed": false,
+                    "status": "error",
+                    "status_code": 1,
+                    "stdout": "Error: File:[.envrc] is not executable\n"
+                },
+                {
+                    "errors_number": 0,
+                    "file": "scripts/gen-init.sh",
+                    "fixed": false,
+                    "status": "success",
+                    "status_code": 0,
+                    "stdout": ""
+                }
+            ],
+            "files_number": 2,
+            "is_active": true,
+            "linter_name": "bash-exec",
+            "name": "BASH_EXEC",
+            "number_errors": 1,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "warning",
+            "total_number_errors": 1
+        },
+        {
+            "descriptor_id": "BASH",
+            "descriptor_type": "language",
+            "elapsed_time_s": 0.03902341200000592,
+            "files": [
+                ".envrc",
+                "scripts/gen-init.sh"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".envrc",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/gen-init.sh",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 2,
+            "is_active": true,
+            "linter_name": "shellcheck",
+            "name": "BASH_SHELLCHECK",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "BASH",
+            "descriptor_type": "language",
+            "elapsed_time_s": 0.022103735000001734,
+            "files": [
+                ".envrc",
+                "scripts/gen-init.sh"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".envrc",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/gen-init.sh",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 2,
+            "is_active": true,
+            "linter_name": "shfmt",
+            "name": "BASH_SHFMT",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "COPYPASTE",
+            "descriptor_type": "other",
+            "elapsed_time_s": 1.3655045160000157,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "jscpd",
+            "name": "COPYPASTE_JSCPD",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "JSON",
+            "descriptor_type": "format",
+            "elapsed_time_s": 0.16138343200000804,
+            "files": [
+                ".cspell.json",
+                ".github/linters/.devskim.json",
+                ".github/release-please/config.json",
+                ".github/renovate.json",
+                ".vscode/settings.json"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".cspell.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.devskim.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/release-please/config.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/renovate.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".vscode/settings.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 5,
+            "is_active": true,
+            "linter_name": "jsonlint",
+            "name": "JSON_JSONLINT",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "JSON",
+            "descriptor_type": "format",
+            "elapsed_time_s": 0.44803858100002003,
+            "files": [
+                ".cspell.json",
+                ".github/linters/.devskim.json",
+                ".github/release-please/config.json",
+                ".github/renovate.json",
+                ".vscode/settings.json"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".cspell.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.devskim.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/release-please/config.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/renovate.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".vscode/settings.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 5,
+            "is_active": true,
+            "linter_name": "prettier",
+            "name": "JSON_PRETTIER",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "JSON",
+            "descriptor_type": "format",
+            "elapsed_time_s": 4.410913389000001,
+            "files": [
+                ".cspell.json",
+                ".github/linters/.devskim.json",
+                ".github/release-please/config.json",
+                ".github/renovate.json",
+                ".vscode/settings.json"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".cspell.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.devskim.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/release-please/config.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/renovate.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".vscode/settings.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 5,
+            "is_active": true,
+            "linter_name": "v8r",
+            "name": "JSON_V8R",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "MARKDOWN",
+            "descriptor_type": "format",
+            "elapsed_time_s": 1.0703766930000143,
+            "files": [
+                "CHANGELOG.md",
+                "docs/README.md",
+                "docs/help.md",
+                "docs/meta-prompts/commit.md",
+                "docs/meta-prompts/description.md",
+                "docs/meta-prompts/readme/description.md",
+                "docs/meta-prompts/readme/features.md",
+                "docs/meta-prompts/topics.md",
+                "src/liblaf/lime/assets/prompts/commit.md",
+                "src/liblaf/lime/assets/prompts/description.md",
+                "src/liblaf/lime/assets/prompts/readme/description.md",
+                "src/liblaf/lime/assets/prompts/readme/features.md",
+                "src/liblaf/lime/assets/prompts/topics.md"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": "CHANGELOG.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/README.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/help.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/commit.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/readme/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/readme/features.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/topics.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/commit.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/readme/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/readme/features.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/topics.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 13,
+            "is_active": true,
+            "linter_name": "prettier",
+            "name": "MARKDOWN_PRETTIER",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "PYTHON",
+            "descriptor_type": "language",
+            "elapsed_time_s": 8.828550184999983,
+            "files": [
+                "scripts/github-description.py",
+                "scripts/github-topics.py",
+                "scripts/prompt-generator.py",
+                "src/liblaf/lime/__init__.py",
+                "src/liblaf/lime/action/__init__.py",
+                "src/liblaf/lime/action/_live.py",
+                "src/liblaf/lime/cli/__init__.py",
+                "src/liblaf/lime/cli/_app.py",
+                "src/liblaf/lime/cli/commit/__init__.py",
+                "src/liblaf/lime/cli/commit/_app.py",
+                "src/liblaf/lime/cli/commit/_main.py",
+                "src/liblaf/lime/cli/repo/__init__.py",
+                "src/liblaf/lime/cli/repo/_app.py",
+                "src/liblaf/lime/cli/repo/description/__init__.py",
+                "src/liblaf/lime/cli/repo/description/_app.py",
+                "src/liblaf/lime/cli/repo/description/_main.py",
+                "src/liblaf/lime/cli/repo/readme/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/_app.py",
+                "src/liblaf/lime/cli/repo/readme/description/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/description/_app.py",
+                "src/liblaf/lime/cli/repo/readme/description/_main.py",
+                "src/liblaf/lime/cli/repo/readme/features/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/features/_app.py",
+                "src/liblaf/lime/cli/repo/readme/features/_main.py",
+                "src/liblaf/lime/cli/repo/topics/__init__.py",
+                "src/liblaf/lime/cli/repo/topics/_app.py",
+                "src/liblaf/lime/cli/repo/topics/_main.py",
+                "src/liblaf/lime/config/__init__.py",
+                "src/liblaf/lime/config/_config.py",
+                "src/liblaf/lime/config/_litellm.py",
+                "src/liblaf/lime/plugin/__init__.py",
+                "src/liblaf/lime/plugin/_github_topics.py",
+                "src/liblaf/lime/plugin/_repomix.py",
+                "src/liblaf/lime/utils/__init__.py",
+                "src/liblaf/lime/utils/_run.py",
+                "src/liblaf/lime/utils/cli/__init__.py",
+                "src/liblaf/lime/utils/cli/_add_commend.py",
+                "src/liblaf/lime/utils/cli/_app_dir.py",
+                "src/liblaf/lime/utils/cli/_logging.py",
+                "src/liblaf/lime/utils/cli/_shared_options.py",
+                "src/liblaf/lime/utils/git/__init__.py",
+                "src/liblaf/lime/utils/git/_github.py",
+                "src/liblaf/lime/utils/git/_github_client.py",
+                "src/liblaf/lime/utils/llm/__init__.py",
+                "src/liblaf/lime/utils/llm/_extract_between_tags.py",
+                "src/liblaf/lime/utils/llm/_get_content.py",
+                "src/liblaf/lime/utils/llm/_prompt.py"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": "scripts/github-description.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/github-topics.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/prompt-generator.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/action/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/action/_live.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/_config.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/_litellm.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/_github_topics.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/_repomix.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/_run.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_add_commend.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_app_dir.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_logging.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_shared_options.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/_github.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/_github_client.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_extract_between_tags.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_get_content.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_prompt.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 47,
+            "is_active": true,
+            "linter_name": "pyright",
+            "name": "PYTHON_PYRIGHT",
+            "number_errors": 1,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "warning",
+            "total_number_errors": 60
+        },
+        {
+            "descriptor_id": "PYTHON",
+            "descriptor_type": "language",
+            "elapsed_time_s": 0.04629007700000898,
+            "files": [
+                "scripts/github-description.py",
+                "scripts/github-topics.py",
+                "scripts/prompt-generator.py",
+                "src/liblaf/lime/__init__.py",
+                "src/liblaf/lime/action/__init__.py",
+                "src/liblaf/lime/action/_live.py",
+                "src/liblaf/lime/cli/__init__.py",
+                "src/liblaf/lime/cli/_app.py",
+                "src/liblaf/lime/cli/commit/__init__.py",
+                "src/liblaf/lime/cli/commit/_app.py",
+                "src/liblaf/lime/cli/commit/_main.py",
+                "src/liblaf/lime/cli/repo/__init__.py",
+                "src/liblaf/lime/cli/repo/_app.py",
+                "src/liblaf/lime/cli/repo/description/__init__.py",
+                "src/liblaf/lime/cli/repo/description/_app.py",
+                "src/liblaf/lime/cli/repo/description/_main.py",
+                "src/liblaf/lime/cli/repo/readme/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/_app.py",
+                "src/liblaf/lime/cli/repo/readme/description/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/description/_app.py",
+                "src/liblaf/lime/cli/repo/readme/description/_main.py",
+                "src/liblaf/lime/cli/repo/readme/features/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/features/_app.py",
+                "src/liblaf/lime/cli/repo/readme/features/_main.py",
+                "src/liblaf/lime/cli/repo/topics/__init__.py",
+                "src/liblaf/lime/cli/repo/topics/_app.py",
+                "src/liblaf/lime/cli/repo/topics/_main.py",
+                "src/liblaf/lime/config/__init__.py",
+                "src/liblaf/lime/config/_config.py",
+                "src/liblaf/lime/config/_litellm.py",
+                "src/liblaf/lime/plugin/__init__.py",
+                "src/liblaf/lime/plugin/_github_topics.py",
+                "src/liblaf/lime/plugin/_repomix.py",
+                "src/liblaf/lime/utils/__init__.py",
+                "src/liblaf/lime/utils/_run.py",
+                "src/liblaf/lime/utils/cli/__init__.py",
+                "src/liblaf/lime/utils/cli/_add_commend.py",
+                "src/liblaf/lime/utils/cli/_app_dir.py",
+                "src/liblaf/lime/utils/cli/_logging.py",
+                "src/liblaf/lime/utils/cli/_shared_options.py",
+                "src/liblaf/lime/utils/git/__init__.py",
+                "src/liblaf/lime/utils/git/_github.py",
+                "src/liblaf/lime/utils/git/_github_client.py",
+                "src/liblaf/lime/utils/llm/__init__.py",
+                "src/liblaf/lime/utils/llm/_extract_between_tags.py",
+                "src/liblaf/lime/utils/llm/_get_content.py",
+                "src/liblaf/lime/utils/llm/_prompt.py"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": "scripts/github-description.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/github-topics.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/prompt-generator.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/action/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/action/_live.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/_config.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/_litellm.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/_github_topics.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/_repomix.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/_run.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_add_commend.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_app_dir.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_logging.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_shared_options.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/_github.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/_github_client.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_extract_between_tags.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_get_content.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_prompt.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 47,
+            "is_active": true,
+            "linter_name": "ruff",
+            "name": "PYTHON_RUFF",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 12.517322850999989,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "checkov",
+            "name": "REPOSITORY_CHECKOV",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 0.9626480150000134,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "devskim",
+            "name": "REPOSITORY_DEVSKIM",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 0.004450292999990779,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "dustilock",
+            "name": "REPOSITORY_DUSTILOCK",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 0.20279559499999777,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "gitleaks",
+            "name": "REPOSITORY_GITLEAKS",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 0.0054415280000057464,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "git_diff",
+            "name": "REPOSITORY_GIT_DIFF",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 10.159917138999987,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "grype",
+            "name": "REPOSITORY_GRYPE",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 1.1401905630000044,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "kics",
+            "name": "REPOSITORY_KICS",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 0.9684993749999933,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "secretlint",
+            "name": "REPOSITORY_SECRETLINT",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 1.2085639720000074,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "syft",
+            "name": "REPOSITORY_SYFT",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 4.520481001999997,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "trivy",
+            "name": "REPOSITORY_TRIVY",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 0.06517897399999129,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "trivy-sbom",
+            "name": "REPOSITORY_TRIVY_SBOM",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "REPOSITORY",
+            "descriptor_type": "other",
+            "elapsed_time_s": 2.2324497799999676,
+            "files": [],
+            "files_lint_results": [],
+            "files_number": 0,
+            "is_active": true,
+            "linter_name": "trufflehog",
+            "name": "REPOSITORY_TRUFFLEHOG",
+            "number_errors": 1,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "warning",
+            "total_number_errors": 1
+        },
+        {
+            "descriptor_id": "SPELL",
+            "descriptor_type": "other",
+            "elapsed_time_s": 5.570059536999992,
+            "files": [
+                ".cspell.json",
+                ".envrc",
+                ".github/.mega-linter.yaml",
+                ".github/copier/.copier-answers.python.yaml",
+                ".github/copier/.copier-answers.release.yaml",
+                ".github/copier/.copier-answers.share.yaml",
+                ".github/linters/.checkov.yml",
+                ".github/linters/.devskim.json",
+                ".github/release-please/.manifest.json",
+                ".github/release-please/config.json",
+                ".github/renovate.json",
+                ".github/workflows/auto-pr.yaml",
+                ".github/workflows/auto-repo.yaml",
+                ".github/workflows/mega-linter.yaml",
+                ".github/workflows/release-please.yaml",
+                ".github/workflows/release.yaml",
+                ".gitignore",
+                ".mega-linter.yml",
+                ".vscode/settings.json",
+                "CHANGELOG.md",
+                "Justfile",
+                "LICENSE",
+                "docs/README.md",
+                "docs/help.md",
+                "docs/meta-prompts/commit.md",
+                "docs/meta-prompts/description.md",
+                "docs/meta-prompts/readme/description.md",
+                "docs/meta-prompts/readme/features.md",
+                "docs/meta-prompts/topics.md",
+                "scripts/gen-init.sh",
+                "scripts/github-description.py",
+                "scripts/github-topics.py",
+                "scripts/prompt-generator.py",
+                "src/liblaf/lime/__init__.py",
+                "src/liblaf/lime/action/__init__.py",
+                "src/liblaf/lime/action/_live.py",
+                "src/liblaf/lime/assets/prompts/commit.md",
+                "src/liblaf/lime/assets/prompts/description.md",
+                "src/liblaf/lime/assets/prompts/readme/description.md",
+                "src/liblaf/lime/assets/prompts/readme/features.md",
+                "src/liblaf/lime/assets/prompts/topics.md",
+                "src/liblaf/lime/cli/__init__.py",
+                "src/liblaf/lime/cli/_app.py",
+                "src/liblaf/lime/cli/commit/__init__.py",
+                "src/liblaf/lime/cli/commit/_app.py",
+                "src/liblaf/lime/cli/commit/_main.py",
+                "src/liblaf/lime/cli/repo/__init__.py",
+                "src/liblaf/lime/cli/repo/_app.py",
+                "src/liblaf/lime/cli/repo/description/__init__.py",
+                "src/liblaf/lime/cli/repo/description/_app.py",
+                "src/liblaf/lime/cli/repo/description/_main.py",
+                "src/liblaf/lime/cli/repo/readme/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/_app.py",
+                "src/liblaf/lime/cli/repo/readme/description/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/description/_app.py",
+                "src/liblaf/lime/cli/repo/readme/description/_main.py",
+                "src/liblaf/lime/cli/repo/readme/features/__init__.py",
+                "src/liblaf/lime/cli/repo/readme/features/_app.py",
+                "src/liblaf/lime/cli/repo/readme/features/_main.py",
+                "src/liblaf/lime/cli/repo/topics/__init__.py",
+                "src/liblaf/lime/cli/repo/topics/_app.py",
+                "src/liblaf/lime/cli/repo/topics/_main.py",
+                "src/liblaf/lime/config/__init__.py",
+                "src/liblaf/lime/config/_config.py",
+                "src/liblaf/lime/config/_litellm.py",
+                "src/liblaf/lime/plugin/__init__.py",
+                "src/liblaf/lime/plugin/_github_topics.py",
+                "src/liblaf/lime/plugin/_repomix.py",
+                "src/liblaf/lime/utils/__init__.py",
+                "src/liblaf/lime/utils/_run.py",
+                "src/liblaf/lime/utils/cli/__init__.py",
+                "src/liblaf/lime/utils/cli/_add_commend.py",
+                "src/liblaf/lime/utils/cli/_app_dir.py",
+                "src/liblaf/lime/utils/cli/_logging.py",
+                "src/liblaf/lime/utils/cli/_shared_options.py",
+                "src/liblaf/lime/utils/git/__init__.py",
+                "src/liblaf/lime/utils/git/_github.py",
+                "src/liblaf/lime/utils/git/_github_client.py",
+                "src/liblaf/lime/utils/llm/__init__.py",
+                "src/liblaf/lime/utils/llm/_extract_between_tags.py",
+                "src/liblaf/lime/utils/llm/_get_content.py",
+                "src/liblaf/lime/utils/llm/_prompt.py",
+                "/github/workspace/104dc996-19fe-40ec-ae48-fb68550bc9a2-megalinter_file_names_cspell.txt"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".cspell.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".envrc",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/.mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.python.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.share.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.checkov.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.devskim.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/release-please/.manifest.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/release-please/config.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/renovate.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-pr.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-repo.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release-please.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".gitignore",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".mega-linter.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".vscode/settings.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "CHANGELOG.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "Justfile",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "LICENSE",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/README.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/help.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/commit.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/readme/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/readme/features.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/topics.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/gen-init.sh",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/github-description.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/github-topics.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "scripts/prompt-generator.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/action/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/action/_live.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/commit.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/readme/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/readme/features.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/topics.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/commit/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/description/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/description/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/readme/features/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/_app.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/cli/repo/topics/_main.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/_config.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/config/_litellm.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/_github_topics.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/plugin/_repomix.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/_run.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_add_commend.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_app_dir.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_logging.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/cli/_shared_options.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/_github.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/git/_github_client.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/__init__.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_extract_between_tags.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_get_content.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/utils/llm/_prompt.py",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "/github/workspace/104dc996-19fe-40ec-ae48-fb68550bc9a2-megalinter_file_names_cspell.txt",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 82,
+            "is_active": true,
+            "linter_name": "cspell",
+            "name": "SPELL_CSPELL",
+            "number_errors": 1,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "warning",
+            "total_number_errors": 26
+        },
+        {
+            "descriptor_id": "SPELL",
+            "descriptor_type": "other",
+            "elapsed_time_s": 0.5446440529999848,
+            "files": [
+                ".cspell.json",
+                ".github/.mega-linter.yaml",
+                ".github/copier/.copier-answers.python.yaml",
+                ".github/copier/.copier-answers.release.yaml",
+                ".github/copier/.copier-answers.share.yaml",
+                ".github/linters/.checkov.yml",
+                ".github/linters/.devskim.json",
+                ".github/release-please/.manifest.json",
+                ".github/release-please/config.json",
+                ".github/renovate.json",
+                ".github/workflows/auto-pr.yaml",
+                ".github/workflows/auto-repo.yaml",
+                ".github/workflows/mega-linter.yaml",
+                ".github/workflows/release-please.yaml",
+                ".github/workflows/release.yaml",
+                ".mega-linter.yml",
+                ".vscode/settings.json",
+                "CHANGELOG.md",
+                "docs/README.md",
+                "docs/help.md",
+                "docs/meta-prompts/commit.md",
+                "docs/meta-prompts/description.md",
+                "docs/meta-prompts/readme/description.md",
+                "docs/meta-prompts/readme/features.md",
+                "docs/meta-prompts/topics.md",
+                "src/liblaf/lime/assets/prompts/commit.md",
+                "src/liblaf/lime/assets/prompts/description.md",
+                "src/liblaf/lime/assets/prompts/readme/description.md",
+                "src/liblaf/lime/assets/prompts/readme/features.md",
+                "src/liblaf/lime/assets/prompts/topics.md"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".cspell.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/.mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.python.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.share.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.checkov.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.devskim.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/release-please/.manifest.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/release-please/config.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/renovate.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-pr.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-repo.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release-please.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".mega-linter.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".vscode/settings.json",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "CHANGELOG.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/README.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/help.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/commit.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/readme/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/readme/features.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "docs/meta-prompts/topics.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/commit.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/readme/description.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/readme/features.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": "src/liblaf/lime/assets/prompts/topics.md",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 30,
+            "is_active": true,
+            "linter_name": "lychee",
+            "name": "SPELL_LYCHEE",
+            "number_errors": 1,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "warning",
+            "total_number_errors": 2
+        },
+        {
+            "descriptor_id": "YAML",
+            "descriptor_type": "format",
+            "elapsed_time_s": 0.6871298659999923,
+            "files": [
+                ".github/.mega-linter.yaml",
+                ".github/copier/.copier-answers.python.yaml",
+                ".github/copier/.copier-answers.release.yaml",
+                ".github/copier/.copier-answers.share.yaml",
+                ".github/linters/.checkov.yml",
+                ".github/workflows/auto-pr.yaml",
+                ".github/workflows/auto-repo.yaml",
+                ".github/workflows/mega-linter.yaml",
+                ".github/workflows/release-please.yaml",
+                ".github/workflows/release.yaml",
+                ".mega-linter.yml"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".github/.mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.python.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.share.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.checkov.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-pr.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-repo.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release-please.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".mega-linter.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 11,
+            "is_active": true,
+            "linter_name": "prettier",
+            "name": "YAML_PRETTIER",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "YAML",
+            "descriptor_type": "format",
+            "elapsed_time_s": 6.459798453000019,
+            "files": [
+                ".github/.mega-linter.yaml",
+                ".github/copier/.copier-answers.python.yaml",
+                ".github/copier/.copier-answers.release.yaml",
+                ".github/copier/.copier-answers.share.yaml",
+                ".github/linters/.checkov.yml",
+                ".github/workflows/auto-pr.yaml",
+                ".github/workflows/auto-repo.yaml",
+                ".github/workflows/mega-linter.yaml",
+                ".github/workflows/release-please.yaml",
+                ".github/workflows/release.yaml",
+                ".mega-linter.yml"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".github/.mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.python.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.share.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.checkov.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-pr.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-repo.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release-please.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".mega-linter.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 11,
+            "is_active": true,
+            "linter_name": "v8r",
+            "name": "YAML_V8R",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        },
+        {
+            "descriptor_id": "YAML",
+            "descriptor_type": "format",
+            "elapsed_time_s": 0.4457022590000008,
+            "files": [
+                ".github/.mega-linter.yaml",
+                ".github/copier/.copier-answers.python.yaml",
+                ".github/copier/.copier-answers.release.yaml",
+                ".github/copier/.copier-answers.share.yaml",
+                ".github/linters/.checkov.yml",
+                ".github/workflows/auto-pr.yaml",
+                ".github/workflows/auto-repo.yaml",
+                ".github/workflows/mega-linter.yaml",
+                ".github/workflows/release-please.yaml",
+                ".github/workflows/release.yaml",
+                ".mega-linter.yml"
+            ],
+            "files_lint_results": [
+                {
+                    "errors_number": null,
+                    "file": ".github/.mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.python.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/copier/.copier-answers.share.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/linters/.checkov.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-pr.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/auto-repo.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/mega-linter.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release-please.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".github/workflows/release.yaml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                },
+                {
+                    "errors_number": null,
+                    "file": ".mega-linter.yml",
+                    "fixed": false,
+                    "status": null,
+                    "status_code": null,
+                    "stdout": null
+                }
+            ],
+            "files_number": 11,
+            "is_active": true,
+            "linter_name": "yamllint",
+            "name": "YAML_YAMLLINT",
+            "number_errors": 0,
+            "number_fixed": 0,
+            "return_code": 0,
+            "status": "success",
+            "total_number_errors": 0
+        }
+    ],
+    "post_commands_results": [],
+    "pre_commands_results": [],
+    "report_folder": "/github/workspace/megalinter-reports",
+    "reporters": [
+        {
+            "is_active": true,
+            "master": null,
+            "name": "CONFIG",
+            "processing_order": 0,
+            "report_folder": "/github/workspace/megalinter-reports",
+            "report_items": []
+        },
+        {
+            "is_active": true,
+            "master": null,
+            "name": "MARKDOWN_SUMMARY",
+            "processing_order": 0,
+            "report_folder": "/github/workspace/megalinter-reports",
+            "report_items": []
+        },
+        {
+            "is_active": true,
+            "master": null,
+            "name": "UPDATED_SOURCES",
+            "processing_order": 0,
+            "report_folder": "/github/workspace/megalinter-reports",
+            "report_items": []
+        },
+        {
+            "is_active": true,
+            "master": null,
+            "name": "GITLAB_COMMENT",
+            "processing_order": 0,
+            "report_folder": "/github/workspace/megalinter-reports",
+            "report_items": []
+        },
+        {
+            "is_active": true,
+            "master": null,
+            "name": "JSON",
+            "processing_order": 0,
+            "report_folder": "/github/workspace/megalinter-reports",
+            "report_items": []
+        },
+        {
+            "is_active": true,
+            "master": null,
+            "name": "SARIF",
+            "processing_order": 0,
+            "report_folder": "/github/workspace/megalinter-reports",
+            "report_items": []
+        },
+        {
+            "is_active": true,
+            "master": null,
+            "name": "GITHUB_COMMENT",
+            "processing_order": 0,
+            "report_folder": "/github/workspace/megalinter-reports",
+            "report_items": []
+        },
+        {
+            "is_active": true,
+            "master": null,
+            "name": "CONSOLE",
+            "processing_order": 0,
+            "report_folder": "/github/workspace/megalinter-reports",
+            "report_items": []
+        }
+    ],
+    "return_code": 0,
+    "status": "warning"
+}
