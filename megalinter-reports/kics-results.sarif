@@ -35,53 +35,13 @@
 							}
 						},
 						{
-							"name": "Supply-Chain",
-							"id": "CAT013",
+							"name": "Secret Management",
+							"id": "CAT012",
 							"shortDescription": {
-								"text": "Dependency version management"
+								"text": "Secret and Key management"
 							},
 							"fullDescription": {
-								"text": "Dependency version management"
-							}
-						},
-						{
-							"name": "Structure and Semantics",
-							"id": "CAT014",
-							"shortDescription": {
-								"text": "Malformed document structure or inadequate semantics"
-							},
-							"fullDescription": {
-								"text": "Malformed document structure or inadequate semantics"
-							}
-						},
-						{
-							"name": "Access Control",
-							"id": "CAT001",
-							"shortDescription": {
-								"text": "Service permission and identity management"
-							},
-							"fullDescription": {
-								"text": "Service permission and identity management"
-							}
-						},
-						{
-							"name": "Backup",
-							"id": "CAT003",
-							"shortDescription": {
-								"text": "Survivability and Recovery"
-							},
-							"fullDescription": {
-								"text": "Survivability and Recovery"
-							}
-						},
-						{
-							"name": "Build Process",
-							"id": "CAT005",
-							"shortDescription": {
-								"text": "Insecure configurations when building/deploying"
-							},
-							"fullDescription": {
-								"text": "Insecure configurations when building/deploying"
+								"text": "Secret and Key management"
 							}
 						},
 						{
@@ -95,36 +55,6 @@
 							}
 						},
 						{
-							"name": "Observability",
-							"id": "CAT010",
-							"shortDescription": {
-								"text": "Logging and Monitoring"
-							},
-							"fullDescription": {
-								"text": "Logging and Monitoring"
-							}
-						},
-						{
-							"name": "Resource Management",
-							"id": "CAT011",
-							"shortDescription": {
-								"text": "Resource and privilege limit configuration"
-							},
-							"fullDescription": {
-								"text": "Resource and privilege limit configuration"
-							}
-						},
-						{
-							"name": "Secret Management",
-							"id": "CAT012",
-							"shortDescription": {
-								"text": "Secret and Key management"
-							},
-							"fullDescription": {
-								"text": "Secret and Key management"
-							}
-						},
-						{
 							"name": "Encryption",
 							"id": "CAT006",
 							"shortDescription": {
@@ -132,6 +62,16 @@
 							},
 							"fullDescription": {
 								"text": "Data Security and Encryption configuration"
+							}
+						},
+						{
+							"name": "Insecure Configurations",
+							"id": "CAT007",
+							"shortDescription": {
+								"text": "Configurations which expose the application unnecessarily"
+							},
+							"fullDescription": {
+								"text": "Configurations which expose the application unnecessarily"
 							}
 						},
 						{
@@ -155,13 +95,13 @@
 							}
 						},
 						{
-							"name": "Availability",
-							"id": "CAT002",
+							"name": "Backup",
+							"id": "CAT003",
 							"shortDescription": {
-								"text": "Reliability and Scalability"
+								"text": "Survivability and Recovery"
 							},
 							"fullDescription": {
-								"text": "Reliability and Scalability"
+								"text": "Survivability and Recovery"
 							}
 						},
 						{
@@ -175,13 +115,73 @@
 							}
 						},
 						{
-							"name": "Insecure Configurations",
-							"id": "CAT007",
+							"name": "Build Process",
+							"id": "CAT005",
 							"shortDescription": {
-								"text": "Configurations which expose the application unnecessarily"
+								"text": "Insecure configurations when building/deploying"
 							},
 							"fullDescription": {
-								"text": "Configurations which expose the application unnecessarily"
+								"text": "Insecure configurations when building/deploying"
+							}
+						},
+						{
+							"name": "Access Control",
+							"id": "CAT001",
+							"shortDescription": {
+								"text": "Service permission and identity management"
+							},
+							"fullDescription": {
+								"text": "Service permission and identity management"
+							}
+						},
+						{
+							"name": "Observability",
+							"id": "CAT010",
+							"shortDescription": {
+								"text": "Logging and Monitoring"
+							},
+							"fullDescription": {
+								"text": "Logging and Monitoring"
+							}
+						},
+						{
+							"name": "Supply-Chain",
+							"id": "CAT013",
+							"shortDescription": {
+								"text": "Dependency version management"
+							},
+							"fullDescription": {
+								"text": "Dependency version management"
+							}
+						},
+						{
+							"name": "Availability",
+							"id": "CAT002",
+							"shortDescription": {
+								"text": "Reliability and Scalability"
+							},
+							"fullDescription": {
+								"text": "Reliability and Scalability"
+							}
+						},
+						{
+							"name": "Resource Management",
+							"id": "CAT011",
+							"shortDescription": {
+								"text": "Resource and privilege limit configuration"
+							},
+							"fullDescription": {
+								"text": "Resource and privilege limit configuration"
+							}
+						},
+						{
+							"name": "Structure and Semantics",
+							"id": "CAT014",
+							"shortDescription": {
+								"text": "Malformed document structure or inadequate semantics"
+							},
+							"fullDescription": {
+								"text": "Malformed document structure or inadequate semantics"
 							}
 						}
 					]
