@@ -47,7 +47,7 @@ dependencies = [
   "typer-di>=0.1.2,<0.2",
   "typer>=0.15.1,<0.16",
 ]
-description = "🤖 Lime: AI-powered CLI for GitHub repository management. Automate commits, generate READMEs, and manage topics with ease. Supports conventional commits, markdown generation, and GitHub API integration."
+description = "🍋‍🟩 Lime: AI-powered CLI for GitHub repository management. Automate commits, generate READMEs, and manage topics with ease. Supports conventional commits, markdown generation, and GitHub API integration."
 keywords = [
   "ai",
   "automation",
