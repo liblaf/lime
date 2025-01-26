@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/liblaf/lime/compare/v0.1.0...v0.1.1) (2025-01-26)
+
+
+### 📝 Documentation
+
+* add CLI help documentation generation ([d7796e1](https://github.com/liblaf/lime/commit/d7796e11a36cd499871447a15233c40d98dfebd8))
+* update README and feature descriptions for clarity and consistency ([badd1c1](https://github.com/liblaf/lime/commit/badd1c10c6c581a1fd3c95b4d9bad308ee7ded7d))
+
 ## [0.1.0](https://github.com/liblaf/lime/compare/v0.0.0...v0.1.0) (2025-01-25)
 
 
