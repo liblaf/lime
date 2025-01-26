@@ -12,7 +12,7 @@ To generate suggested topics, follow these rules:
 
 1. Topics should be relevant to the repository's purpose, subject area, or technology stack.
 2. Topics must be lowercase, use letters, numbers, and hyphens only, and be 50 characters or less.
-3. Do not suggest more than 20 topics.
+3. Do not suggest more than 10 topics.
 4. Refer to the list of featured topics provided in the supplementary materials for inspiration, but do not limit yourself to only those topics.
 
 Analyze the repository content carefully and generate a list of suggested topics. Write your response inside <answer> tags, separating each topic with a comma.

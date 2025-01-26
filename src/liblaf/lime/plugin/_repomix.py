@@ -17,7 +17,6 @@ async def repomix(instruction: str | None = None) -> str:
             "ignore": {
                 "customPatterns": [
                     "**/.*",
-                    "**/.*/**",
                     "**/*-lock.*",
                     "**/*.ipynb",
                     "**/*.lock",
