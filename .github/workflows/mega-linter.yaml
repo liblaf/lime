@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT || github.token }}
+          token: ${{ github.token }}
       - name: MegaLinter
         uses: liblaf/actions/mega-linter@main
       - name: Auto Commit
