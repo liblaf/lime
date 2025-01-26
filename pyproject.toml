@@ -74,7 +74,7 @@ license = "MIT"
 name = "liblaf-lime"
 readme = "docs/README.md"
 requires-python = ">=3.12,<4"
-version = "0.1.0"
+version = "0.1.1"
 
 [project.scripts]
 aic = "liblaf.lime.cli.commit:app"

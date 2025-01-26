@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.1](https://github.com/liblaf/lime/compare/v0.1.0...v0.1.1) (2025-01-26)
+
+
+### 📝 Documentation
+
+* add CLI help documentation generation ([d7796e1](https://github.com/liblaf/lime/commit/d7796e11a36cd499871447a15233c40d98dfebd8))
+* update README and feature descriptions for clarity and consistency ([badd1c1](https://github.com/liblaf/lime/commit/badd1c10c6c581a1fd3c95b4d9bad308ee7ded7d))
+* update README and project metadata for clarity and accuracy ([e3a8387](https://github.com/liblaf/lime/commit/e3a838756263a72eeb1273402fde6d1bafaaf757))
+
+
+### ♻ Code Refactoring
+
+* reduce maximum suggested topics from 20 to 10 ([8ccf5be](https://github.com/liblaf/lime/commit/8ccf5be073607f971a957f2d719a5733129ea858))
+
 ## [0.1.0](https://github.com/liblaf/lime/compare/v0.0.0...v0.1.0) (2025-01-25)
 
 ### ⚠ BREAKING CHANGES
