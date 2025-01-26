@@ -35,6 +35,26 @@
 							}
 						},
 						{
+							"name": "Supply-Chain",
+							"id": "CAT013",
+							"shortDescription": {
+								"text": "Dependency version management"
+							},
+							"fullDescription": {
+								"text": "Dependency version management"
+							}
+						},
+						{
+							"name": "Structure and Semantics",
+							"id": "CAT014",
+							"shortDescription": {
+								"text": "Malformed document structure or inadequate semantics"
+							},
+							"fullDescription": {
+								"text": "Malformed document structure or inadequate semantics"
+							}
+						},
+						{
 							"name": "Secret Management",
 							"id": "CAT012",
 							"shortDescription": {
@@ -42,6 +62,26 @@
 							},
 							"fullDescription": {
 								"text": "Secret and Key management"
+							}
+						},
+						{
+							"name": "Best Practices",
+							"id": "CAT004",
+							"shortDescription": {
+								"text": "Metadata management"
+							},
+							"fullDescription": {
+								"text": "Metadata management"
+							}
+						},
+						{
+							"name": "Networking and Firewall",
+							"id": "CAT009",
+							"shortDescription": {
+								"text": "Network port exposure and firewall configuration"
+							},
+							"fullDescription": {
+								"text": "Network port exposure and firewall configuration"
 							}
 						},
 						{
@@ -55,13 +95,13 @@
 							}
 						},
 						{
-							"name": "Encryption",
-							"id": "CAT006",
+							"name": "Backup",
+							"id": "CAT003",
 							"shortDescription": {
-								"text": "Data Security and Encryption configuration"
+								"text": "Survivability and Recovery"
 							},
 							"fullDescription": {
-								"text": "Data Security and Encryption configuration"
+								"text": "Survivability and Recovery"
 							}
 						},
 						{
@@ -85,33 +125,13 @@
 							}
 						},
 						{
-							"name": "Networking and Firewall",
-							"id": "CAT009",
+							"name": "Availability",
+							"id": "CAT002",
 							"shortDescription": {
-								"text": "Network port exposure and firewall configuration"
+								"text": "Reliability and Scalability"
 							},
 							"fullDescription": {
-								"text": "Network port exposure and firewall configuration"
-							}
-						},
-						{
-							"name": "Backup",
-							"id": "CAT003",
-							"shortDescription": {
-								"text": "Survivability and Recovery"
-							},
-							"fullDescription": {
-								"text": "Survivability and Recovery"
-							}
-						},
-						{
-							"name": "Best Practices",
-							"id": "CAT004",
-							"shortDescription": {
-								"text": "Metadata management"
-							},
-							"fullDescription": {
-								"text": "Metadata management"
+								"text": "Reliability and Scalability"
 							}
 						},
 						{
@@ -125,13 +145,13 @@
 							}
 						},
 						{
-							"name": "Access Control",
-							"id": "CAT001",
+							"name": "Encryption",
+							"id": "CAT006",
 							"shortDescription": {
-								"text": "Service permission and identity management"
+								"text": "Data Security and Encryption configuration"
 							},
 							"fullDescription": {
-								"text": "Service permission and identity management"
+								"text": "Data Security and Encryption configuration"
 							}
 						},
 						{
@@ -145,26 +165,6 @@
 							}
 						},
 						{
-							"name": "Supply-Chain",
-							"id": "CAT013",
-							"shortDescription": {
-								"text": "Dependency version management"
-							},
-							"fullDescription": {
-								"text": "Dependency version management"
-							}
-						},
-						{
-							"name": "Availability",
-							"id": "CAT002",
-							"shortDescription": {
-								"text": "Reliability and Scalability"
-							},
-							"fullDescription": {
-								"text": "Reliability and Scalability"
-							}
-						},
-						{
 							"name": "Resource Management",
 							"id": "CAT011",
 							"shortDescription": {
@@ -175,13 +175,13 @@
 							}
 						},
 						{
-							"name": "Structure and Semantics",
-							"id": "CAT014",
+							"name": "Access Control",
+							"id": "CAT001",
 							"shortDescription": {
-								"text": "Malformed document structure or inadequate semantics"
+								"text": "Service permission and identity management"
 							},
 							"fullDescription": {
-								"text": "Malformed document structure or inadequate semantics"
+								"text": "Service permission and identity management"
 							}
 						}
 					]
