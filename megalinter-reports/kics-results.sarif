@@ -35,23 +35,13 @@
 							}
 						},
 						{
-							"name": "Build Process",
-							"id": "CAT005",
+							"name": "Access Control",
+							"id": "CAT001",
 							"shortDescription": {
-								"text": "Insecure configurations when building/deploying"
+								"text": "Service permission and identity management"
 							},
 							"fullDescription": {
-								"text": "Insecure configurations when building/deploying"
-							}
-						},
-						{
-							"name": "Encryption",
-							"id": "CAT006",
-							"shortDescription": {
-								"text": "Data Security and Encryption configuration"
-							},
-							"fullDescription": {
-								"text": "Data Security and Encryption configuration"
+								"text": "Service permission and identity management"
 							}
 						},
 						{
@@ -65,43 +55,13 @@
 							}
 						},
 						{
-							"name": "Secret Management",
-							"id": "CAT012",
+							"name": "Observability",
+							"id": "CAT010",
 							"shortDescription": {
-								"text": "Secret and Key management"
+								"text": "Logging and Monitoring"
 							},
 							"fullDescription": {
-								"text": "Secret and Key management"
-							}
-						},
-						{
-							"name": "Access Control",
-							"id": "CAT001",
-							"shortDescription": {
-								"text": "Service permission and identity management"
-							},
-							"fullDescription": {
-								"text": "Service permission and identity management"
-							}
-						},
-						{
-							"name": "Availability",
-							"id": "CAT002",
-							"shortDescription": {
-								"text": "Reliability and Scalability"
-							},
-							"fullDescription": {
-								"text": "Reliability and Scalability"
-							}
-						},
-						{
-							"name": "Resource Management",
-							"id": "CAT011",
-							"shortDescription": {
-								"text": "Resource and privilege limit configuration"
-							},
-							"fullDescription": {
-								"text": "Resource and privilege limit configuration"
+								"text": "Logging and Monitoring"
 							}
 						},
 						{
@@ -115,23 +75,23 @@
 							}
 						},
 						{
-							"name": "Networking and Firewall",
-							"id": "CAT009",
+							"name": "Best Practices",
+							"id": "CAT004",
 							"shortDescription": {
-								"text": "Network port exposure and firewall configuration"
+								"text": "Metadata management"
 							},
 							"fullDescription": {
-								"text": "Network port exposure and firewall configuration"
+								"text": "Metadata management"
 							}
 						},
 						{
-							"name": "Supply-Chain",
-							"id": "CAT013",
+							"name": "Build Process",
+							"id": "CAT005",
 							"shortDescription": {
-								"text": "Dependency version management"
+								"text": "Insecure configurations when building/deploying"
 							},
 							"fullDescription": {
-								"text": "Dependency version management"
+								"text": "Insecure configurations when building/deploying"
 							}
 						},
 						{
@@ -145,23 +105,13 @@
 							}
 						},
 						{
-							"name": "Bill Of Materials",
-							"id": "CAT015",
+							"name": "Encryption",
+							"id": "CAT006",
 							"shortDescription": {
-								"text": "List of resources provisioned"
+								"text": "Data Security and Encryption configuration"
 							},
 							"fullDescription": {
-								"text": "List of resources provisioned"
-							}
-						},
-						{
-							"name": "Best Practices",
-							"id": "CAT004",
-							"shortDescription": {
-								"text": "Metadata management"
-							},
-							"fullDescription": {
-								"text": "Metadata management"
+								"text": "Data Security and Encryption configuration"
 							}
 						},
 						{
@@ -175,13 +125,63 @@
 							}
 						},
 						{
-							"name": "Observability",
-							"id": "CAT010",
+							"name": "Bill Of Materials",
+							"id": "CAT015",
 							"shortDescription": {
-								"text": "Logging and Monitoring"
+								"text": "List of resources provisioned"
 							},
 							"fullDescription": {
-								"text": "Logging and Monitoring"
+								"text": "List of resources provisioned"
+							}
+						},
+						{
+							"name": "Supply-Chain",
+							"id": "CAT013",
+							"shortDescription": {
+								"text": "Dependency version management"
+							},
+							"fullDescription": {
+								"text": "Dependency version management"
+							}
+						},
+						{
+							"name": "Availability",
+							"id": "CAT002",
+							"shortDescription": {
+								"text": "Reliability and Scalability"
+							},
+							"fullDescription": {
+								"text": "Reliability and Scalability"
+							}
+						},
+						{
+							"name": "Networking and Firewall",
+							"id": "CAT009",
+							"shortDescription": {
+								"text": "Network port exposure and firewall configuration"
+							},
+							"fullDescription": {
+								"text": "Network port exposure and firewall configuration"
+							}
+						},
+						{
+							"name": "Resource Management",
+							"id": "CAT011",
+							"shortDescription": {
+								"text": "Resource and privilege limit configuration"
+							},
+							"fullDescription": {
+								"text": "Resource and privilege limit configuration"
+							}
+						},
+						{
+							"name": "Secret Management",
+							"id": "CAT012",
+							"shortDescription": {
+								"text": "Secret and Key management"
+							},
+							"fullDescription": {
+								"text": "Secret and Key management"
 							}
 						}
 					]
