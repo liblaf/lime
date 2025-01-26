@@ -5,31 +5,31 @@
 |✅ ACTION    |[actionlint](https://megalinter.io/8.3.0/descriptors/action_actionlint)    |    5|     |     0|0.02s       |
 |⚠️ BASH      |[bash-exec](https://megalinter.io/8.3.0/descriptors/bash_bash_exec)        |    2|     |     1|0.01s       |
 |✅ BASH      |[shellcheck](https://megalinter.io/8.3.0/descriptors/bash_shellcheck)      |    2|     |     0|0.04s       |
-|✅ BASH      |[shfmt](https://megalinter.io/8.3.0/descriptors/bash_shfmt)                |    2|    0|     0|0.02s       |
+|✅ BASH      |[shfmt](https://megalinter.io/8.3.0/descriptors/bash_shfmt)                |    2|    0|     0|0.03s       |
 |✅ COPYPASTE |[jscpd](https://megalinter.io/8.3.0/descriptors/copypaste_jscpd)           |yes  |     |no    |1.49s       |
-|✅ JSON      |[jsonlint](https://megalinter.io/8.3.0/descriptors/json_jsonlint)          |    5|     |     0|0.19s       |
-|✅ JSON      |[prettier](https://megalinter.io/8.3.0/descriptors/json_prettier)          |    5|    0|     0|0.59s       |
-|✅ JSON      |[v8r](https://megalinter.io/8.3.0/descriptors/json_v8r)                    |    5|     |     0|3.61s       |
-|✅ MARKDOWN  |[prettier](https://megalinter.io/8.3.0/descriptors/markdown_prettier)      |   13|    0|     0|1.2s        |
-|⚠️ PYTHON    |[pyright](https://megalinter.io/8.3.0/descriptors/python_pyright)          |   47|     |    60|8.96s       |
-|✅ PYTHON    |[ruff](https://megalinter.io/8.3.0/descriptors/python_ruff)                |   47|    0|     0|0.05s       |
-|✅ REPOSITORY|[checkov](https://megalinter.io/8.3.0/descriptors/repository_checkov)      |yes  |     |no    |13.19s      |
-|✅ REPOSITORY|[devskim](https://megalinter.io/8.3.0/descriptors/repository_devskim)      |yes  |     |no    |0.95s       |
-|✅ REPOSITORY|[dustilock](https://megalinter.io/8.3.0/descriptors/repository_dustilock)  |yes  |     |no    |0.0s        |
+|✅ JSON      |[jsonlint](https://megalinter.io/8.3.0/descriptors/json_jsonlint)          |    5|     |     0|0.17s       |
+|✅ JSON      |[prettier](https://megalinter.io/8.3.0/descriptors/json_prettier)          |    5|    0|     0|0.5s        |
+|✅ JSON      |[v8r](https://megalinter.io/8.3.0/descriptors/json_v8r)                    |    5|     |     0|4.13s       |
+|✅ MARKDOWN  |[prettier](https://megalinter.io/8.3.0/descriptors/markdown_prettier)      |   13|    0|     0|1.19s       |
+|⚠️ PYTHON    |[pyright](https://megalinter.io/8.3.0/descriptors/python_pyright)          |   47|     |    60|8.85s       |
+|✅ PYTHON    |[ruff](https://megalinter.io/8.3.0/descriptors/python_ruff)                |   47|    0|     0|0.04s       |
+|✅ REPOSITORY|[checkov](https://megalinter.io/8.3.0/descriptors/repository_checkov)      |yes  |     |no    |13.4s       |
+|✅ REPOSITORY|[devskim](https://megalinter.io/8.3.0/descriptors/repository_devskim)      |yes  |     |no    |0.97s       |
+|✅ REPOSITORY|[dustilock](https://megalinter.io/8.3.0/descriptors/repository_dustilock)  |yes  |     |no    |0.01s       |
 |✅ REPOSITORY|[gitleaks](https://megalinter.io/8.3.0/descriptors/repository_gitleaks)    |yes  |     |no    |0.21s       |
 |✅ REPOSITORY|[git_diff](https://megalinter.io/8.3.0/descriptors/repository_git_diff)    |yes  |     |no    |0.01s       |
-|✅ REPOSITORY|[grype](https://megalinter.io/8.3.0/descriptors/repository_grype)          |yes  |     |no    |8.82s       |
-|✅ REPOSITORY|[kics](https://megalinter.io/8.3.0/descriptors/repository_kics)            |yes  |     |no    |1.36s       |
-|✅ REPOSITORY|[secretlint](https://megalinter.io/8.3.0/descriptors/repository_secretlint)|yes  |     |no    |1.0s        |
-|✅ REPOSITORY|[syft](https://megalinter.io/8.3.0/descriptors/repository_syft)            |yes  |     |no    |1.1s        |
-|✅ REPOSITORY|[trivy](https://megalinter.io/8.3.0/descriptors/repository_trivy)          |yes  |     |no    |4.87s       |
+|✅ REPOSITORY|[grype](https://megalinter.io/8.3.0/descriptors/repository_grype)          |yes  |     |no    |9.24s       |
+|✅ REPOSITORY|[kics](https://megalinter.io/8.3.0/descriptors/repository_kics)            |yes  |     |no    |1.17s       |
+|✅ REPOSITORY|[secretlint](https://megalinter.io/8.3.0/descriptors/repository_secretlint)|yes  |     |no    |1.05s       |
+|✅ REPOSITORY|[syft](https://megalinter.io/8.3.0/descriptors/repository_syft)            |yes  |     |no    |1.2s        |
+|✅ REPOSITORY|[trivy](https://megalinter.io/8.3.0/descriptors/repository_trivy)          |yes  |     |no    |4.44s       |
 |✅ REPOSITORY|[trivy-sbom](https://megalinter.io/8.3.0/descriptors/repository_trivy_sbom)|yes  |     |no    |0.07s       |
-|✅ REPOSITORY|[trufflehog](https://megalinter.io/8.3.0/descriptors/repository_trufflehog)|yes  |     |no    |2.16s       |
-|⚠️ SPELL     |[cspell](https://megalinter.io/8.3.0/descriptors/spell_cspell)             |83   |     |26    |5.8s        |
-|⚠️ SPELL     |[lychee](https://megalinter.io/8.3.0/descriptors/spell_lychee)             |30   |     |2     |0.61s       |
-|✅ YAML      |[prettier](https://megalinter.io/8.3.0/descriptors/yaml_prettier)          |11   |    0|     0|0.69s       |
-|✅ YAML      |[v8r](https://megalinter.io/8.3.0/descriptors/yaml_v8r)                    |11   |     |     0|6.69s       |
-|✅ YAML      |[yamllint](https://megalinter.io/8.3.0/descriptors/yaml_yamllint)          |11   |     |     0|0.56s       |
+|⚠️ REPOSITORY|[trufflehog](https://megalinter.io/8.3.0/descriptors/repository_trufflehog)|yes  |     |1     |2.28s       |
+|⚠️ SPELL     |[cspell](https://megalinter.io/8.3.0/descriptors/spell_cspell)             |83   |     |26    |5.67s       |
+|⚠️ SPELL     |[lychee](https://megalinter.io/8.3.0/descriptors/spell_lychee)             |30   |     |2     |0.77s       |
+|✅ YAML      |[prettier](https://megalinter.io/8.3.0/descriptors/yaml_prettier)          |11   |    0|     0|0.64s       |
+|✅ YAML      |[v8r](https://megalinter.io/8.3.0/descriptors/yaml_v8r)                    |11   |     |     0|6.21s       |
+|✅ YAML      |[yamllint](https://megalinter.io/8.3.0/descriptors/yaml_yamllint)          |11   |     |     0|0.54s       |
 
 See detailed report in MegaLinter reports
 
