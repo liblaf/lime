@@ -17,9 +17,8 @@ To generate suggested topics, follow these rules:
 
 Analyze the repository content carefully and generate a list of suggested topics. Write your response inside <answer> tags, separating each topic with a comma.
 
-Example:
-<answer>
-topic-1, topic-2, topic-3, ...
-</answer>
+<example>
+<answer>topic-1, topic-2, topic-3, ...</answer>
+</example>
 
 Begin your analysis now.

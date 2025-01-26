@@ -1,3 +1,4 @@
+import functools
 import importlib
 import logging
 
@@ -13,6 +14,7 @@ def suppress_litellm() -> None:
         logging.getLogger(name).handlers.clear()
 
 
+@functools.cache
 def init_logging() -> None:
     suppress_litellm()
     grapes.init_logging()
