@@ -35,46 +35,6 @@
 							}
 						},
 						{
-							"name": "Availability",
-							"id": "CAT002",
-							"shortDescription": {
-								"text": "Reliability and Scalability"
-							},
-							"fullDescription": {
-								"text": "Reliability and Scalability"
-							}
-						},
-						{
-							"name": "Build Process",
-							"id": "CAT005",
-							"shortDescription": {
-								"text": "Insecure configurations when building/deploying"
-							},
-							"fullDescription": {
-								"text": "Insecure configurations when building/deploying"
-							}
-						},
-						{
-							"name": "Encryption",
-							"id": "CAT006",
-							"shortDescription": {
-								"text": "Data Security and Encryption configuration"
-							},
-							"fullDescription": {
-								"text": "Data Security and Encryption configuration"
-							}
-						},
-						{
-							"name": "Insecure Defaults",
-							"id": "CAT008",
-							"shortDescription": {
-								"text": "Configurations that are insecure by default"
-							},
-							"fullDescription": {
-								"text": "Configurations that are insecure by default"
-							}
-						},
-						{
 							"name": "Supply-Chain",
 							"id": "CAT013",
 							"shortDescription": {
@@ -85,13 +45,13 @@
 							}
 						},
 						{
-							"name": "Bill Of Materials",
-							"id": "CAT015",
+							"name": "Structure and Semantics",
+							"id": "CAT014",
 							"shortDescription": {
-								"text": "List of resources provisioned"
+								"text": "Malformed document structure or inadequate semantics"
 							},
 							"fullDescription": {
-								"text": "List of resources provisioned"
+								"text": "Malformed document structure or inadequate semantics"
 							}
 						},
 						{
@@ -115,33 +75,23 @@
 							}
 						},
 						{
-							"name": "Best Practices",
-							"id": "CAT004",
+							"name": "Build Process",
+							"id": "CAT005",
 							"shortDescription": {
-								"text": "Metadata management"
+								"text": "Insecure configurations when building/deploying"
 							},
 							"fullDescription": {
-								"text": "Metadata management"
+								"text": "Insecure configurations when building/deploying"
 							}
 						},
 						{
-							"name": "Insecure Configurations",
-							"id": "CAT007",
+							"name": "Bill Of Materials",
+							"id": "CAT015",
 							"shortDescription": {
-								"text": "Configurations which expose the application unnecessarily"
+								"text": "List of resources provisioned"
 							},
 							"fullDescription": {
-								"text": "Configurations which expose the application unnecessarily"
-							}
-						},
-						{
-							"name": "Networking and Firewall",
-							"id": "CAT009",
-							"shortDescription": {
-								"text": "Network port exposure and firewall configuration"
-							},
-							"fullDescription": {
-								"text": "Network port exposure and firewall configuration"
+								"text": "List of resources provisioned"
 							}
 						},
 						{
@@ -175,13 +125,63 @@
 							}
 						},
 						{
-							"name": "Structure and Semantics",
-							"id": "CAT014",
+							"name": "Encryption",
+							"id": "CAT006",
 							"shortDescription": {
-								"text": "Malformed document structure or inadequate semantics"
+								"text": "Data Security and Encryption configuration"
 							},
 							"fullDescription": {
-								"text": "Malformed document structure or inadequate semantics"
+								"text": "Data Security and Encryption configuration"
+							}
+						},
+						{
+							"name": "Insecure Defaults",
+							"id": "CAT008",
+							"shortDescription": {
+								"text": "Configurations that are insecure by default"
+							},
+							"fullDescription": {
+								"text": "Configurations that are insecure by default"
+							}
+						},
+						{
+							"name": "Networking and Firewall",
+							"id": "CAT009",
+							"shortDescription": {
+								"text": "Network port exposure and firewall configuration"
+							},
+							"fullDescription": {
+								"text": "Network port exposure and firewall configuration"
+							}
+						},
+						{
+							"name": "Availability",
+							"id": "CAT002",
+							"shortDescription": {
+								"text": "Reliability and Scalability"
+							},
+							"fullDescription": {
+								"text": "Reliability and Scalability"
+							}
+						},
+						{
+							"name": "Best Practices",
+							"id": "CAT004",
+							"shortDescription": {
+								"text": "Metadata management"
+							},
+							"fullDescription": {
+								"text": "Metadata management"
+							}
+						},
+						{
+							"name": "Insecure Configurations",
+							"id": "CAT007",
+							"shortDescription": {
+								"text": "Configurations which expose the application unnecessarily"
+							},
+							"fullDescription": {
+								"text": "Configurations which expose the application unnecessarily"
 							}
 						}
 					]
