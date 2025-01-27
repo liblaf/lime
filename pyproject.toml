@@ -47,33 +47,23 @@ dependencies = [
   "typer-di>=0.1.2,<0.2",
   "typer>=0.15.1,<0.16",
 ]
-description = "🍋‍🟩 Lime: AI-powered CLI for GitHub repository management. Automate commits, generate READMEs, and manage topics with ease. Supports conventional commits, markdown generation, and GitHub API integration."
+description = "🍋‍🟩 AI-powered CLI for GitHub: Automate commits, generate READMEs, and manage topics with ease."
 keywords = [
-  "ai",
-  "automation",
   "cli",
   "code-quality",
   "code-review",
-  "commit-messages",
-  "developer-tools",
   "documentation",
-  "git",
   "github-api",
+  "machine-learning",
   "markdown",
-  "open-source",
-  "productivity",
-  "project-management",
   "python",
-  "readme-generation",
   "repository-management",
-  "software-development",
-  "topic-management",
   "version-control",
 ]
 license = "MIT"
 name = "liblaf-lime"
 readme = "docs/README.md"
-requires-python = ">=3.12,<4"
+requires-python = ">=3.12"
 version = "0.1.2"
 
 [project.scripts]

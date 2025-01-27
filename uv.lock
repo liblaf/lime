@@ -1,5 +1,5 @@
 version = 1
-requires-python = ">=3.12, <4"
+requires-python = ">=3.12"
 
 [[package]]
 name = "about-time"
@@ -860,7 +860,7 @@ wheels = [
 
 [[package]]
 name = "liblaf-lime"
-version = "0.1.1"
+version = "0.1.2"
 source = { editable = "." }
 dependencies = [
     { name = "emoji" },
