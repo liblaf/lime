@@ -1,6 +1,29 @@
 # Changelog
 
-## [0.1.1](https://github.com/liblaf/lime/compare/v0.1.0..v0.1.1) - 20250126
+## [0.1.2](https://github.com/liblaf/lime/compare/v0.1.1..v0.1.2) - 2025-01-27
+
+### ✨ Features
+
+- **cli:** add `--model` and `--add` options to repo commands - ([842f5d1](https://github.com/liblaf/lime/commit/842f5d11ae4adc77b0cb0f8bb0e21217ad2a6c51))
+- **git:** add `ls_files` utility and update ignore patterns - ([6a7f970](https://github.com/liblaf/lime/commit/6a7f97040eb4dfb4b7c235ef22a2d718fbbc0849))
+- add commit message sanitizer - ([b8cf795](https://github.com/liblaf/lime/commit/b8cf795c3eae7655ba2debbabd7c369ae9a3e572))
+- add max-len and n-topics options for repo commands - ([7953524](https://github.com/liblaf/lime/commit/79535242376f9175935d6f12472fe63862c64f7f))
+
+### 🐛 Bug Fixes
+
+- trigger release - ([cef7aaa](https://github.com/liblaf/lime/commit/cef7aaa23ed34c772401df5589f4088304961b43))
+- adjust topic count calculation in CLI - ([2b9e3c4](https://github.com/liblaf/lime/commit/2b9e3c4d60d38633d8f1d4bd199394a37892e7c1))
+
+### 📝 Documentation
+
+- update description length guideline in prompts - ([632a6f8](https://github.com/liblaf/lime/commit/632a6f8359c4c9bc8eeb13cec3cfafab935a3b7c))
+- simplify README.md by removing redundant badge definitions - ([80f794d](https://github.com/liblaf/lime/commit/80f794d29f6d5c16151196b2d87812a51afbc434))
+
+### ❤️ New Contributors
+
+- @liblaf made their first contribution
+
+## [0.1.1](https://github.com/liblaf/lime/compare/v0.1.0..v0.1.1) - 2025-01-26
 
 ### 📝 Documentation
 
@@ -14,9 +37,9 @@
 
 ### ❤️ New Contributors
 
-- @liblaf made their first contribution
+- @github-actions[bot] made their first contribution in [#20](https://github.com/liblaf/lime/pull/20)
 
-## [0.1.0](https://github.com/liblaf/lime/compare/v0.0.2..v0.1.0) - 20250125
+## [0.1.0](https://github.com/liblaf/lime/compare/v0.0.2..v0.1.0) - 2025-01-25
 
 ### 💥 BREAKING CHANGES
 
@@ -36,7 +59,7 @@
 
 - update README badge links and formatting - ([fb02378](https://github.com/liblaf/lime/commit/fb0237827bf5243369fb99dbfdba96c559179a29))
 
-## [0.0.2](https://github.com/liblaf/lime/compare/v0.0.1..v0.0.2) - 20241130
+## [0.0.2](https://github.com/liblaf/lime/compare/v0.0.1..v0.0.2) - 2024-11-30
 
 ### 📝 Documentation
 
@@ -47,7 +70,7 @@
 
 - rename LLM CLI to AI CLI for broader applicability - ([53b7d9d](https://github.com/liblaf/lime/commit/53b7d9d9ad2e4e25703df9e0e0cce5f3ffbed7c0))
 
-## [0.0.1](https://github.com/liblaf/lime/compare/v0.0.0..v0.0.1) - 20241130
+## [0.0.1](https://github.com/liblaf/lime/compare/v0.0.0..v0.0.1) - 2024-11-30
 
 ### 🐛 Bug Fixes
 
@@ -64,7 +87,7 @@
 - rename project and related references to 'ai-cli' - ([ea2baaf](https://github.com/liblaf/lime/commit/ea2baaf45ac5bac8e3c1cd20afe24cca42ffe573))
 - streamline CLI and logging initialization - ([9e04a97](https://github.com/liblaf/lime/commit/9e04a97e14bacda010ea0cda02d0684938637902))
 
-## [0.0.0] - 20241129
+## [0.0.0] - 2024-11-29
 
 ### ✨ Features
 
