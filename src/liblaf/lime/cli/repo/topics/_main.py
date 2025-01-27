@@ -1,15 +1,20 @@
 from collections.abc import Sequence
 
 import githubkit
+import litellm
 from rich.prompt import Confirm
 
 from liblaf import lime
 
 
-async def main(add: Sequence[str] = []) -> None:
-    instruction: lime.Prompt = lime.get_prompt("topics")
-    prompt: str = await lime.plugin.repomix(instruction.prompt)
-    topics_str: str = await lime.live([{"role": "user", "content": prompt}])
+async def main(add: Sequence[str], n_topics: int) -> None:
+    prompt: lime.Prompt = lime.get_prompt("topics")
+    messages: list[litellm.AllMessageValues] = prompt.substitiute(
+        {"N_TOPICS": str(n_topics)}
+    )
+    instruction: str = messages[1]["content"]  # pyright: ignore[reportAssignmentType, reportTypedDictNotRequiredAccess]
+    messages[1]["content"] = await lime.plugin.repomix(instruction)
+    topics_str: str = await lime.live(messages)
     confirm: bool = Confirm.ask("Do you want to add these topics to the repo?")
     if confirm:
         topics: list[str] = [topic.strip() for topic in topics_str.split(",")]

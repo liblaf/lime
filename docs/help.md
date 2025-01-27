@@ -63,7 +63,7 @@ $ lime repo description [OPTIONS]
 
 **Options**:
 
-- `--model TEXT`
+- `--max-len INTEGER`: [default: 100]
 - `--help`: Show this message and exit.
 
 ### `lime repo topics`
@@ -77,7 +77,7 @@ $ lime repo topics [OPTIONS]
 **Options**:
 
 - `--add TEXT`
-- `--model TEXT`
+- `--n-topics INTEGER`: [default: 10]
 - `--help`: Show this message and exit.
 
 ### `lime repo readme`
@@ -107,7 +107,6 @@ $ lime repo readme description [OPTIONS]
 
 **Options**:
 
-- `--model TEXT`
 - `--help`: Show this message and exit.
 
 #### `lime repo readme features`
@@ -120,5 +119,4 @@ $ lime repo readme features [OPTIONS]
 
 **Options**:
 
-- `--model TEXT`
 - `--help`: Show this message and exit.

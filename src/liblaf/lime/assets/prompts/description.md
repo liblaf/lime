@@ -1,4 +1,9 @@
-You will analyze the content of a repository and generate a concise, impressive description that includes emojis. The description must be no longer than 100 characters.
+---
+system: You are an advanced AI programming assistant.
+prefix: <answer>
+---
+
+You will analyze the content of a repository and generate a concise, impressive description that includes emojis. The description must be no longer than ${MAX_LEN} characters.
 
 <examples>
 <answer>😎 Awesome lists about all kinds of interesting topics</answer>
@@ -23,7 +28,7 @@ You will analyze the content of a repository and generate a concise, impressive 
 <answer>⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API</answer>
 </examples>
 
-Analyze the content carefully and identify its key themes, features, or purposes. Then, craft a short, engaging description that highlights the most impressive aspects of the repository. Use emojis to make the description visually appealing and memorable.
+Analyze the content carefully and identify its key themes, features, or purposes. Then, craft a short, engaging description that highlights the most impressive aspects of the repository. Prefix with an emoji to make the description visually appealing and memorable.
 
 Write your final description inside <answer> tags.
 
