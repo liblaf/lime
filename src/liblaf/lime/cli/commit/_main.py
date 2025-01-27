@@ -18,7 +18,7 @@ async def main(path: list[str], *, verify: bool = True) -> None:
     messages: list[litellm.AllMessageValues] = prompt.substitiute(
         {"DIFF": diff, "GIT_LS_FILES": files}
     )
-    message: str = await lime.live(messages)
+    message: str = await lime.live(messages, sanitizer=commit_message_sanitizer)
     proc: asp.Process = await lime.run(
         [
             "git",
@@ -31,3 +31,12 @@ async def main(path: list[str], *, verify: bool = True) -> None:
     )
     if proc.returncode:
         raise typer.Exit(proc.returncode)
+
+
+def commit_message_sanitizer(message: str) -> str:
+    message: str = lime.extract_between_tags(message)
+    lines: list[str] = message.split("\n")
+    if len(lines) >= 2 and lines[1].strip():
+        lines.insert(1, "")
+    message = "\n".join(lines)
+    return message
