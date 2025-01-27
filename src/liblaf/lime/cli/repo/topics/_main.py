@@ -8,6 +8,7 @@ from liblaf import lime
 
 
 async def main(add: Sequence[str], n_topics: int) -> None:
+    n_topics -= len(add)
     prompt: lime.Prompt = lime.get_prompt("topics")
     messages: list[litellm.AllMessageValues] = prompt.substitiute(
         {"N_TOPICS": str(n_topics)}
