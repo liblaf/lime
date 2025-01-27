@@ -16,7 +16,14 @@ async def repomix(instruction: str | None = None) -> str:
             "output": {"filePath": str(output_path), "style": "xml"},
             "ignore": {
                 "customPatterns": [
-                    "**/.*",
+                    ".github/copier/**",
+                    ".github/linters/**",
+                    ".github/release-please/**",
+                    ".github/renovate.json",
+                    ".github/workflows/shared-*.yaml",
+                    "**/.cspell.json",
+                    "**/.ruff.toml",
+                    "**/.vscode/**",
                     "**/*-lock.*",
                     "**/*.ipynb",
                     "**/*.lock",
