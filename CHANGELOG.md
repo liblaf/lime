@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.1.2](https://github.com/liblaf/lime/compare/v0.1.1...v0.1.2) (2025-01-27)
+
+
+### ✨ Features
+
+* add commit message sanitizer ([b8cf795](https://github.com/liblaf/lime/commit/b8cf795c3eae7655ba2debbabd7c369ae9a3e572))
+* add max-len and n-topics options for repo commands ([7953524](https://github.com/liblaf/lime/commit/79535242376f9175935d6f12472fe63862c64f7f))
+* **cli:** add `--model` and `--add` options to repo commands ([842f5d1](https://github.com/liblaf/lime/commit/842f5d11ae4adc77b0cb0f8bb0e21217ad2a6c51))
+* **git:** add `ls_files` utility and update ignore patterns ([6a7f970](https://github.com/liblaf/lime/commit/6a7f97040eb4dfb4b7c235ef22a2d718fbbc0849))
+
+
+### 🐛 Bug Fixes
+
+* adjust topic count calculation in CLI ([2b9e3c4](https://github.com/liblaf/lime/commit/2b9e3c4d60d38633d8f1d4bd199394a37892e7c1))
+* trigger release ([cef7aaa](https://github.com/liblaf/lime/commit/cef7aaa23ed34c772401df5589f4088304961b43))
+
+
+### 📝 Documentation
+
+* simplify README.md by removing redundant badge definitions ([80f794d](https://github.com/liblaf/lime/commit/80f794d29f6d5c16151196b2d87812a51afbc434))
+* update description length guideline in prompts ([632a6f8](https://github.com/liblaf/lime/commit/632a6f8359c4c9bc8eeb13cec3cfafab935a3b7c))
+
 ## [0.1.1](https://github.com/liblaf/lime/compare/v0.1.0..v0.1.1) - 20250126
 
 ### 📝 Documentation
