@@ -95,7 +95,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
       - name: Trigger Release Workflow
-        run: gh workflow run "release.yaml" --ref "${{ needs.release-please.outputs.tag }}"
+        run: |-
+          WORKFLOW_FILES=(.github/workflows/{,shared-}release{.yaml,.yml})
+          for workflow_file in "${WORKFLOW_FILES[@]}"; do
+            if [[ -f $workflow_file ]]; then
+              workflow_name=$(basename -- "$workflow_file")
+              echo "::notice::Triggering workflow: $workflow_name"
+              gh workflow run "$workflow_name" --ref "${{ needs.release-please.outputs.tag }}"
+            fi
+          done
         env:
           GH_TOKEN: ${{ github.token }}
         continue-on-error: true
