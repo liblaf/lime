@@ -106,4 +106,3 @@ jobs:
           done
         env:
           GH_TOKEN: ${{ github.token }}
-        continue-on-error: true
