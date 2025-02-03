@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/liblaf/lime/compare/v0.1.2...v0.1.3) (2025-02-03)
+
+
+### ⬆️ Dependencies
+
+* **deps:** update dependency liblaf-grapes to &gt;=0.0.3,&lt;0.0.4 ([#23](https://github.com/liblaf/lime/issues/23)) ([c9ec6ae](https://github.com/liblaf/lime/commit/c9ec6ae8c23ef22ecbec4553a1242fe15f1d7143))
+
 ## [0.1.2](https://github.com/liblaf/lime/compare/v0.1.1..v0.1.2) - 2025-01-27
 
 ### ✨ Features
