@@ -1,11 +1,15 @@
 # Changelog
 
-## [0.1.3](https://github.com/liblaf/lime/compare/v0.1.2...v0.1.3) (2025-02-03)
-
+## [0.1.3](https://github.com/liblaf/lime/compare/v0.1.2..v0.1.3) - 2025-02-03
 
 ### ⬆️ Dependencies
 
-* **deps:** update dependency liblaf-grapes to &gt;=0.0.3,&lt;0.0.4 ([#23](https://github.com/liblaf/lime/issues/23)) ([c9ec6ae](https://github.com/liblaf/lime/commit/c9ec6ae8c23ef22ecbec4553a1242fe15f1d7143))
+- **deps:** update dependency liblaf-grapes to >=0.0.3,<0.0.4 (#23) - ([c9ec6ae](https://github.com/liblaf/lime/commit/c9ec6ae8c23ef22ecbec4553a1242fe15f1d7143))
+
+### ❤️ New Contributors
+
+- @renovate[bot] made their first contribution in [#23](https://github.com/liblaf/lime/pull/23)
+- @liblaf made their first contribution
 
 ## [0.1.2](https://github.com/liblaf/lime/compare/v0.1.1..v0.1.2) - 2025-01-27
 
@@ -25,10 +29,6 @@
 
 - update description length guideline in prompts - ([632a6f8](https://github.com/liblaf/lime/commit/632a6f8359c4c9bc8eeb13cec3cfafab935a3b7c))
 - simplify README.md by removing redundant badge definitions - ([80f794d](https://github.com/liblaf/lime/commit/80f794d29f6d5c16151196b2d87812a51afbc434))
-
-### ❤️ New Contributors
-
-- @liblaf made their first contribution
 
 ## [0.1.1](https://github.com/liblaf/lime/compare/v0.1.0..v0.1.1) - 2025-01-26
 
