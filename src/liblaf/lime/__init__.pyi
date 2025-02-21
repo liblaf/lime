@@ -1,4 +1,5 @@
 from . import action, cli, config, plugin, utils
+from ._version import __version__, __version_tuple__, version, version_tuple
 from .action import live
 from .config import (
     Config,
@@ -27,6 +28,8 @@ __all__ = [
     "ModelConfig",
     "Prompt",
     "RouterConfig",
+    "__version__",
+    "__version_tuple__",
     "action",
     "add_command",
     "app_dir",
@@ -46,4 +49,6 @@ __all__ = [
     "run",
     "shared_options",
     "utils",
+    "version",
+    "version_tuple",
 ]

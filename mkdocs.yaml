@@ -6,6 +6,10 @@ site_name: "liblaf-lime"
 site_description: TODO
 
 plugins:
+  gen-files:
+    scripts:
+      - docs/scripts/gen-ref-pages.py
+      - docs/scripts/gen-schema.py
   mkdocstrings:
     handlers:
       python:
