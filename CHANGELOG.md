@@ -1,28 +1,27 @@
 # Changelog
 
-## [0.1.5](https://github.com/liblaf/lime/compare/v0.1.4...v0.1.5) (2025-02-23)
-
+## [0.1.5](https://github.com/liblaf/lime/compare/v0.1.4..v0.1.5) - 2025-02-23
 
 ### ✨ Features
 
-* add version management and update dependencies ([44e9b12](https://github.com/liblaf/lime/commit/44e9b12db2d29b7c06c425b47143421a74e9dbc1))
-
-
-### ⬆️ Dependencies
-
-* **deps:** update dependency liblaf-grapes to &gt;=0.1.1,&lt;0.1.2 ([#29](https://github.com/liblaf/lime/issues/29)) ([35d702a](https://github.com/liblaf/lime/commit/35d702a68334f314ac60a71c3d3083af714f8a58))
-
-## [0.1.4](https://github.com/liblaf/lime/compare/v0.1.3..v0.1.4) - 2025-02-16
+- add version management and update dependencies - ([44e9b12](https://github.com/liblaf/lime/commit/44e9b12db2d29b7c06c425b47143421a74e9dbc1))
 
 ### ⬆️ Dependencies
 
-- **deps:** update dependency liblaf-grapes to >=0.0.5,<0.0.6 (#27) - ([39e41f9](https://github.com/liblaf/lime/commit/39e41f96013647c2d3f2975e56c28befa3e5e0dd))
-- **deps:** update dependency liblaf-grapes to >=0.0.4,<0.0.5 (#25) - ([49f1a5e](https://github.com/liblaf/lime/commit/49f1a5eda51fa4c75391394d149676594ca5d7f9))
+- **deps:** update dependency liblaf-grapes to >=0.1.1,<0.1.2 (#29) - ([35d702a](https://github.com/liblaf/lime/commit/35d702a68334f314ac60a71c3d3083af714f8a58))
 
 ### ❤️ New Contributors
 
 - @liblaf made their first contribution
-- @renovate[bot] made their first contribution in [#27](https://github.com/liblaf/lime/pull/27)
+- @renovate[bot] made their first contribution in [#29](https://github.com/liblaf/lime/pull/29)
+
+## [0.1.4](https://github.com/liblaf/lime/compare/v0.1.3..v0.1.4) - 2025-02-17
+
+### ⬆️ Dependencies
+
+- **deps:** update dependency liblaf-grapes to >=0.1.0,<0.1.1 (#28) - ([db30289](https://github.com/liblaf/lime/commit/db302897a72d323ec07dd00393f545ca50e6d925))
+- **deps:** update dependency liblaf-grapes to >=0.0.5,<0.0.6 (#27) - ([39e41f9](https://github.com/liblaf/lime/commit/39e41f96013647c2d3f2975e56c28befa3e5e0dd))
+- **deps:** update dependency liblaf-grapes to >=0.0.4,<0.0.5 (#25) - ([49f1a5e](https://github.com/liblaf/lime/commit/49f1a5eda51fa4c75391394d149676594ca5d7f9))
 
 ## [0.1.3](https://github.com/liblaf/lime/compare/v0.1.2..v0.1.3) - 2025-02-03
 
