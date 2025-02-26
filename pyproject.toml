@@ -26,6 +26,12 @@ docs = [
   "mkdocstrings>=0.28.1",
   "pymdown-extensions>=10.14.3",
 ]
+test = [
+  "pytest-codspeed>=3.2.0",
+  "pytest-cov>=6.0.0",
+  "pytest-xdist>=3.6.1",
+  "pytest>=8.3.4",
+]
 
 [project]
 authors = [
@@ -99,7 +105,7 @@ ignore = ["W002"]
 version-file = "src/liblaf/lime/_version.py"
 
 [tool.hatch.build.targets.sdist]
-only-packages = true
+only-include = ["src/"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/liblaf"]
