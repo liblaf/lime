@@ -1,13 +1,17 @@
 # Changelog
 
-## [0.1.6](https://github.com/liblaf/lime/compare/v0.1.5...v0.1.6) (2025-03-02)
-
+## [0.1.6](https://github.com/liblaf/lime/compare/v0.1.5..v0.1.6) - 2025-03-02
 
 ### 🐛 Bug Fixes
 
-* trigger release ([c0b707a](https://github.com/liblaf/lime/commit/c0b707a49d19a525c662a3ae24f6a965270f6be2))
+- trigger release - ([c0b707a](https://github.com/liblaf/lime/commit/c0b707a49d19a525c662a3ae24f6a965270f6be2))
 
-## [0.1.5](https://github.com/liblaf/lime/compare/v0.1.4..v0.1.5) - 2025-02-23
+### ❤️ New Contributors
+
+- @liblaf made their first contribution
+- @renovate[bot] made their first contribution in [#32](https://github.com/liblaf/lime/pull/32)
+
+## [0.1.5](https://github.com/liblaf/lime/compare/v0.1.4..v0.1.5) - 2025-02-24
 
 ### ✨ Features
 
@@ -15,12 +19,8 @@
 
 ### ⬆️ Dependencies
 
+- **deps:** update dependency liblaf-grapes to >=0.1.2,<0.1.3 (#31) - ([4173062](https://github.com/liblaf/lime/commit/4173062f56dfe6e3b1f3ea677baafa548b2587eb))
 - **deps:** update dependency liblaf-grapes to >=0.1.1,<0.1.2 (#29) - ([35d702a](https://github.com/liblaf/lime/commit/35d702a68334f314ac60a71c3d3083af714f8a58))
-
-### ❤️ New Contributors
-
-- @liblaf made their first contribution
-- @renovate[bot] made their first contribution in [#29](https://github.com/liblaf/lime/pull/29)
 
 ## [0.1.4](https://github.com/liblaf/lime/compare/v0.1.3..v0.1.4) - 2025-02-17
 
