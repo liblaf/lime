@@ -1035,7 +1035,7 @@ wheels = [
 
 [[package]]
 name = "liblaf-grapes"
-version = "0.1.10"
+version = "0.1.11"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "about-time" },
@@ -1052,9 +1052,9 @@ dependencies = [
     { name = "ruamel-yaml" },
     { name = "tomlkit" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1e/66/b513d0cb09bcf5bf672f3cc5c50f4e5da875552a139124ec1d5b78ab3a52/liblaf_grapes-0.1.10.tar.gz", hash = "sha256:e8781743030a1cf83caebc7881bae4cb677ae437c775a7f8106adf3b81008f20", size = 25683 }
+sdist = { url = "https://files.pythonhosted.org/packages/14/06/88b817daec17c7dcac52c091493f5e46845abfcd4f329d13ef4a0565e9b1/liblaf_grapes-0.1.11.tar.gz", hash = "sha256:d62495ce290268263747e700c96919a44a1b110abbb8687979953f38ebd87c38", size = 25598 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/77/0e/172822269131764a81a9af5845dea1adc0e9c3d7fd2921b15805da2d23eb/liblaf_grapes-0.1.10-py3-none-any.whl", hash = "sha256:3271834535deacd6efba7c45484af947639731266009471508cc22ebce8aa3c2", size = 46489 },
+    { url = "https://files.pythonhosted.org/packages/fb/d1/2fdbc16dff338e399d3c856a399bb6c2634bae451c2c42770249701e0c65/liblaf_grapes-0.1.11-py3-none-any.whl", hash = "sha256:b8665180e59ee236cb910a95850246ccf438f00e3f80e9870e9f694354842446", size = 46366 },
 ]
 
 [[package]]
@@ -1119,7 +1119,7 @@ requires-dist = [
     { name = "hishel", specifier = ">=0.1.1,<0.2" },
     { name = "httpx", extras = ["socks"], specifier = ">=0.27.2,<0.28" },
     { name = "lazy-loader", specifier = ">=0.4,<0.5" },
-    { name = "liblaf-grapes", specifier = ">=0.1.10,<0.1.11" },
+    { name = "liblaf-grapes", specifier = ">=0.1.11,<0.1.12" },
     { name = "litellm", specifier = ">=1.59.8,<2" },
     { name = "loguru", specifier = ">=0.7.3,<0.8" },
     { name = "platformdirs", specifier = ">=4.3.6,<5" },
