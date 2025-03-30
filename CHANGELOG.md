@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.8](https://github.com/liblaf/lime/compare/v0.1.7...v0.1.8) (2025-03-30)
+
+
+### ⬆️ Dependencies
+
+* **deps:** update dependency liblaf-grapes to &gt;=0.1.11,&lt;0.1.12 ([#37](https://github.com/liblaf/lime/issues/37)) ([153aa09](https://github.com/liblaf/lime/commit/153aa0931dc97e283c49afae27e30e380f3c785a))
+* **deps:** update dependency liblaf-grapes to &gt;=0.1.12,&lt;0.1.13 ([#39](https://github.com/liblaf/lime/issues/39)) ([e8666c0](https://github.com/liblaf/lime/commit/e8666c0621db8a97740558b8e5f2bbb81995cfe5))
+* **deps:** update dependency liblaf-grapes to &gt;=0.1.13,&lt;0.1.14 ([#40](https://github.com/liblaf/lime/issues/40)) ([1f5c59d](https://github.com/liblaf/lime/commit/1f5c59d5bb21bbbe5fbd92a5bd334ce82a93fe4d))
+
 ## [0.1.7](https://github.com/liblaf/lime/compare/v0.1.6..v0.1.7) - 2025-03-20
 
 ### ⬆️ Dependencies
