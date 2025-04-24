@@ -29,7 +29,7 @@ jobs:
           locked: false
       - if: hashFiles('uv.lock') != ''
         name: Setup uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v6
       - if: hashFiles('docs/scripts/prepare.sh') != ''
         name: Prepare
         run: docs/scripts/prepare.sh
