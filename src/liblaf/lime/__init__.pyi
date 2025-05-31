@@ -1,53 +1,43 @@
-from . import action, cli, config, plugin, utils
+from . import cli, llm, prompts, tools, utils
 from ._version import __version__, __version_tuple__, version, version_tuple
-from .action import live
-from .config import (
-    Config,
+from .cli import app, commit, main
+from .llm import (
+    CompletionRequest,
+    LiteLLMConfig,
     ModelConfig,
     RouterConfig,
-    default_model_list,
-    get_config,
-    get_router,
+    litellm_config,
+    live,
 )
-from .utils import (
-    Prompt,
-    add_command,
-    app_dir,
-    extract_between_tags,
-    get_content,
-    get_prompt,
-    github_owner_repo,
-    init_logging,
-    make_github_client,
-    run,
-    shared_options,
-)
+from .prompts import get_prompt
+from .tools import Git, Repomix
+from .utils import BaseModel, BaseSettings, config_file, load_config, merge, to_kebab
 
 __all__ = [
-    "Config",
+    "BaseModel",
+    "BaseSettings",
+    "CompletionRequest",
+    "Git",
+    "LiteLLMConfig",
     "ModelConfig",
-    "Prompt",
+    "Repomix",
     "RouterConfig",
     "__version__",
     "__version_tuple__",
-    "action",
-    "add_command",
-    "app_dir",
+    "app",
     "cli",
-    "config",
-    "default_model_list",
-    "extract_between_tags",
-    "get_config",
-    "get_content",
+    "commit",
+    "config_file",
     "get_prompt",
-    "get_router",
-    "github_owner_repo",
-    "init_logging",
+    "litellm_config",
     "live",
-    "make_github_client",
-    "plugin",
-    "run",
-    "shared_options",
+    "llm",
+    "load_config",
+    "main",
+    "merge",
+    "prompts",
+    "to_kebab",
+    "tools",
     "utils",
     "version",
     "version_tuple",

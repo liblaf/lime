@@ -1,2 +1,2 @@
-- [HOME](README.md)
-- [API Reference](api/)
+- [HOME](./README.md)
+- [API Reference](./api/)

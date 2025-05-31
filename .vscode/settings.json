@@ -1,11 +1,23 @@
 {
   "files.exclude": {
-    "**/__pycache__": true,
-    "**/.pixi": true,
-    "**/.ruff_cache": true,
-    "**/.venv": true
+    "**/__pycache__/": true,
+    "**/.cache/": true,
+    "**/.coverage": true,
+    "**/.pixi/": true,
+    "**/.pytest_cache/": true,
+    "**/.ruff_cache/": true,
+    "**/.venv/": true,
+    "**/junit.xml": true
   },
   "python.analysis.diagnosticMode": "workspace",
+  "python.testing.pytestArgs": [
+    "--color=yes",
+    "--cov",
+    "--benchmark-disable",
+    "--numprocesses=auto"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
   "yaml.customTags": [
     "!ENV scalar",
     "!ENV sequence",
@@ -14,6 +26,5 @@
     "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
     "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
     "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
-  ],
-  "yaml.validate": false
+  ]
 }

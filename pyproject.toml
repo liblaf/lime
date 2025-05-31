@@ -1,36 +1,36 @@
 #:schema https://json.schemastore.org/pyproject.json
-# https://packaging.python.org/en/latest/specifications/pyproject-toml/
+# ref: <https://packaging.python.org/en/latest/specifications/pyproject-toml/>
 
 [build-system]
 build-backend = "hatchling.build"
 requires = ["hatch-vcs", "hatchling"]
 
 [dependency-groups]
-build = [
-  "build>=1.2.2.post1,<2",
-  "check-wheel-contents>=0.6.1,<0.7",
-  "twine>=6.1.0,<7",
-]
-dev = ["icecream>=2.1.4,<3", "ipykernel>=6.29.5,<7", "ipython>=9,<10"]
+build = ["check-wheel-contents", "hatch", "twine"]
+dev = ["icecream"]
 docs = [
-  "mdx-truly-sane-lists>=1.3",
-  "mkdocs-autorefs>=1.3.1",
-  "mkdocs-gen-files>=0.5.0",
-  "mkdocs-git-committers-plugin-2>=2.5.0",
-  "mkdocs-git-revision-date-localized-plugin>=1.3.0",
-  "mkdocs-literate-nav>=0.6.1",
-  "mkdocs-material[imaging]>=9.6.5",
-  "mkdocs-section-index>=0.3.9",
-  "mkdocs>=1.6.1",
-  "mkdocstrings-python>=1.16.1",
-  "mkdocstrings>=0.28.1",
-  "pymdown-extensions>=10.14.3",
+  "gitpython",
+  "mdx-truly-sane-lists",
+  "mkdocs",
+  "mkdocs-autorefs",
+  "mkdocs-gen-files",
+  "mkdocs-git-committers-plugin-2",
+  "mkdocs-git-revision-date-localized-plugin",
+  "mkdocs-include-markdown-plugin",
+  "mkdocs-literate-nav",
+  "mkdocs-material[imaging]",
+  "mkdocs-section-index",
+  "mkdocstrings",
+  "mkdocstrings-python",
+  "pymdown-extensions",
+  "ruff",
 ]
 test = [
-  "pytest-codspeed>=3.2.0",
-  "pytest-cov>=6.0.0",
-  "pytest-xdist>=3.6.1",
-  "pytest>=8.3.4",
+  "pytest",
+  "pytest-benchmark",
+  "pytest-codspeed",
+  "pytest-cov",
+  "pytest-xdist",
 ]
 
 [project]
@@ -38,57 +38,43 @@ authors = [
   { email = "30631553+liblaf@users.noreply.github.com", name = "liblaf" },
 ]
 classifiers = [
+  # common classifiers
+  # ref: <https://pypi.org/classifiers/>
   "Development Status :: 4 - Beta",
-  "Environment :: Console",
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
+  "License :: OSI Approved",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python",
-  "Topic :: Scientific/Engineering :: Artificial Intelligence",
-  "Topic :: Utilities",
   "Typing :: Typed",
 ]
 dependencies = [
-  "emoji>=2.14.1,<3",
-  "githubkit>=0.12.5",
+  "cyclopts>=3.16.2,<4",
   "gitpython>=3.1.44,<4",
-  "hishel>=0.1.1,<0.2",
-  "httpx[socks]>=0.27.2,<0.28",
+  "jinja2>=3.1.6",
   "lazy-loader>=0.4,<0.5",
-  "liblaf-grapes>=0.1.13,<0.1.14",
-  "litellm>=1.59.8,<2",
+  "liblaf-grapes>=0.1.31,<0.2",
+  "litellm>=1.71.2,<2",
   "loguru>=0.7.3,<0.8",
-  "platformdirs>=4.3.6,<5",
-  "pydantic-settings>=2.7.1,<3",
-  "pydantic>=2.10.6,<3",
+  "platformdirs>=4.3.8",
+  "pydantic-settings>=2.9.1",
+  "pydantic>=2.11.5,<3",
   "python-frontmatter>=1.1.0,<2",
-  "rich>=14,<15",
-  "typer-di>=0.1.2,<0.2",
-  "typer>=0.15.1,<0.16",
+  "rich>=14.0.0,<15",
 ]
-description = "🍋‍🟩 AI-powered CLI for GitHub: Automate commits, generate READMEs, and manage topics with ease."
+description = "Add your description here"
 dynamic = ["version"]
-keywords = [
-  "cli",
-  "code-quality",
-  "code-review",
-  "documentation",
-  "github-api",
-  "machine-learning",
-  "markdown",
-  "python",
-  "repository-management",
-  "version-control",
-]
+keywords = []
 license = "MIT"
 name = "liblaf-lime"
-readme = "docs/README.md"
+readme = "README.md"
 requires-python = ">=3.12"
 
 [project.scripts]
-aic = "liblaf.lime.cli.commit:app"
-lime = "liblaf.lime.cli:app"
+lime = "liblaf.lime.cli:main"
 
 [project.urls]
 "Changelog" = "https://github.com/liblaf/lime/blob/main/CHANGELOG.md"
@@ -101,6 +87,10 @@ lime = "liblaf.lime.cli:app"
 [tool.check-wheel-contents]
 ignore = ["W002"]
 
+[tool.coverage.run]
+branch = true
+source = ["src/"]
+
 [tool.hatch.build.hooks.vcs]
 version-file = "src/liblaf/lime/_version.py"
 
@@ -108,10 +98,14 @@ version-file = "src/liblaf/lime/_version.py"
 only-include = ["src/"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/liblaf"]
+packages = ["src/liblaf/"]
 
 [tool.hatch.version]
 source = "vcs"
 
+[tool.pytest.ini_options]
+addopts = ["--showlocals", "--strict-config", "--strict-markers"]
+testpaths = ["benches/", "tests/"]
+
 [tool.uv]
-default-groups = ["build", "dev", "docs"]
+default-groups = "all"

@@ -1,13 +1,23 @@
-import typer_di
+from typing import Annotated
 
-from liblaf import lime
+import cyclopts
 
-from . import commit, repo
+from liblaf import grapes
+from liblaf.lime._version import __version__
 
-app = typer_di.TyperDI(name="lime", no_args_is_help=True)
-lime.add_command(app, repo.app)
-lime.add_command(app, commit.app)
+from . import _commit, _meta
+
+app = cyclopts.App(name="lime", version=__version__)
+main: cyclopts.App = app.meta
 
 
-@app.callback()
-def callback(_: None = typer_di.Depends(lime.shared_options)) -> None: ...
+@app.meta.default
+def meta(
+    *tokens: Annotated[str, cyclopts.Parameter(show=False, allow_leading_hyphen=True)],
+) -> None:
+    grapes.init_logging()
+    app(tokens)
+
+
+app.command(_commit.commit, name="commit")
+app.command(_meta.meta, name="meta")
