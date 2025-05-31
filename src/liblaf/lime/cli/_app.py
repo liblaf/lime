@@ -1,4 +1,5 @@
-from typing import Annotated
+import sys
+from typing import Annotated, Any
 
 import cyclopts
 
@@ -8,7 +9,6 @@ from liblaf.lime._version import __version__
 from . import _commit, _meta
 
 app = cyclopts.App(name="lime", version=__version__)
-main: cyclopts.App = app.meta
 
 
 @app.meta.default
@@ -21,3 +21,9 @@ def meta(
 
 app.command(_commit.commit, name="commit")
 app.command(_meta.meta, name="meta")
+
+
+def main() -> None:
+    result: Any = app.meta()
+    if isinstance(result, int):
+        sys.exit(result)

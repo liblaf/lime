@@ -85,5 +85,6 @@ Write your commit message inside <answer> tags.
 
 {$DIFF} - output of `git diff --staged`
 {$TYPE} - (optional) type of commit (e.g., feat, fix, refactor, etc.)
+{$BREAKING_CHANGE} - (optional) True / False / None
 
 </inputs>
