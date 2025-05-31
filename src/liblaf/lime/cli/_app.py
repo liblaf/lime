@@ -14,9 +14,9 @@ app = cyclopts.App(name="lime", version=__version__)
 @app.meta.default
 def meta(
     *tokens: Annotated[str, cyclopts.Parameter(show=False, allow_leading_hyphen=True)],
-) -> None:
+) -> Any:
     grapes.init_logging()
-    app(tokens)
+    return app(tokens)
 
 
 app.command(_commit.commit, name="commit")
