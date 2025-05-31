@@ -1,4 +1,4 @@
-from . import commit, repo
-from ._app import app
+from ._app import app, main
+from ._commit import commit
 
-__all__ = ["app", "commit", "repo"]
+__all__ = ["app", "commit", "main"]
