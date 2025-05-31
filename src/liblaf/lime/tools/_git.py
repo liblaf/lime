@@ -50,7 +50,7 @@ class Git:
 
     def list_generated_files(self) -> Generator[Path]:
         for file in self.ls_files():
-            if file.match("template/**"):  # skip copier template files
+            if file.is_relative_to("template/"):  # skip copier template files
                 continue
             with file.open("r") as fp:
                 for _, line in zip(range(5), fp, strict=False):
