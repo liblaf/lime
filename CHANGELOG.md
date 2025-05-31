@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/liblaf/lime/compare/v0.2.0...v0.2.1) (2025-05-31)
+
+
+### 🐛 Bug Fixes
+
+* **tools:** improve template file detection ([afc0bb6](https://github.com/liblaf/lime/commit/afc0bb687036f9dd103450b591dfef6ba80dadec))
+
 ## [0.2.0](https://github.com/liblaf/lime/compare/v0.1.8..v0.2.0) - 2025-05-31
 
 ### 💥 BREAKING CHANGES
