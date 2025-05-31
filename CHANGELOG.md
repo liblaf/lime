@@ -1,11 +1,14 @@
 # Changelog
 
-## [0.2.1](https://github.com/liblaf/lime/compare/v0.2.0...v0.2.1) (2025-05-31)
-
+## [0.2.1](https://github.com/liblaf/lime/compare/v0.2.0..v0.2.1) - 2025-05-31
 
 ### 🐛 Bug Fixes
 
-* **tools:** improve template file detection ([afc0bb6](https://github.com/liblaf/lime/commit/afc0bb687036f9dd103450b591dfef6ba80dadec))
+- **tools:** improve template file detection - ([afc0bb6](https://github.com/liblaf/lime/commit/afc0bb687036f9dd103450b591dfef6ba80dadec))
+
+### ❤️ New Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
 
 ## [0.2.0](https://github.com/liblaf/lime/compare/v0.1.8..v0.2.0) - 2025-05-31
 
@@ -15,7 +18,6 @@
 
 ### ❤️ New Contributors
 
-- [@liblaf](https://github.com/liblaf) made their first contribution in [#45](https://github.com/liblaf/lime/pull/45)
 - [@mergery[bot]](https://github.com/apps/mergery) made their first contribution
 
 ## [0.1.8](https://github.com/liblaf/lime/compare/v0.1.7..v0.1.8) - 2025-03-31
