@@ -8,21 +8,30 @@ name: MegaLinter
 
 on:
   push:
-    # prevent workflow from running for events affecting tags
-    # ref: <https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onpushbranchestagsbranches-ignoretags-ignore>
     branches-ignore:
+      - assets**
       - gh-pages
   pull_request:
   workflow_dispatch:
 
 jobs:
+  delete-cancelled-runs:
+    name: Delete Cancelled Runs
+    permissions:
+      actions: write
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: MercuryTechnologies/delete-cancelled-runs@1.0.0
+        with:
+          workflow-file: mega-linter.yaml
+          github-token: ${{ secrets.GH_PAT || github.token }}
+
   mega-linter:
     name: MegaLinter
     permissions:
       contents: write # commit fix
       issues: write # ref: <https://megalinter.io/latest/reporters/GitHubCommentReporter/>
       pull-requests: write # ref: <https://megalinter.io/latest/reporters/GitHubCommentReporter/>
-      statuses: write # ref: <https://megalinter.io/latest/reporters/GitHubStatusReporter/>
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}-mega-linter
