@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/liblaf/lime/compare/v0.2.1...v0.2.2) (2025-06-02)
+
+
+### ⬆️ Dependencies
+
+* **deps:** update dependency versions ([3dad007](https://github.com/liblaf/lime/commit/3dad0079ec0787eb31e138f2f1412e5963481311))
+
 ## [0.2.1](https://github.com/liblaf/lime/compare/v0.2.0..v0.2.1) - 2025-05-31
 
 ### 🐛 Bug Fixes
