@@ -1,5 +1,5 @@
 import sys
-from typing import Annotated, Any
+from typing import Annotated, Any, Literal
 
 import cyclopts
 
@@ -14,8 +14,12 @@ app = cyclopts.App(name="lime", version=__version__)
 @app.meta.default
 def meta(
     *tokens: Annotated[str, cyclopts.Parameter(show=False, allow_leading_hyphen=True)],
+    log_level: Annotated[
+        Literal["trace", "debug", "info", "success", "warning", "error", "critical"],
+        cyclopts.Parameter(env_var="LOGGING_LEVEL"),
+    ] = "warning",
 ) -> Any:
-    grapes.init_logging()
+    grapes.init_logging(level=log_level.upper())
     return app(tokens)
 
 
