@@ -392,7 +392,7 @@ wheels = [
 
 [[package]]
 name = "cyclopts"
-version = "3.17.0"
+version = "3.19.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -400,9 +400,9 @@ dependencies = [
     { name = "rich" },
     { name = "rich-rst" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0e/25/3e9d428fe65b22d61f4710237b9f03907559a7c2d35e66312019e69ac767/cyclopts-3.17.0.tar.gz", hash = "sha256:bc4057c0cfc7b14ce7ec6395ddcfcf02a1e9d21a00c01b7871b5c4f648b832c5", size = 72755, upload-time = "2025-06-05T11:50:07.584Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/dc/52/21e319ca0fcd95096e1d34039f4b385ef271c2bc2276cabc5cf41dc32809/cyclopts-3.19.0.tar.gz", hash = "sha256:0825c5dbca16c85ebbcaca8ab0952e9a2b62bacf25c704ab8cdb2ce229d46163", size = 73150, upload-time = "2025-06-12T00:18:59.526Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e1/6e/73465866ca6a95c1a846947b511c567306eb4bb9b804c19764bc383ede17/cyclopts-3.17.0-py3-none-any.whl", hash = "sha256:9d351811eaeb28501fd7967c4e810d6b8661c9ba4760dd1e95a9881f0ced2b53", size = 82641, upload-time = "2025-06-05T11:50:06.189Z" },
+    { url = "https://files.pythonhosted.org/packages/82/1d/da668d2c98ac97b811042de24906a32a806606d03bb1eaaf6be51bd6def4/cyclopts-3.19.0-py3-none-any.whl", hash = "sha256:776a5747945bbafd23e007d3813b2bc4e6483adfe9f12f5684e941a726851ee4", size = 83086, upload-time = "2025-06-12T00:18:58.287Z" },
 ]
 
 [[package]]
@@ -976,7 +976,7 @@ wheels = [
 
 [[package]]
 name = "liblaf-grapes"
-version = "0.2.0"
+version = "0.2.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "about-time" },
@@ -995,9 +995,9 @@ dependencies = [
     { name = "sortedcontainers" },
     { name = "sortedcontainers-stubs" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/20/92/339b1b8a0939dc9ac96fb4325892ba7c36fad2db5edd9e77516bfef33a05/liblaf_grapes-0.2.0.tar.gz", hash = "sha256:57063a1b9e136ca332f9459da89a4bb9b75c6af72ea5483f85a51bd49d237250", size = 29083, upload-time = "2025-06-05T14:02:12.316Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/aa/be/8b249ff58ef34395ccaee03d16feb917da68a20dcfc5727f67c4899b80a1/liblaf_grapes-0.2.2.tar.gz", hash = "sha256:e9b70a8481fd6d6fbdc4655c5b15a87c252f2c61e76dde34ad6dbf878fa61dae", size = 29430, upload-time = "2025-06-11T01:46:33.257Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/15/b0/8a63c9a3913f9653350ecb231c30978b41e208740cf5631dd5069896091b/liblaf_grapes-0.2.0-py3-none-any.whl", hash = "sha256:c2b26e105d4881103ef220dac4ba9b856b27969c7e726516b74bd1cb677d01f3", size = 54485, upload-time = "2025-06-05T14:02:10.933Z" },
+    { url = "https://files.pythonhosted.org/packages/08/f7/90573acf9eeb4c9cd088735b92b2e13773301acc3efdbf7277a9453c0d94/liblaf_grapes-0.2.2-py3-none-any.whl", hash = "sha256:6e642d78f0093a77b4acb1728902cfeabeb5b5358aeee19862b13dbcfac662cf", size = 55080, upload-time = "2025-06-11T01:46:31.755Z" },
 ]
 
 [[package]]
@@ -1054,12 +1054,12 @@ test = [
 
 [package.metadata]
 requires-dist = [
-    { name = "cyclopts", specifier = ">=3.17.0,<4" },
+    { name = "cyclopts", specifier = ">=3.19.0,<4" },
     { name = "gitpython", specifier = ">=3.1.44,<4" },
     { name = "jinja2", specifier = ">=3.1.6,<4" },
     { name = "lazy-loader", specifier = ">=0.4,<0.5" },
-    { name = "liblaf-grapes", specifier = ">=0.2.0,<0.3" },
-    { name = "litellm", specifier = ">=1.72.1,<2" },
+    { name = "liblaf-grapes", specifier = ">=0.2.2,<0.3" },
+    { name = "litellm", specifier = ">=1.72.4,<2" },
     { name = "loguru", specifier = ">=0.7.3,<0.8" },
     { name = "platformdirs", specifier = ">=4.3.8,<5" },
     { name = "pydantic", specifier = ">=2.11.5,<3" },
@@ -1102,7 +1102,7 @@ test = [
 
 [[package]]
 name = "litellm"
-version = "1.72.1"
+version = "1.72.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -1117,9 +1117,9 @@ dependencies = [
     { name = "tiktoken" },
     { name = "tokenizers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d0/a7/67da5f515c3847bd121b5fde54ac48ee3e7d55d75c49d2b51a2f9b20ab7a/litellm-1.72.1.tar.gz", hash = "sha256:d5d822988d62db8fe434aca7584e1cf8f5a03c033e957e3b5c1ca24366840951", size = 8095871, upload-time = "2025-06-04T19:09:07.717Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/83/80/d73c821a2f65ee5b97b41e61d9b18324ebb9d616e1e21844f4253ac38957/litellm-1.72.4.tar.gz", hash = "sha256:8855de30f78bcb1f37af244519b37a37faaaf579401b1414400b5b5e5b616d57", size = 8132997, upload-time = "2025-06-11T05:46:38.041Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/10/2d/48dee9e0cc782a74d7361a3a1acf70d9ac8a9278a4fa8d2dcf2ac7359ed8/litellm-1.72.1-py3-none-any.whl", hash = "sha256:858b4458f199dd8d3acd46436cf5fb1de19404e5dcf92ff59ec417c224b52481", size = 7994774, upload-time = "2025-06-04T19:09:04.316Z" },
+    { url = "https://files.pythonhosted.org/packages/6f/0d/0f86db9724b9bd63d057b912aa6aa532a76e6e707f9bb75abbd3b0a0401a/litellm-1.72.4-py3-none-any.whl", hash = "sha256:f98ca994420ed649c466d423655a6e0f2aeecab4564ed372b3378a949e491dc2", size = 8036589, upload-time = "2025-06-11T05:46:34.727Z" },
 ]
 
 [[package]]

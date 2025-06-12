@@ -52,11 +52,14 @@ class Git:
         for file in self.ls_files():
             if file.is_relative_to("template/"):  # skip copier template files
                 continue
-            with file.open("r") as fp:
-                for _, line in zip(range(5), fp, strict=False):
-                    if "@generated" in line:
-                        yield file
-                        break
+            try:
+                with file.open("r") as fp:
+                    for _, line in zip(range(5), fp, strict=False):
+                        if "@generated" in line:
+                            yield file
+                            break
+            except UnicodeDecodeError:
+                continue
 
     def ls_files(self) -> list[Path]:
         output: str = self.repo.git.ls_files()
