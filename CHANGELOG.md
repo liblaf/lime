@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/liblaf/lime/compare/v0.2.2...v0.2.3) (2025-06-12)
+
+
+### ⬆️ Dependencies
+
+* **deps:** update dependency versions and handle binary files ([4d6f6cc](https://github.com/liblaf/lime/commit/4d6f6ccecc2944f668ed7fa3fd6a1767195fcb0c))
+
 ## [0.2.2](https://github.com/liblaf/lime/compare/v0.2.1..v0.2.2) - 2025-06-02
 
 ### ⬆️ Dependencies
