@@ -1,15 +1,20 @@
 # Changelog
 
-## [0.2.2](https://github.com/liblaf/lime/compare/v0.2.1..v0.2.2) - 2025-06-02
+## [0.2.3](https://github.com/liblaf/lime/compare/v0.2.2..v0.2.3) - 2025-06-12
 
 ### ⬆️ Dependencies
 
-- **deps:** update dependency versions - ([3dad007](https://github.com/liblaf/lime/commit/3dad0079ec0787eb31e138f2f1412e5963481311))
+- **deps:** update dependency versions and handle binary files - ([4d6f6cc](https://github.com/liblaf/lime/commit/4d6f6ccecc2944f668ed7fa3fd6a1767195fcb0c))
 
 ### ❤️ New Contributors
 
 - [@liblaf](https://github.com/liblaf) made their first contribution
-- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
+
+## [0.2.2](https://github.com/liblaf/lime/compare/v0.2.1..v0.2.2) - 2025-06-03
+
+### ⬆️ Dependencies
+
+- **deps:** update dependency versions - ([3dad007](https://github.com/liblaf/lime/commit/3dad0079ec0787eb31e138f2f1412e5963481311))
 
 ## [0.2.1](https://github.com/liblaf/lime/compare/v0.2.0..v0.2.1) - 2025-05-31
 
