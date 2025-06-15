@@ -7,6 +7,7 @@
 
   "reportArgumentType": "information",
   "reportAssignmentType": "information",
-  "reportPrivateImportUsage": "none",
-  "reportRedeclaration": "none"
+  "reportRedeclaration": "none",
+  "reportIncompatibleMethodOverride": "warning",
+  "reportIncompatibleVariableOverride": "warning"
 }

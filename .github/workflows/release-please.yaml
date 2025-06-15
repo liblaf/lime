@@ -83,7 +83,6 @@ jobs:
   changelog-release:
     name: Changelog (Release)
     permissions:
-      actions: write
       contents: write
     needs:
       - release-please

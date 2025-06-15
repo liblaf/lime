@@ -15,18 +15,20 @@ repo_url: "https://github.com/liblaf/lime"
 edit_uri: blob/main/docs/
 
 extra_css:
-  # - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/css/fonts.css
-  # - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/css/mkdocstrings/material.css
-  # - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/css/mkdocstrings/syntax-highlight-in-signatures.css
-  # I don't know why, but external CSS does not work.
-  - css/fonts.css
-  - css/mkdocstrings/material.css
-  - css/mkdocstrings/syntax-highlight-in-signatures.css
+  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/css/fonts.css
+  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/css/mkdocstrings/api-autonav.css
+  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/css/mkdocstrings/material.css
+  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/css/mkdocstrings/syntax-highlight-in-signatures.css
+
+extra_javascript:
+  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/javascript/mathjax.js
+  - https://raw.githubusercontent.com/readthedocs/test-builds/refs/heads/mkdocs-material/docs/javascripts/readthedocs.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 theme:
   name: material
   features:
-    - announce.dismiss
+    # - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -44,7 +46,7 @@ theme:
     - navigation.instant.progress
     - navigation.path
     # - navigation.prune
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -55,6 +57,7 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
+    # ref: <https://github.com/mkdocstrings/mkdocstrings/blob/d5bf4e1ed0370853f968b210ad77913faf106eed/mkdocs.yml#L70-L88>
     - media: (prefers-color-scheme)
       toggle:
         icon: material/brightness-auto
@@ -76,20 +79,26 @@ theme:
 
 plugins:
   # Built-in plugins
+  # blog:
+  # group:
+  # info:
+  meta:
+  # offline:
   # optimize: # sponsors only
+  privacy:
+  # projects:
   search:
   social:
+  tags:
   # typeset: # sponsors only
+
   # External plugins, schema provided by us
-  gen-files:
-    scripts:
-      - docs/scripts/gen-ref-pages.py
   git-committers:
     enabled: !ENV [READTHEDOCS, CI, false]
     repository: "liblaf/lime"
     branch: main
-  literate-nav:
   section-index:
+
   # External plugins, schema provided by our community
   include-markdown:
   git-revision-date-localized:
@@ -103,14 +112,29 @@ plugins:
           - https://docs.python.org/3/objects.inv
         options:
           # General
+          backlinks: tree
+          extensions:
+            # Official extensions
+            - griffe_inherited_docstrings
+            - griffe_pydantic
+            - griffe_warnings_deprecated
+            # Third-party extensions
+            - docstring_inheritance.griffe
+            - griffe_fieldz
+            - griffe_generics
+            # - griffe_inherited_method_crossrefs # does not work
+          find_stubs_package: true
+          show_inheritance_diagram: true
           # Headings
+          heading_level: 1
+          show_root_heading: true
           show_symbol_type_heading: true
           show_symbol_type_toc: true
           # Members
           inherited_members: true
           filters:
-            - "!^_[^_]"
             - "!__all__"
+            - "!^_[^_]"
           summary: true
           # Docstrings
           docstring_style: google
@@ -118,29 +142,60 @@ plugins:
             ignore_init_summary: true
           docstring_section_style: list
           merge_init_into_class: true
+          relative_crossrefs: true
+          scoped_crossrefs: true
           show_if_no_docstring: true
           # Signatures
+          modernize_annotations: true
           show_signature_annotations: true
           separate_signature: true
+          show_overloads: true
           signature_crossrefs: true
-  # External plugins, schema not provided
+
+  # ref: <https://mkdocstrings.github.io/autorefs/>
   autorefs:
 
+  # ref: <https://github.com/tlambert03/mkdocs-api-autonav>
+  api-autonav:
+    modules:
+      - "src/liblaf/"
+
 markdown_extensions:
+  # ref: <https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/>
+  abbr:
   admonition:
+  attr_list:
+  def_list:
+  footnotes:
   md_in_html:
-  mdx_truly_sane_lists:
+  toc:
+    # ref: <https://github.com/mkdocstrings/mkdocstrings/blob/d5bf4e1ed0370853f968b210ad77913faf106eed/mkdocs.yml#L124-L125>
+    permalink: ¤
+
+  # ref: <https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/>
+  pymdownx.arithmatex:
+    generic: true
+  pymdownx.betterem:
+    smart_enable: all
+  pymdownx.blocks.caption:
+  pymdownx.caret:
+  pymdownx.mark:
+  pymdownx.tilde:
+  pymdownx.critic:
   pymdownx.details:
+  pymdownx.emoji:
+  pymdownx.highlight:
+  pymdownx.inlinehilite:
+  pymdownx.keys:
+  pymdownx.smartsymbols:
   pymdownx.snippets:
   pymdownx.superfences:
   pymdownx.tabbed:
     alternate_style: true
-  toc:
-    permalink: ¤
+  pymdownx.tasklist:
 
-extra:
-  version:
-    provider: mike
+  # ref: <https://github.com/radude/mdx_truly_sane_lists>
+  mdx_truly_sane_lists:
 
 watch:
   - .config/copier/mkdocs.yaml

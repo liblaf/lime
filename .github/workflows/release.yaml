@@ -4,10 +4,6 @@
 name: Release
 
 on:
-  push:
-    branches-ignore:
-      - assets**
-      - gh-pages
   release:
     types:
       - published
@@ -45,42 +41,6 @@ jobs:
           path: dist/
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-
-  pre-release:
-    name: Pre-Release
-    permissions:
-      contents: write
-    needs:
-      - build
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-pre-release
-      cancel-in-progress: true
-    steps:
-      - id: auth
-        name: Auth App
-        uses: liblaf/actions/auth-app@main
-        with:
-          app-id: ${{ secrets.GH_APP_ID }}
-          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Download Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: ${{ needs.build.outputs.artifact-name }}
-          path: dist/
-      - name: Create Pre-Release
-        uses: liblaf/actions/release@main
-        with:
-          clobber: true
-          files: dist/*
-          prerelease: true
-          tag: dev
-          token: ${{ steps.auth.outputs.token }}
 
   release:
     name: Release
