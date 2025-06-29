@@ -17,7 +17,8 @@ jobs:
       pages: write
     runs-on: ubuntu-latest
     concurrency:
-      group: docs
+      group: ${{ github.workflow }}-${{ github.ref }}-docs
+      cancel-in-progress: true
     steps:
       - id: auth
         name: Auth App
@@ -43,3 +44,4 @@ jobs:
         uses: liblaf/actions/setup-pages@main
         with:
           token: ${{ secrets.GH_PAT || steps.auth.outputs.token }}
+        continue-on-error: true

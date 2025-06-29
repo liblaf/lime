@@ -138,6 +138,7 @@ plugins:
           filters:
             - "!__all__"
             - "!^_[^_]"
+            - "!^_$"
           summary: true
           # Docstrings
           docstring_style: google
