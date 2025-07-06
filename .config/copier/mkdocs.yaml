@@ -15,14 +15,14 @@ repo_url: "https://github.com/liblaf/lime"
 edit_uri: blob/main/docs/
 
 extra_css:
-  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/css/fonts.css
-  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/css/mkdocstrings/api-autonav.css
-  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/css/mkdocstrings/material.css
-  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/css/mkdocstrings/syntax-highlight-in-signatures.css
+  - https://cdn.jsdelivr.net/gh/liblaf/copier-python/docs/css/fonts.min.css
+  - https://cdn.jsdelivr.net/gh/liblaf/copier-python/docs/css/mkdocstrings/api-autonav.min.css
+  - https://cdn.jsdelivr.net/gh/liblaf/copier-python/docs/css/mkdocstrings/material.min.css
+  - https://cdn.jsdelivr.net/gh/liblaf/copier-python/docs/css/mkdocstrings/syntax-highlight-in-signatures.min.css
 
 extra_javascript:
-  - https://raw.githubusercontent.com/liblaf/copier-python/refs/heads/main/docs/javascript/mathjax.js
-  - https://raw.githubusercontent.com/readthedocs/test-builds/refs/heads/mkdocs-material/docs/javascripts/readthedocs.js
+  - https://cdn.jsdelivr.net/gh/liblaf/copier-python/docs/javascript/mathjax.min.js
+  - https://cdn.jsdelivr.net/gh/liblaf/copier-python/docs/javascript/readthedocs.min.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 theme:
@@ -79,28 +79,32 @@ theme:
         name: Dark Mode
 
 plugins:
-  # Built-in plugins
+  # ---------------------------- Built-in plugins ---------------------------- #
   # blog:
   # group:
   # info:
   meta:
   # offline:
   # optimize: # sponsors only
-  privacy:
+
+  # privacy:
+  # ref: <https://squidfunk.github.io/mkdocs-material/plugins/privacy/#__code_16_annotation_1>
+  # MathJax loads web fonts for typesetting of mathematical content through relative URLs, and thus cannot be automatically bundled by the privacy plugin.
+
   # projects:
   search:
   social:
   tags:
   # typeset: # sponsors only
 
-  # External plugins, schema provided by us
+  # ----------------- External plugins, schema provided by us ---------------- #
   git-committers:
     enabled: !ENV [READTHEDOCS, CI, false]
     repository: "liblaf/lime"
     branch: main
   section-index:
 
-  # External plugins, schema provided by our community
+  # ----------- External plugins, schema provided by our community ----------- #
   include-markdown:
   git-revision-date-localized:
     enable_creation_date: true
@@ -156,13 +160,17 @@ plugins:
           show_overloads: true
           signature_crossrefs: true
 
-  # ref: <https://mkdocstrings.github.io/autorefs/>
-  autorefs:
+  # ---------------------------- External Plugins ---------------------------- #
 
-  # ref: <https://github.com/tlambert03/mkdocs-api-autonav>
-  api-autonav:
+  autorefs: # ref: <https://mkdocstrings.github.io/autorefs/>
+
+  api-autonav: # ref: <https://github.com/tlambert03/mkdocs-api-autonav>
     modules:
       - "src/liblaf/"
+
+  # hippogriffe: # ref: <https://github.com/patrick-kidger/hippogriffe>
+  # hippogriffe requires `mkdocstrings.python.options.force_inspection: true`. (This is so it can do things like display type annotations correctly.)
+  # However, this option will not be not compatible with `lazy-loader` until <https://github.com/mkdocstrings/mkdocstrings/issues/752> is resolved.
 
 markdown_extensions:
   # ref: <https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/>
