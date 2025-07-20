@@ -11,7 +11,7 @@ __getattr__, __dir__, __all__ = lazy.attach_stub(__name__, __file__)"
 N_LINES=$(echo "$CODE" | wc --lines)
 
 git_root=$(git rev-parse --show-toplevel)
-readarray -t files < <(fd --fixed-strings --type file '__init__.pyi' "$git_root")
+readarray -t files < <(fd --fixed-strings --type file '__init__.pyi' "$git_root/src/")
 for file in "${files[@]}"; do
   file="${file/%".pyi"/".py"}"
   if [[ ! -f $file ]]; then

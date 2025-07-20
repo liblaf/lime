@@ -20,7 +20,7 @@ function is-true() {
 export EAGER_IMPORT=1
 
 if is-true "${CI-}"; then
-  pytest --junit-xml="junit.xml" --cov --cov-branch --benchmark-disable --numprocesses="auto" "$@"
+  pytest --junit-xml="junit.xml" --cov --cov-branch --numprocesses="auto" "$@"
 else
-  pytest --benchmark-disable --numprocesses="auto" "$@"
+  pytest --numprocesses="auto" "$@"
 fi
