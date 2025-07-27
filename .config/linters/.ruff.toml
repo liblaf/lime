@@ -30,7 +30,7 @@ ignore = [
   "ERA001",
   "FIX002",
   "INP001",
-  "PLR0913",
+  "PLC0415",
   "PLR2004",
   "RET504",
   "S101",
@@ -51,8 +51,6 @@ select = ["ALL"]
 allow-star-arg-any = true
 
 [lint.flake8-import-conventions.aliases]
-"asyncio.subprocess" = "asp"
-"boltons" = "bt"
 "jax.numpy" = "jnp"
 "jax.typing" = "jxt"
 "matplotlib" = "mpl"
@@ -66,7 +64,9 @@ allow-star-arg-any = true
 "seaborn" = "sns"
 "taichi" = "ti"
 "trimesh" = "tm"
-"ubelt" = "ub"
 
 [lint.pydocstyle]
 convention = "google"
+
+[lint.pylint]
+max-args = 10
