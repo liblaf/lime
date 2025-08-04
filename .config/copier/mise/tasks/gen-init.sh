@@ -5,21 +5,36 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-CODE="import lazy_loader as lazy
+function has() {
+  type "$@" &> /dev/null
+}
 
-__getattr__, __dir__, __all__ = lazy.attach_stub(__name__, __file__)"
-N_LINES=$(echo "$CODE" | wc --lines)
+TEMPLATE="\
+# tangerine-start: lazy-loader.py.jinja
+import lazy_loader as lazy
+
+__getattr__, __dir__, __all__ = lazy.attach_stub(__name__, __file__)
+# tangerine-end
+"
 
 git_root=$(git rev-parse --show-toplevel)
-readarray -t files < <(fd --fixed-strings --type file '__init__.pyi' "$git_root/src/")
-for file in "${files[@]}"; do
-  file="${file/%".pyi"/".py"}"
-  if [[ ! -f $file ]]; then
-    echo "$CODE" > "$file"
-    continue
-  fi
-  last_lines=$(tail --lines="$N_LINES" "$file")
-  if ! diff <(echo "$last_lines") <(echo "$CODE") &> /dev/null; then
-    echo "$CODE" >> "$file"
-  fi
-done
+src_dir="$git_root/src"
+if [[ -d $src_dir ]]; then
+  find "$src_dir" -name '__init__.pyi' -type f -print0 |
+    while IFS= read -d '' -r file; do
+      file="${file/%'.pyi'/'.py'}"
+      if has tangerine; then
+        if [[ ! -f $file ]]; then
+          tangerine <<< "$TEMPLATE" > "$file"
+        else
+          tangerine "$file"
+        fi
+      else
+        if [[ ! -f $file ]]; then
+          echo -n "$TEMPLATE" > "$file"
+        else
+          : # skip existing files
+        fi
+      fi
+    done
+fi

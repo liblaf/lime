@@ -33,7 +33,10 @@
     { "type": "build", "section": "👷 Build System" },
     { "type": "ci", "section": "🔧 Continuous Integration" }
   ],
+  "skip-changelog": true,
+  "extra-label": "automerge",
   "include-component-in-tag": false,
-  "initial-version": "0.0.0",
+  "always-update": true,
+  "initial-version": "0.1.0",
   "packages": { ".": {} }
 }
