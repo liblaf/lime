@@ -1,4 +1,4 @@
-from ._git import Git
-from ._repomix import Repomix
+from ._git import GitRepo
+from ._repomix import RepomixConfig, repomix
 
-__all__ = ["Git", "Repomix"]
+__all__ = ["GitRepo", "RepomixConfig", "repomix"]
