@@ -28,7 +28,6 @@ classifiers = [
 dependencies = [
   "cappa>=0.30,<0.31",
   "gitpython>=3,<4",
-  "instructor[litellm]>=1,<2",
   "jinja2>=3,<4",
   "lazy-loader>=0.4,<0.5",
   "liblaf-grapes>=1,<2",
@@ -38,6 +37,7 @@ dependencies = [
   "pydantic-settings>=2,<3",
   "pydantic>=2,<3",
   "python-frontmatter>=1,<2",
+  "questionary>=2,<3",
   "rich>=14,<15",
 ]
 dynamic = ["version"]

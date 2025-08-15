@@ -1,4 +1,4 @@
-from .invoke import repomix
-from .parse import RepomixConfig
+from ._invoke import repomix
+from ._parse import RepomixArgs
 
-__all__ = ["RepomixConfig", "repomix"]
+__all__ = ["RepomixArgs", "repomix"]

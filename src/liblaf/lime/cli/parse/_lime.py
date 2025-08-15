@@ -1,9 +1,11 @@
 import attrs
 import cappa
+from cappa import Subcommands
 
-from liblaf.lime import tools
+from ._commit import Commit
 
 
-@cappa.command(invoke="liblaf.lime.cli.invoke.lime")
+@cappa.command
 @attrs.define
-class Lime(tools.RepomixConfig): ...
+class Lime:
+    command: Subcommands[Commit]

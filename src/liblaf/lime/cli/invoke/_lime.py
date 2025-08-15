@@ -1,5 +1,5 @@
 from liblaf.lime.cli.parse import Lime
 
 
-async def lime(lime: Lime) -> None:
+async def lime(self: Lime) -> None:
     raise NotImplementedError

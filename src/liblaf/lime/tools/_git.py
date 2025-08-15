@@ -1,15 +1,21 @@
-from collections.abc import Generator
+import asyncio
+import subprocess
+from collections.abc import Generator, Sequence
 from pathlib import Path
+from typing import cast
 
 import attrs
 import git
 import giturlparse
 
 from liblaf import grapes
+from liblaf.lime.typed import StrOrBytesPath
+
+from .constants import DEFAULT_IGNORES
 
 
 @attrs.define
-class GitRepo:
+class Git:
     repo: git.Repo = attrs.field(
         factory=lambda: git.Repo(search_parent_directories=True)
     )
@@ -21,19 +27,50 @@ class GitRepo:
     @property
     def info(self) -> grapes.git.GitInfo:
         remote: git.Remote = self.repo.remote()
-        return giturlparse.parse(remote.url)  # pyright: ignore[reportReturnType]
+        return cast("grapes.git.GitInfo", giturlparse.parse(remote.url))
 
-    def list_generated_files(self) -> Generator[Path]:
-        for file in self.ls_files():
-            if file.stat().st_size > 512_000:
-                yield file
+    async def commit(self, message: str, *, edit: bool = False) -> None:
+        cmd: list[StrOrBytesPath] = ["git", "commit", f"--message={message}"]
+        if edit:
+            cmd.append("--edit")
+        process: asyncio.subprocess.Process = (
+            await asyncio.subprocess.create_subprocess_exec(*cmd)
+        )
+        returncode: int = await process.wait()
+        if returncode != 0:
+            raise subprocess.CalledProcessError(returncode, cmd)
+
+    def diff(self, ignore: Sequence[str] = [], *, default_ignore: bool = True) -> str:
+        if default_ignore:
+            ignore = [*DEFAULT_IGNORES, *ignore]
+        args: list[str] = ["--minimal", "--no-ext-diff", "--cached", "--"]
+        args.extend(f":(exclude){pattern}" for pattern in ignore)
+        return self.repo.git.diff(*args)
+
+    def ls_files(
+        self,
+        ignore: Sequence[str] = [],
+        *,
+        default_ignore: bool = True,
+        ignore_generated: bool = True,
+    ) -> Generator[Path]:
+        if default_ignore:
+            ignore = [*DEFAULT_IGNORES, *ignore]
+        for pathlike, _ in self.repo.index.entries:
+            file: Path = Path(pathlike)
+            if any(file.match(pattern) for pattern in ignore):
                 continue
-            with file.open() as fp:
-                for _, line in zip(range(5), fp, strict=False):
-                    if "@generated" in line:
-                        yield file
-                        break
+            if ignore_generated and is_generated(self.root / file):
+                continue
+            yield file
 
-    def ls_files(self) -> list[Path]:
-        output: str = self.repo.git.ls_files()
-        return [Path(line) for line in output.splitlines() if line]
+
+def is_generated(file: Path) -> bool:
+    if file.stat().st_size > 512_000:  # 500 KB
+        return True
+    with file.open() as fp:
+        for _, line in zip(range(5), fp, strict=False):
+            # ref: <https://generated.at/>
+            if "@generated" in line:
+                return True
+    return False
