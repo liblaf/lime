@@ -5,6 +5,7 @@ import jinja2
 import litellm
 import rich
 from rich.panel import Panel
+from rich.text import Text
 
 from liblaf.lime import tools
 from liblaf.lime.cli.parse import Commit
@@ -48,7 +49,14 @@ async def commit(self: Commit) -> None:
 
     content: str = litellm.get_content_from_model_response(response)
     content = _response_parser(content)
-    rich.print(Panel(content, title=f"🤖 {response.model}", title_align="left"))
+    rich.print(
+        Panel(
+            content,
+            title=Text(f"🤖 {response.model}", style="bold cyan"),
+            title_align="left",
+            border_style="cyan",
+        )
+    )
 
     action: Action = await prompt_action()
     match action:
