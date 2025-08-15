@@ -11,7 +11,7 @@ class Action(enum.StrEnum):
 
 async def prompt_action() -> Action:
     answer: Any = await questionary.select(
-        message="",
+        message="Commit message generated successfully",
         choices=[
             questionary.Choice("✅  Use this message", value=Action.CONFIRM),
             questionary.Choice("✏️  Edit this message", value=Action.EDIT),

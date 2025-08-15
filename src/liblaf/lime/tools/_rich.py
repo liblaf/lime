@@ -14,7 +14,7 @@ class Tail:
     """
 
     renderable: RenderableType
-    margin: int = 1
+    margin: int = 0
 
     def __rich_console__(
         self, console: Console, options: ConsoleOptions
@@ -25,7 +25,7 @@ class Tail:
         height: int
         _, height = Segment.get_shape(lines)
         if height + self.margin > options.size.height:
-            lines = lines[-(options.size.height - self.margin) :]
+            lines = lines[-(options.size.height - self.margin - 1) :]
             overflow_text = Text(
                 "...", style="live.ellipsis", justify="center", overflow="crop", end=""
             )

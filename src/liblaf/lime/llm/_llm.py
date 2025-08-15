@@ -1,11 +1,11 @@
-from collections.abc import Callable, Generator, Sequence
-from typing import Any, Self
+from collections.abc import Callable, Sequence
+from typing import Any, Self, cast
 
 import attrs
 import litellm
-import rich
-from rich.console import RenderableType
+from rich.console import Group
 from rich.live import Live
+from rich.spinner import Spinner
 from rich.text import Text
 
 from liblaf.lime import tools
@@ -51,37 +51,44 @@ class LLM:
         parser: Callable | None = None,
         **kwargs,
     ) -> litellm.ModelResponse:
-        stream: litellm.CustomStreamWrapper = await self.acompletion(
+        kwargs: dict[str, Any] = self._prepare_kwargs(
             messages=messages, model=model, **kwargs
         )
+        model: str = kwargs["model"]
+        stream: litellm.CustomStreamWrapper = await self.router.acompletion(**kwargs)
         chunks: list[litellm.ModelResponseStream | None] = []
         with Live(screen=True) as live:
+            spinner: Spinner = Spinner(
+                name="dots",
+                text=Text(f"🤖 {model} (Waiting for response ...)", style="bold cyan"),
+                style="bold cyan",
+            )
+            live.update(Group(spinner))
             async for chunk in stream:
                 chunks.append(chunk)
                 response: litellm.ModelResponse = litellm.stream_chunk_builder(chunks)  # pyright: ignore[reportAssignmentType]
-                live.update(self._rich_content(response, parser=parser))
+                message: litellm.Message = response.choices[0].message  # pyright: ignore[reportAttributeAccessIssue]
+                if response.model:
+                    model = response.model
+                if content := cast("str", message.content):
+                    spinner.update(text=Text(f"🤖 {model}", style="bold cyan"))
+                    if parser is not None:
+                        content: str = parser(content)
+                    live.update(Group(spinner, tools.Tail(Text(content), margin=1)))
+                elif message.reasoning_content:
+                    spinner.update(
+                        text=Text(f"🤖 {model} (Reasoning ...)", style="bold cyan")
+                    )
+                    live.update(
+                        Group(
+                            spinner,
+                            tools.Tail(
+                                Text(message.reasoning_content, style="dim"), margin=1
+                            ),
+                        )
+                    )
         response: litellm.ModelResponse = litellm.stream_chunk_builder(chunks)  # pyright: ignore[reportAssignmentType]
         return response
-
-    @rich.console.group()
-    def _rich_content(
-        self,
-        response: litellm.ModelResponse,
-        parser: Callable[[str], str] | None = None,
-    ) -> Generator[RenderableType]:
-        message: litellm.Message = response.choices[0].message  # pyright: ignore[reportAttributeAccessIssue]
-        if content := message.content:  # pyright: ignore[reportAssignmentType]
-            if response.model:
-                yield Text(text=f"🤖 {response.model}", style="bold cyan")
-            if parser is not None:
-                content: str = parser(content)
-            yield tools.Tail(Text(content), margin=1)
-        elif message.reasoning_content:
-            if response.model:
-                yield Text(
-                    text=f"🤖 {response.model} (Reasoning ...)", style="bold cyan"
-                )
-            yield tools.Tail(Text(message.reasoning_content, style="dim"), margin=1)
 
     def _prepare_kwargs(self, **kwargs) -> dict[str, Any]:
         if not kwargs.get("model"):
