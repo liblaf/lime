@@ -4,11 +4,7 @@
 
 site_name: "Lime"
 site_url:
-  !ENV [
-    READTHEDOCS_CANONICAL_URL,
-    SITE_URL,
-    "https://liblaf.github.io/lime/",
-  ]
+  !ENV [READTHEDOCS_CANONICAL_URL, SITE_URL, "https://liblaf.github.io/lime/"]
 site_author: "liblaf"
 repo_name: "liblaf/lime"
 repo_url: "https://github.com/liblaf/lime"

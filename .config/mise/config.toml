@@ -3,5 +3,8 @@
 [task_config]
 includes = [".config/mise/tasks/", ".config/copier/mise/tasks/"]
 
+[tasks.gen-schema]
+run = "python 'scripts/gen-schema.py'"
+
 [tasks.lint]
 depends = ["lint-python", "lint-toml"]
