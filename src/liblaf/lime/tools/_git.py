@@ -21,13 +21,13 @@ class Git:
     )
 
     @property
-    def root(self) -> Path:
-        return Path(self.repo.working_dir)
-
-    @property
     def info(self) -> grapes.git.GitInfo:
         remote: git.Remote = self.repo.remote()
         return cast("grapes.git.GitInfo", giturlparse.parse(remote.url))
+
+    @property
+    def root(self) -> Path:
+        return Path(self.repo.working_dir)
 
     async def commit(self, message: str, *, edit: bool = False) -> None:
         cmd: list[StrOrBytesPath] = ["git", "commit", f"--message={message}"]
@@ -63,12 +63,15 @@ class Git:
             file: Path = Path(pathlike)
             if any(file.match(pattern) for pattern in ignore):
                 continue
-            if ignore_generated and is_generated(self.root / file):
+            if ignore_generated and is_generated(self.root, file):
                 continue
             yield file
 
 
-def is_generated(file: Path) -> bool:
+def is_generated(root: Path, file: Path) -> bool:
+    if file.is_relative_to("template"):
+        return False
+    file = root / file
     if file.stat().st_size > 512_000:  # 500 KB
         return True
     with file.open() as fp:
