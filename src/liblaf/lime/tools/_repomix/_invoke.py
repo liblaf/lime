@@ -1,12 +1,13 @@
 import asyncio
+import os
 import subprocess
 import tempfile
+from collections.abc import Sequence
 from pathlib import Path
 
 import pydantic
 import pydantic.alias_generators
 
-from liblaf.lime.tools._git import Git
 from liblaf.lime.typed import StrOrBytesPath
 
 from ._parse import RepomixArgs
@@ -31,24 +32,19 @@ class RepomixConfig(BaseModel):
 
 
 async def repomix(
-    args: RepomixArgs, *, instruction: str | None = None, git: Git | None = None
+    args: RepomixArgs,
+    *,
+    include: Sequence[str | os.PathLike[str]] = [],
+    instruction: str | None = None,
+    root: str | os.PathLike[str] | None = None,
 ) -> str:
-    if git is None:
-        git = Git()
     config = RepomixConfig(
         output=RepomixConfigOutput(
             compress=args.compress,
             files=args.files,
             truncate_base64=args.truncate_base64,
         ),
-        include=[
-            str(file)
-            for file in git.ls_files(
-                ignore=args.ignore,
-                default_ignore=args.default_ignore,
-                ignore_generated=args.ignore_generated,
-            )
-        ],
+        include=list(map(str, include)),
     )
     with tempfile.TemporaryDirectory() as tmpdir_str:
         tmpdir: Path = Path(tmpdir_str)
@@ -68,7 +64,7 @@ async def repomix(
         cmd += ["--config", config_file]
 
         process: asyncio.subprocess.Process = (
-            await asyncio.subprocess.create_subprocess_exec(*cmd, cwd=git.root)
+            await asyncio.subprocess.create_subprocess_exec(*cmd, cwd=root)
         )
         returncode: int = await process.wait()
         if returncode != 0:

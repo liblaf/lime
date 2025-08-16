@@ -1,3 +1,4 @@
+from pathlib import Path
 from typing import Self
 
 import attrs
@@ -37,11 +38,16 @@ async def commit(self: Commit) -> None:
     llm: LLM = LLM.from_args(self)
     template: jinja2.Template = jinja.get_template("commit.md")
 
-    git_diff: str = git.diff(ignore=self.ignore, default_ignore=self.default_ignore)
+    files: list[Path] = list(
+        git.ls_files(ignore=self.ignore, default_ignore=self.default_ignore)
+    )
+    git_diff: str = git.diff(include=files)
     instruction: str = template.render(
         commit_types=COMMIT_TYPES.values(), git_diff=git_diff, inputs=inputs
     )
-    repomix: str = await tools.repomix(self, instruction=instruction, git=git)
+    repomix: str = await tools.repomix(
+        self, include=files, instruction=instruction, root=git.root
+    )
     response: litellm.ModelResponse = await llm.live(
         messages=[{"role": "user", "content": repomix}],
         parser=_response_parser,

@@ -40,11 +40,14 @@ class Git:
         if returncode != 0:
             raise subprocess.CalledProcessError(returncode, cmd)
 
-    def diff(self, ignore: Sequence[str] = [], *, default_ignore: bool = True) -> str:
-        if default_ignore:
-            ignore = [*DEFAULT_IGNORES, *ignore]
-        args: list[str] = ["--minimal", "--no-ext-diff", "--cached", "--"]
-        args.extend(f":(exclude){pattern}" for pattern in ignore)
+    def diff(self, include: Sequence[StrOrBytesPath] = []) -> str:
+        args: list[StrOrBytesPath] = [
+            "--minimal",
+            "--no-ext-diff",
+            "--cached",
+            "--",
+            *include,
+        ]
         return self.repo.git.diff(*args)
 
     def ls_files(
