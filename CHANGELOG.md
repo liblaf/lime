@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.3.2](https://github.com/liblaf/lime/compare/v0.3.1..v0.3.2) - 2025-08-16
+
+### 🐛 Bug Fixes
+
+- **commit:** handle empty diff and improve error handling - ([956af5a](https://github.com/liblaf/lime/commit/956af5abff95622c073a6847d67b7210851d71da))
+
+### 📝 Documentation
+
+- remove outdated commit message guidelines - ([d1f0191](https://github.com/liblaf/lime/commit/d1f0191b7582aea1fd5eee0c463a79cde8222a31))
+
+### ❤️ New Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+
 ## [0.3.1](https://github.com/liblaf/lime/compare/v0.3.0..v0.3.1) - 2025-08-16
 
 ### ✨ Features
@@ -23,11 +37,6 @@
 ### ♻ Code Refactoring
 
 - **commit:** decouple file listing from diff and repomix - ([bcbd89d](https://github.com/liblaf/lime/commit/bcbd89d383d6f273ce1a398fa8237b8115d1285d))
-
-### ❤️ New Contributors
-
-- [@liblaf](https://github.com/liblaf) made their first contribution
-- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
 
 ## [0.3.0](https://github.com/liblaf/lime/compare/v0.2.3..v0.3.0) - 2025-08-15
 
