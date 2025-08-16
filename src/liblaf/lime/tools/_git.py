@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import cast
 
 import attrs
+import cappa
 import git
 import giturlparse
 
@@ -29,8 +30,16 @@ class Git:
     def root(self) -> Path:
         return Path(self.repo.working_dir)
 
-    async def commit(self, message: str, *, edit: bool = False) -> None:
-        cmd: list[StrOrBytesPath] = ["git", "commit", f"--message={message}"]
+    async def commit(
+        self,
+        message: str | None = None,
+        *,
+        edit: bool = False,
+        exit_on_error: bool = False,
+    ) -> None:
+        cmd: list[StrOrBytesPath] = ["git", "commit"]
+        if message:
+            cmd.append(f"--message={message}")
         if edit:
             cmd.append("--edit")
         process: asyncio.subprocess.Process = (
@@ -38,6 +47,8 @@ class Git:
         )
         returncode: int = await process.wait()
         if returncode != 0:
+            if exit_on_error:
+                raise cappa.Exit(code=returncode)
             raise subprocess.CalledProcessError(returncode, cmd)
 
     def diff(self, include: Sequence[StrOrBytesPath] = []) -> str:

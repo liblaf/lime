@@ -42,6 +42,9 @@ async def commit(self: Commit) -> None:
         git.ls_files(ignore=self.ignore, default_ignore=self.default_ignore)
     )
     git_diff: str = git.diff(include=files)
+    if not git_diff:
+        await git.commit(exit_on_error=True)
+        return
     instruction: str = template.render(
         commit_types=COMMIT_TYPES.values(), git_diff=git_diff, inputs=inputs
     )
@@ -67,9 +70,9 @@ async def commit(self: Commit) -> None:
     action: Action = await prompt_action()
     match action:
         case Action.CONFIRM:
-            await git.commit(message=content, edit=False)
+            await git.commit(message=content, edit=False, exit_on_error=True)
         case Action.EDIT:
-            await git.commit(message=content, edit=True)
+            await git.commit(message=content, edit=True, exit_on_error=True)
 
 
 def _response_parser(content: str) -> str:
