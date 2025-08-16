@@ -68,6 +68,7 @@ docs = [
   "mkdocs",
   "mkdocs-api-autonav",
   "mkdocs-autorefs",
+  "mkdocs-gen-files",
   "mkdocs-git-committers-plugin-2",
   "mkdocs-git-revision-date-localized-plugin",
   "mkdocs-include-markdown-plugin",
