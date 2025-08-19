@@ -33,7 +33,7 @@ dependencies = [
   "liblaf-grapes>=1,<2",
   "litellm>=1,<2",
   "loguru>=0.7,<0.8",
-  "openai<1.100",  # remove this constraint when <https://github.com/BerriAI/litellm/issues/13710> is fixed
+  "openai<1.101",  # remove this constraint when <https://github.com/BerriAI/litellm/issues/13710> is fixed
   "platformdirs>=4,<5",
   "pydantic-settings>=2,<3",
   "pydantic>=2,<3",
