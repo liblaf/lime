@@ -30,7 +30,7 @@ dependencies = [
   "gitpython>=3,<4",
   "jinja2>=3,<4",
   "lazy-loader>=0.4,<0.5",
-  "liblaf-grapes>=1,<2",
+  "liblaf-grapes>=2,<3",
   "litellm>=1,<2",
   "loguru>=0.7,<0.8",
   "openai<1.102",  # remove this constraint when <https://github.com/BerriAI/litellm/issues/13710> is fixed
