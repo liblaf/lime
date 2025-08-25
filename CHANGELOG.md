@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.3](https://github.com/liblaf/lime/compare/v0.3.2..v0.3.3) - 2025-08-25
+
+### ⬆️ Dependencies
+
+- **deps:** update dependency liblaf-grapes to v2 (#67) - ([0acbebd](https://github.com/liblaf/lime/commit/0acbebd2de21a6d35d6bb20a58f0250aea00a608))
+- **deps:** update dependency openai to <1.102 (#68) - ([5e806f4](https://github.com/liblaf/lime/commit/5e806f4318e49be4a1572be0930cad97ee93f9df))
+- **deps:** update dependency openai to <1.101 (#66) - ([0eacfb7](https://github.com/liblaf/lime/commit/0eacfb7102841796f61a7fc5379866feeca747bf))
+- **deps:** pin openai dependency version - ([ee522f0](https://github.com/liblaf/lime/commit/ee522f0a6f395c72f5bce48907f739b26938cd10))
+
+### ❤️ New Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#67](https://github.com/liblaf/lime/pull/67)
+- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
+- [@liblaf](https://github.com/liblaf) made their first contribution
+
 ## [0.3.2](https://github.com/liblaf/lime/compare/v0.3.1..v0.3.2) - 2025-08-16
 
 ### 🐛 Bug Fixes
@@ -9,10 +24,6 @@
 ### 📝 Documentation
 
 - remove outdated commit message guidelines - ([d1f0191](https://github.com/liblaf/lime/commit/d1f0191b7582aea1fd5eee0c463a79cde8222a31))
-
-### ❤️ New Contributors
-
-- [@liblaf](https://github.com/liblaf) made their first contribution
 
 ## [0.3.1](https://github.com/liblaf/lime/compare/v0.3.0..v0.3.1) - 2025-08-16
 
