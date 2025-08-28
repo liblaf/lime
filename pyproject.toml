@@ -33,8 +33,8 @@ dependencies = [
   "liblaf-grapes>=2,<3",
   "litellm>=1,<2",
   "loguru>=0.7,<0.8",
-  "openai<1.103",  # remove this constraint when <https://github.com/BerriAI/litellm/issues/13710> is fixed
   "platformdirs>=4,<5",
+  "prompt-toolkit>=3,<3.0.52",  # TODO: remove this workaround until <https://github.com/tmbo/questionary/issues/454> is fixed
   "pydantic-settings>=2,<3",
   "pydantic>=2,<3",
   "python-frontmatter>=1,<2",
@@ -55,32 +55,17 @@ dynamic = ["version"]
 lime = "liblaf.lime.cli:main"
 
 [dependency-groups]
-build = ["check-wheel-contents", "hatch", "twine"]
-dev = ["icecream"]
-docs = [
-  "docstring-inheritance",
-  "griffe-fieldz",
-  "griffe-generics",
-  "griffe-inherited-docstrings",
-  "griffe-modernized-annotations",
-  "griffe-pydantic",
-  "griffe-warnings-deprecated",
-  "mdx-truly-sane-lists",
-  "mkdocs",
-  "mkdocs-api-autonav",
-  "mkdocs-autorefs",
-  "mkdocs-gen-files",
-  "mkdocs-git-committers-plugin-2",
-  "mkdocs-git-revision-date-localized-plugin",
-  "mkdocs-include-markdown-plugin",
-  "mkdocs-material[imaging]",
-  "mkdocs-section-index",
-  "mkdocstrings",
-  "mkdocstrings-python",
-  "pymdown-extensions",
-  "ruff",
+build = ["check-wheel-contents>=0.6,<0.7", "hatch>=1,<2", "twine>=6,<7"]
+dev = ["icecream>=2,<3", "mkdocs-gen-files>=0.5,<0.6"]
+docs = ["liblaf-mkdocs-preset>=0.2,<0.3", "mkdocs>=1,<2"]
+test = [
+  "hypothesis>=6,<7",
+  "pytest-codspeed>=4,<5",
+  "pytest-cov>=6,<7",
+  "pytest-randomly>=3,<4",
+  "pytest-xdist>=3,<4",
+  "pytest>=8,<9",
 ]
-test = ["pytest", "pytest-codspeed", "pytest-cov", "pytest-xdist"]
 
 [build-system]
 requires = ["hatch-vcs", "hatchling"]
@@ -91,23 +76,36 @@ ignore = ["W002"]
 
 [tool.coverage.run]
 branch = true
-source = ["src/"]
+source = ["src"]
 
 [tool.hatch.build.hooks.vcs]
 version-file = "src/liblaf/lime/_version.py"
 
 [tool.hatch.build.targets.sdist]
-only-include = ["src/"]
+only-include = ["src"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/liblaf/"]
+packages = ["src/liblaf"]
 
 [tool.hatch.version]
 source = "vcs"
 
+[tool.pyright]
+exclude = ["**/.*", "**/__pycache__", "**/marimo", "**/node_modules"]
+extends = ".config/linters/pyrightconfig.json"
+
 [tool.pytest.ini_options]
-addopts = ["--showlocals", "--strict-config", "--strict-markers"]
-testpaths = ["benches/", "tests/"]
+addopts = [
+  "--doctest-modules",
+  "--hypothesis-show-statistics",
+  "--showlocals",
+  "--strict-config",
+  "--strict-markers",
+]
+testpaths = ["benches", "src", "tests"]
+
+[tool.ruff]
+extend = ".config/linters/.ruff.toml"
 
 [tool.uv]
 default-groups = "all"
