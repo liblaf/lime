@@ -42,7 +42,7 @@ TODO: DESCRIPTION <br />
 To install `liblaf-lime`, run the following command:
 
 ```bash
-$ uv add liblaf-lime
+uv add liblaf-lime
 ```
 
 <div align="right" markdown>
@@ -60,9 +60,9 @@ You can use Github Codespaces for online development:
 Or clone it for local development:
 
 ```bash
-$ gh repo clone liblaf/lime
-$ cd lime
-$ just test
+gh repo clone liblaf/lime
+cd lime
+just test
 ```
 
 <div align="right" markdown>
