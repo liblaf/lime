@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.4](https://github.com/liblaf/lime/compare/v0.3.3..v0.3.4) - 2025-09-03
+
+### ⬆️ Dependencies
+
+- **deps:** update dependency prompt-toolkit to >=3,<3.0.53 (#71) - ([33867cf](https://github.com/liblaf/lime/commit/33867cf3020689276fa6394ae23e97e62f3b700c))
+
+### ❤️ New Contributors
+
+- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#71](https://github.com/liblaf/lime/pull/71)
+
 ## [0.3.3](https://github.com/liblaf/lime/compare/v0.3.2..v0.3.3) - 2025-08-28
 
 ### ⬆️ Dependencies
@@ -10,12 +21,6 @@
 - **deps:** update dependency openai to <1.102 (#68) - ([5e806f4](https://github.com/liblaf/lime/commit/5e806f4318e49be4a1572be0930cad97ee93f9df))
 - **deps:** update dependency openai to <1.101 (#66) - ([0eacfb7](https://github.com/liblaf/lime/commit/0eacfb7102841796f61a7fc5379866feeca747bf))
 - **deps:** pin openai dependency version - ([ee522f0](https://github.com/liblaf/lime/commit/ee522f0a6f395c72f5bce48907f739b26938cd10))
-
-### ❤️ New Contributors
-
-- [@liblaf](https://github.com/liblaf) made their first contribution
-- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#70](https://github.com/liblaf/lime/pull/70)
-- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
 
 ## [0.3.2](https://github.com/liblaf/lime/compare/v0.3.1..v0.3.2) - 2025-08-16
 
