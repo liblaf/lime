@@ -54,7 +54,7 @@ lime = "liblaf.lime.cli:main"
 
 [dependency-groups]
 build = ["check-wheel-contents>=0.6,<0.7", "hatch>=1,<2", "twine>=6,<7"]
-dev = ["icecream>=2,<3"]
+dev = ["emoji>=2,<3", "githubkit>=0.13,<0.14", "icecream>=2,<3"]
 docs = [
   "liblaf-mkdocs-preset>=0.2,<0.3",
   "mkdocs-gen-files>=0.5,<0.6",

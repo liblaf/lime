@@ -548,6 +548,15 @@ wheels = [
 ]
 
 [[package]]
+name = "emoji"
+version = "2.14.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cb/7d/01cddcbb6f5cc0ba72e00ddf9b1fa206c802d557fd0a20b18e130edf1336/emoji-2.14.1.tar.gz", hash = "sha256:f8c50043d79a2c1410ebfae833ae1868d5941a67a6cd4d18377e2eb0bd79346b", size = 597182, upload-time = "2025-01-16T06:31:24.983Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/91/db/a0335710caaa6d0aebdaa65ad4df789c15d89b7babd9a30277838a7d9aac/emoji-2.14.1-py3-none-any.whl", hash = "sha256:35a8a486c1460addb1499e3bf7929d3889b2e2841a57401903699fef595e942b", size = 590617, upload-time = "2025-01-16T06:31:23.526Z" },
+]
+
+[[package]]
 name = "environs"
 version = "14.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -715,6 +724,22 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/72/94/63b0fc47eb32792c7ba1fe1b694daec9a63620db1e313033d18140c2320a/gitdb-4.0.12.tar.gz", hash = "sha256:5ef71f855d191a3326fcfbc0d5da835f26b13fbcba60c32c21091c349ffdb571", size = 394684, upload-time = "2025-01-02T07:20:46.413Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a0/61/5c78b91c3143ed5c14207f463aecfc8f9dbb5092fb2869baf37c273b2705/gitdb-4.0.12-py3-none-any.whl", hash = "sha256:67073e15955400952c6565cc3e707c554a4eea2e428946f7a4c162fab9bd9bcf", size = 62794, upload-time = "2025-01-02T07:20:43.624Z" },
+]
+
+[[package]]
+name = "githubkit"
+version = "0.13.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "hishel" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2c/cb/f6cfa0b90328d3602d951188f3c39e4556d75ac3acba4d4da5701a066a48/githubkit-0.13.2.tar.gz", hash = "sha256:5309279a3a0b3f5ec1a499f88bd7f9badc79167a24755e64b0717e556f291d79", size = 2225486, upload-time = "2025-09-05T03:14:30.157Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/94/44/5c522140d0561ad9e954ad388aa18a6b7539a13411010a149ad8d7b3d2d4/githubkit-0.13.2-py3-none-any.whl", hash = "sha256:4f13c0d6a6c0b779bcef052a07d02b13daf2c8799f99e8d840130f6c417df4c1", size = 5853421, upload-time = "2025-09-05T03:14:27.97Z" },
 ]
 
 [[package]]
@@ -889,6 +914,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/6c/3c/28cc4db153a7601a996985bcb564f7b8f5b9e1a706c7537aad4b4809f358/hf_xet-1.1.9-cp37-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:ad1022e9a998e784c97b2173965d07fe33ee26e4594770b7785a8cc8f922cd95", size = 3251429, upload-time = "2025-08-27T23:05:16.471Z" },
     { url = "https://files.pythonhosted.org/packages/84/17/7caf27a1d101bfcb05be85850d4aa0a265b2e1acc2d4d52a48026ef1d299/hf_xet-1.1.9-cp37-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:86754c2d6d5afb11b0a435e6e18911a4199262fe77553f8c50d75e21242193ea", size = 3354643, upload-time = "2025-08-27T23:05:17.828Z" },
     { url = "https://files.pythonhosted.org/packages/cd/50/0c39c9eed3411deadcc98749a6699d871b822473f55fe472fad7c01ec588/hf_xet-1.1.9-cp37-abi3-win_amd64.whl", hash = "sha256:5aad3933de6b725d61d51034e04174ed1dce7a57c63d530df0014dea15a40127", size = 2804797, upload-time = "2025-08-27T23:05:20.77Z" },
+]
+
+[[package]]
+name = "hishel"
+version = "0.1.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3e/b5/c063cd3eab8154ddd61deb07b50497cf24010727eaeec4d78ed1a6262986/hishel-0.1.3.tar.gz", hash = "sha256:db3e07429cb739dcda851ff9b35b0f3e7589e21b90ee167df54336ac608b6ec3", size = 36649, upload-time = "2025-07-06T14:19:23.528Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/29/a5/bf3553b44a36e1c5d2aa0cd15478e02b466dcaecdc2983b07068999d2675/hishel-0.1.3-py3-none-any.whl", hash = "sha256:bae3ba9970ffc56f90014aea2b3019158fb0a5b0b635a56f414ba6b96651966e", size = 42518, upload-time = "2025-07-06T14:19:22.336Z" },
 ]
 
 [[package]]
@@ -1245,12 +1282,14 @@ build = [
     { name = "twine" },
 ]
 dev = [
+    { name = "emoji" },
+    { name = "githubkit" },
     { name = "icecream" },
-    { name = "mkdocs-gen-files" },
 ]
 docs = [
     { name = "liblaf-mkdocs-preset" },
     { name = "mkdocs" },
+    { name = "mkdocs-gen-files" },
 ]
 test = [
     { name = "liblaf-pytest-preset" },
@@ -1281,12 +1320,14 @@ build = [
     { name = "twine", specifier = ">=6,<7" },
 ]
 dev = [
+    { name = "emoji", specifier = ">=2.14.1" },
+    { name = "githubkit", specifier = ">=0.13.2" },
     { name = "icecream", specifier = ">=2,<3" },
-    { name = "mkdocs-gen-files", specifier = ">=0.5,<0.6" },
 ]
 docs = [
     { name = "liblaf-mkdocs-preset", specifier = ">=0.2,<0.3" },
     { name = "mkdocs", specifier = ">=1,<2" },
+    { name = "mkdocs-gen-files", specifier = ">=0.5,<0.6" },
 ]
 test = [
     { name = "liblaf-pytest-preset", specifier = ">=0.1,<0.2" },
