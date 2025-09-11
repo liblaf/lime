@@ -3,7 +3,7 @@
 
 [project]
 name = "liblaf-lime"
-description = "Add your description here"
+description = ""
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
@@ -12,7 +12,6 @@ authors = [
 ]
 keywords = []
 classifiers = [
-  # common classifiers
   # ref: <https://pypi.org/classifiers/>
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
@@ -34,7 +33,6 @@ dependencies = [
   "litellm>=1,<2",
   "loguru>=0.7,<0.8",
   "platformdirs>=4,<5",
-  "prompt-toolkit>=3,<3.0.53",  # TODO: remove this workaround until <https://github.com/tmbo/questionary/issues/454> is fixed
   "pydantic-settings>=2,<3",
   "pydantic>=2,<3",
   "python-frontmatter>=1,<2",
@@ -56,16 +54,13 @@ lime = "liblaf.lime.cli:main"
 
 [dependency-groups]
 build = ["check-wheel-contents>=0.6,<0.7", "hatch>=1,<2", "twine>=6,<7"]
-dev = ["icecream>=2,<3", "mkdocs-gen-files>=0.5,<0.6"]
-docs = ["liblaf-mkdocs-preset>=0.2,<0.3", "mkdocs>=1,<2"]
-test = [
-  "hypothesis>=6,<7",
-  "pytest-codspeed>=4,<5",
-  "pytest-cov>=6,<7",
-  "pytest-randomly>=3,<4",
-  "pytest-xdist>=3,<4",
-  "pytest>=8,<9",
+dev = ["icecream>=2,<3"]
+docs = [
+  "liblaf-mkdocs-preset>=0.2,<0.3",
+  "mkdocs-gen-files>=0.5,<0.6",
+  "mkdocs>=1,<2",
 ]
+test = ["liblaf-pytest-preset>=0.1,<0.2", "pytest>=8,<9"]
 
 [build-system]
 requires = ["hatch-vcs", "hatchling"]
@@ -91,13 +86,13 @@ packages = ["src/liblaf"]
 source = "vcs"
 
 [tool.pyright]
-exclude = ["**/.*", "**/__pycache__", "**/marimo", "**/node_modules"]
 extends = ".config/linters/pyrightconfig.json"
 
 [tool.pytest.ini_options]
 addopts = [
   "--doctest-modules",
   "--hypothesis-show-statistics",
+  "--import-mode=importlib",
   "--showlocals",
   "--strict-config",
   "--strict-markers",

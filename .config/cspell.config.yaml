@@ -53,6 +53,7 @@ words:
   - pypi
   - pyplot
   - pyproject
+  - pyright
   - pyrightconfig
   - pytest
   - pytype
@@ -67,4 +68,3 @@ words:
   - unshallow
   - venv
   - virtualenv
-  - xdist
