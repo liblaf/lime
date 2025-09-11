@@ -1,5 +1,5 @@
-{#- ref: https://github.com/eli64s/readme-ai/blob/main/readmeai/config/settings/prompts.toml -#}
-{#- ref: https://github.com/lobehub/lobe-readme-wizard/blob/main/src/const/sample.ts -#}
+{#- ref: <https://github.com/eli64s/readme-ai/blob/main/readmeai/config/settings/prompts.toml> -#}
+{#- ref: <https://github.com/lobehub/lobe-readme-wizard/blob/main/src/const/sample.ts> -#}
 
 You are a skilled technical writer tasked with creating an engaging and concise introduction for the repository. Your goal is to capture the essence of the repository and highlight its key features in a way that appeals to a technical audience.
 

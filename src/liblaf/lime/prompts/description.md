@@ -1,4 +1,4 @@
-{#- ref: https://github.com/eli64s/readme-ai/blob/main/readmeai/config/settings/prompts.toml -#}
+{#- ref: <https://github.com/eli64s/readme-ai/blob/main/readmeai/config/settings/prompts.toml> -#}
 
 Analyze the content carefully and identify its key themes, features, or purposes.
 Then, craft a short, engaging description that highlights the most impressive aspects of the repository.
