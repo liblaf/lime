@@ -1320,8 +1320,8 @@ build = [
     { name = "twine", specifier = ">=6,<7" },
 ]
 dev = [
-    { name = "emoji", specifier = ">=2.14.1" },
-    { name = "githubkit", specifier = ">=0.13.2" },
+    { name = "emoji", specifier = ">=2,<3" },
+    { name = "githubkit", specifier = ">=0.13,<0.14" },
     { name = "icecream", specifier = ">=2,<3" },
 ]
 docs = [

@@ -2,24 +2,22 @@
 
 <div align="center" markdown><a name="readme-top"></a>
 
-<img height="160" src="https://api.iconify.design/logos/python.svg" />
+[![lime](https://socialify.git.ci/liblaf/lime/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmicrosoft%2Ffluentui-emoji%2Fassets%2FLime%2F3D%2Flime_3d.png&name=1&owner=1&pattern=Transparent&pulls=1&stargazers=1&theme=Auto)](https://github.com/liblaf/lime)
 
-# Lime
-
-TODO: DESCRIPTION <br />
 [**Explore the docs »**](https://liblaf.github.io/lime/)
 
+<!-- tangerine-start: badges/python.md -->
+
+[![Codecov](https://img.shields.io/codecov/c/github/liblaf/lime?logo=Codecov&label=Coverage)](https://codecov.io/gh/liblaf/lime)
+[![CodSpeed Badge](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://codspeed.io/liblaf/lime)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/liblaf/lime/test.yaml?logo=GitHub%20Actions&label=Test)](https://github.com/liblaf/lime/actions/workflows/test.yaml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/liblaf/apple/main.svg)](https://results.pre-commit.ci/latest/github/liblaf/apple/main)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/liblaf-lime?logo=PyPI&label=Downloads)](https://pypi.org/project/liblaf-lime)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/liblaf-lime?logo=Python&label=Python)](https://pypi.org/project/liblaf-lime)
 [![PyPI - Version](https://img.shields.io/pypi/v/liblaf-lime?logo=PyPI&label=PyPI)](https://pypi.org/project/liblaf-lime)
-[![Codecov](https://img.shields.io/codecov/c/github/liblaf/lime?logo=Codecov&label=Coverage)](https://codecov.io/gh/liblaf/lime)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/liblaf/lime/test.yaml?logo=GitHub%20Actions&label=Test)](https://github.com/liblaf/lime/actions/workflows/test.yaml)
-<br />
-[![GitHub Contributors](https://img.shields.io/github/contributors/liblaf/lime?logo=GitHub&label=Contributors)](https://github.com/liblaf/lime/graphs/contributors)
-[![GitHub Forks](https://img.shields.io/github/forks/liblaf/lime)](https://github.com/liblaf/lime/forks)
-[![GitHub Repo Stars](https://img.shields.io/github/stars/liblaf/lime)](https://github.com/liblaf/lime/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/liblaf/lime?logo=GitHub&label=Issues)](https://github.com/liblaf/lime/issues)
-[![GitHub License](https://img.shields.io/github/license/liblaf/lime?label=License)](https://github.com/liblaf/lime/blob/main/LICENSE)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
+<!-- tangerine-end -->
 
 [Changelog](https://github.com/liblaf/lime/blob/main/CHANGELOG.md) · [Report Bug](https://github.com/liblaf/lime/issues) · [Request Feature](https://github.com/liblaf/lime/issues)
 
@@ -29,7 +27,12 @@ TODO: DESCRIPTION <br />
 
 ## ✨ Features
 
-- [x] ✨ **TODO:** FEATURES;
+- 🤖 **AI-Powered Commit Messages**: Automatically generates meaningful commit messages using LLMs that analyze git diffs and follow conventional commit standards
+- 🎯 **Interactive Workflow**: Provides an intuitive command-line interface with interactive prompts for confirming or editing generated commit messages
+- 📁 **Smart Context Awareness**: Uses repomix to intelligently include relevant repository files while ignoring generated and unnecessary files
+- 🔧 **Highly Configurable**: Supports multiple LLM providers (DeepSeek, Qwen) with customizable temperature settings and model fallbacks
+- 🎨 **Rich Terminal Experience**: Features beautiful console output with live streaming responses and formatted commit message previews
+- 📚 **Template-Based Prompts**: Utilizes Jinja2 templates for flexible and customizable prompt engineering
 
 <div align="right" markdown>
 
@@ -62,7 +65,7 @@ Or clone it for local development:
 ```bash
 gh repo clone liblaf/lime
 cd lime
-just test
+uv sync
 ```
 
 <div align="right" markdown>
@@ -77,7 +80,7 @@ Contributions of all types are more than welcome, if you are interested in contr
 
 [![](https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge)](https://github.com/liblaf/lime/pulls)
 
-[![](https://contrib.rocks/image?repo=liblaf%2Flime)](https://github.com/liblaf/lime/graphs/contributors)
+[![Contributors](https://contrib.nn.ci/api?repo=liblaf/lime)](https://github.com/liblaf/lime/graphs/contributors)
 
 <div align="right" markdown>
 
@@ -89,11 +92,11 @@ Contributions of all types are more than welcome, if you are interested in contr
 
 ### More Projects
 
-- **[🍇 Grapes](https://github.com/liblaf/grapes)** - Powerful Python utilities for logging, timing, and more, making development smoother!
+<!-- tangerine-start: projects/python.md -->
 
-### Credits
+- **[🍇 grapes](https://github.com/liblaf/grapes)** - Powerful Python utilities for logging, timing, and more, making development smoother!
 
-- **Python** - <https://www.python.org/>
+<!-- tangerine-end -->
 
 <div align="right" markdown>
 

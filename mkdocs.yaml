@@ -1,6 +1,6 @@
 INHERIT: .config/copier/mkdocs.yaml
 site_name: Lime
-site_description:
+site_description: 🍋‍🟩 AI-powered Git commit assistant and repository documentation generator
 
 plugins:
   gen-files:

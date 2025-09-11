@@ -3,7 +3,7 @@
 
 [project]
 name = "liblaf-lime"
-description = ""
+description = "🍋‍🟩 AI-powered Git commit assistant and repository documentation generator"
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
