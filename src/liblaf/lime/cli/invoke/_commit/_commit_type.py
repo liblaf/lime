@@ -7,20 +7,24 @@ class CommitType:
     desc: str = ""
 
 
+# ref: <https://github.com/conventional-changelog/commitlint/blob/master/%40commitlint/config-conventional/src/index.ts>
 # ref: <https://github.com/lobehub/lobe-cli-toolbox/blob/master/packages/lobe-commit/src/constants/gitmojis.ts>
 COMMIT_TYPES_LIST: list[CommitType] = [
-    CommitType("feat", "Introduce new features"),
-    CommitType("fix", "Fix a bug"),
-    CommitType("refactor", "Refactor code that neither fixes a bug nor adds a feature"),
-    CommitType("perf", "A code change that improves performance"),
-    CommitType(
-        "style", "Add or update style files that do not affect the meaning of the code"
-    ),
-    CommitType("test", "Adding missing tests or correcting existing tests"),
+    CommitType("feat", "A new feature"),
+    CommitType("fix", "A bug fix"),
     CommitType("docs", "Documentation only changes"),
+    CommitType(
+        "style",
+        "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)",
+    ),
+    CommitType("refactor", "A code change that neither fixes a bug nor adds a feature"),
+    CommitType("perf", "A code change that improves performance"),
+    CommitType("test", "Adding missing tests or correcting existing tests"),
+    CommitType(
+        "build", "Changes that affect the build system or external dependencies"
+    ),
     CommitType("ci", "Changes to our CI configuration files and scripts"),
-    CommitType("chore", "Other changes that dont modify src or test file"),
-    CommitType("build", "Make architectural changes"),
+    CommitType("chore", "Other changes that don't modify src or test files"),
 ]
 
 
