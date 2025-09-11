@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.3.4](https://github.com/liblaf/lime/compare/v0.3.3..v0.3.4) - 2025-09-11
+
+### ✨ Features
+
+- add generate command with description and features prompts - ([4bd8cdb](https://github.com/liblaf/lime/commit/4bd8cdb1bad6e7f79218fb0e7bd542e328863e50))
+
+### ⬆️ Dependencies
+
+- **deps:** update dependency prompt-toolkit to >=3,<3.0.53 (#71) - ([33867cf](https://github.com/liblaf/lime/commit/33867cf3020689276fa6394ae23e97e62f3b700c))
+
+### 📝 Documentation
+
+- update README and prompts with improved formatting and content - ([1a629d3](https://github.com/liblaf/lime/commit/1a629d34a856767309f290422aeaab56e1e9a33a))
+- update project documentation and metadata - ([9b47705](https://github.com/liblaf/lime/commit/9b4770538d12fd142eba3bec22b4f5db1cbb1915))
+
+### ❤️ New Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@github-actions[bot]](https://github.com/apps/github-actions) made their first contribution in [#76](https://github.com/liblaf/lime/pull/76)
+- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#71](https://github.com/liblaf/lime/pull/71)
+
 ## [0.3.3](https://github.com/liblaf/lime/compare/v0.3.2..v0.3.3) - 2025-08-28
 
 ### ⬆️ Dependencies
@@ -10,12 +32,6 @@
 - **deps:** update dependency openai to <1.102 (#68) - ([5e806f4](https://github.com/liblaf/lime/commit/5e806f4318e49be4a1572be0930cad97ee93f9df))
 - **deps:** update dependency openai to <1.101 (#66) - ([0eacfb7](https://github.com/liblaf/lime/commit/0eacfb7102841796f61a7fc5379866feeca747bf))
 - **deps:** pin openai dependency version - ([ee522f0](https://github.com/liblaf/lime/commit/ee522f0a6f395c72f5bce48907f739b26938cd10))
-
-### ❤️ New Contributors
-
-- [@liblaf](https://github.com/liblaf) made their first contribution
-- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#70](https://github.com/liblaf/lime/pull/70)
-- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
 
 ## [0.3.2](https://github.com/liblaf/lime/compare/v0.3.1..v0.3.2) - 2025-08-16
 
