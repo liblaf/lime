@@ -743,6 +743,15 @@ wheels = [
 ]
 
 [[package]]
+name = "gitmatch"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/fe/67/c57587329ad2c0be4ff6361e84989f4b9afb283c5d8fb18a9380ed39c9a0/gitmatch-0.2.1.tar.gz", hash = "sha256:46d2c5e25d579580ebed15632ceaaae696fa437f8b52634fb042d1b4fa432f52", size = 16379, upload-time = "2024-11-29T15:37:25.045Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6d/5c/18e5a3d3fed736692c7f33be646cd6ec3d1ae3214eb19b7ddc745c252641/gitmatch-0.2.1-py3-none-any.whl", hash = "sha256:c74b370d78356e587c87374ded757ce953c5dd84b458ddea7e65918d7cd11972", size = 8127, upload-time = "2024-11-29T15:37:08.684Z" },
+]
+
+[[package]]
 name = "gitpython"
 version = "3.1.45"
 source = { registry = "https://pypi.org/simple" }
@@ -1261,6 +1270,7 @@ name = "liblaf-lime"
 source = { editable = "." }
 dependencies = [
     { name = "cappa" },
+    { name = "gitmatch" },
     { name = "gitpython" },
     { name = "jinja2" },
     { name = "lazy-loader" },
@@ -1299,6 +1309,7 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "cappa", specifier = ">=0.30,<0.31" },
+    { name = "gitmatch", specifier = ">=0.2,<0.3" },
     { name = "gitpython", specifier = ">=3,<4" },
     { name = "jinja2", specifier = ">=3,<4" },
     { name = "lazy-loader", specifier = ">=0.4,<0.5" },

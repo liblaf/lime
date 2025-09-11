@@ -26,6 +26,7 @@ classifiers = [
 ]
 dependencies = [
   "cappa>=0.30,<0.31",
+  "gitmatch>=0.2,<0.3",
   "gitpython>=3,<4",
   "jinja2>=3,<4",
   "lazy-loader>=0.4,<0.5",

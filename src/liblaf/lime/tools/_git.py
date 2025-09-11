@@ -7,6 +7,7 @@ from typing import cast
 import attrs
 import cappa
 import git
+import gitmatch
 import giturlparse
 
 from liblaf import grapes
@@ -70,9 +71,10 @@ class Git:
     ) -> Generator[Path]:
         if default_ignore:
             ignore = [*DEFAULT_IGNORES, *ignore]
+        gi: gitmatch.Gitignore[str] = gitmatch.compile(ignore)
         for pathlike, _ in self.repo.index.entries:
             file: Path = Path(pathlike)
-            if any(file.match(pattern) for pattern in ignore):
+            if gi.match(file):
                 continue
             if ignore_generated and is_generated(self.root, file):
                 continue
