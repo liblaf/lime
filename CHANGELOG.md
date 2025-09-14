@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.5](https://github.com/liblaf/lime/compare/v0.3.4...v0.3.5) (2025-09-14)
+
+
+### 🐛 Bug Fixes
+
+* **commit-types:** update descriptions and ordering to match conventional commit standard ([c9af707](https://github.com/liblaf/lime/commit/c9af70732eb7cfe80f8adebce4220d971a7b1513))
+
 ## [0.3.4](https://github.com/liblaf/lime/compare/v0.3.3..v0.3.4) - 2025-09-11
 
 ### ✨ Features
