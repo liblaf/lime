@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.7](https://github.com/liblaf/lime/compare/v0.3.6...v0.3.7) (2025-10-05)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency liblaf-grapes to v5 ([#81](https://github.com/liblaf/lime/issues/81)) ([519d8d5](https://github.com/liblaf/lime/commit/519d8d597d8fc479a0de9ad589205f2db4a39d95))
+
 ## [0.3.6](https://github.com/liblaf/lime/compare/v0.3.5..v0.3.6) - 2025-09-21
 
 ### ⬆️ Dependencies
