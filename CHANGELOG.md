@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.9](https://github.com/liblaf/lime/compare/v0.3.8...v0.3.9) (2025-10-13)
+
+
+### ♻️ Code Refactoring
+
+* **tools:** improve file filtering for binary and LFS files ([68fd097](https://github.com/liblaf/lime/commit/68fd0970853b7189113023b8f123bc41560eed10))
+
 ## [0.3.8](https://github.com/liblaf/lime/compare/v0.3.7..v0.3.8) - 2025-10-13
 
 ### 🐛 Bug Fixes
