@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.8](https://github.com/liblaf/lime/compare/v0.3.7...v0.3.8) (2025-10-13)
+
+
+### 🐛 Bug Fixes
+
+* **tools:** handle binary files in is_generated check ([ded1da8](https://github.com/liblaf/lime/commit/ded1da85f2fc0d9f42f790cfbaa6da8449ecc2d6))
+
 ## [0.3.7](https://github.com/liblaf/lime/compare/v0.3.6..v0.3.7) - 2025-10-05
 
 ### ⬆️ Dependencies
