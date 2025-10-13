@@ -87,9 +87,13 @@ def is_generated(root: Path, file: Path) -> bool:
     file = root / file
     if file.stat().st_size > 512_000:  # 500 KB
         return True
-    with file.open() as fp:
-        for _, line in zip(range(5), fp, strict=False):
-            # ref: <https://generated.at/>
-            if "@generated" in line:
-                return True
+    try:
+        with file.open() as fp:
+            for _, line in zip(range(5), fp, strict=False):
+                # ref: <https://generated.at/>
+                if "@generated" in line:
+                    return True
+    except UnicodeDecodeError:
+        # binary file
+        return True
     return False
