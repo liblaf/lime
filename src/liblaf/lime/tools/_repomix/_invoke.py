@@ -8,7 +8,7 @@ from pathlib import Path
 import pydantic
 import pydantic.alias_generators
 
-from liblaf.lime.typed import StrOrBytesPath
+from liblaf.lime.typing import StrOrBytesPath
 
 from ._parse import RepomixArgs
 

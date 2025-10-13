@@ -1,6 +1,6 @@
 import asyncio
 import subprocess
-from collections.abc import Generator, Sequence
+from collections.abc import Generator, Iterable, Sequence
 from pathlib import Path
 from typing import cast
 
@@ -11,7 +11,7 @@ import gitmatch
 import giturlparse
 
 from liblaf import grapes
-from liblaf.lime.typed import StrOrBytesPath
+from liblaf.lime.typing import PathLike, StrOrBytesPath
 
 from .constants import DEFAULT_IGNORES
 
@@ -72,13 +72,49 @@ class Git:
         if default_ignore:
             ignore = [*DEFAULT_IGNORES, *ignore]
         gi: gitmatch.Gitignore[str] = gitmatch.compile(ignore)
-        for pathlike, _ in self.repo.index.entries:
-            file: Path = Path(pathlike)
-            if gi.match(file):
+        entries: Iterable[PathLike] = [entry for entry, _ in self.repo.index.entries]
+        entries = filter_git_lfs(entries, root=self.root)
+        for entry in entries:
+            path: Path = Path(entry)
+            if gi.match(path):
                 continue
-            if ignore_generated and is_generated(self.root, file):
+            if is_binary(self.root, path):
                 continue
-            yield file
+            if ignore_generated and is_generated(self.root, path):
+                continue
+            yield path
+
+
+def filter_git_lfs(entries: Iterable[PathLike], *, root: Path) -> Generator[str]:
+    process: subprocess.CompletedProcess[str] = subprocess.run(
+        ["git", "check-attr", "filter", "--stdin"],
+        stdout=subprocess.PIPE,
+        cwd=root,
+        check=True,
+        input="\n".join(map(str, entries)),
+        text=True,
+    )
+    for line in process.stdout.splitlines():
+        path: str
+        attribute: str
+        info: str
+        path, attribute, info = line.rsplit(": ", maxsplit=2)
+        assert attribute == "filter"
+        if info == "lfs":
+            continue
+        yield path
+
+
+def is_binary(root: Path, file: Path) -> bool:
+    file: Path = root / file
+    try:
+        with file.open() as fp:
+            for _ in fp:
+                pass
+    except UnicodeDecodeError:
+        return True
+    else:
+        return False
 
 
 def is_generated(root: Path, file: Path) -> bool:
@@ -87,13 +123,9 @@ def is_generated(root: Path, file: Path) -> bool:
     file = root / file
     if file.stat().st_size > 512_000:  # 500 KB
         return True
-    try:
-        with file.open() as fp:
-            for _, line in zip(range(5), fp, strict=False):
-                # ref: <https://generated.at/>
-                if "@generated" in line:
-                    return True
-    except UnicodeDecodeError:
-        # binary file
-        return True
+    with file.open() as fp:
+        for _, line in zip(range(5), fp, strict=False):
+            # ref: <https://generated.at/>
+            if "@generated" in line:
+                return True
     return False
