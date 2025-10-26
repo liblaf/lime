@@ -1,21 +1,21 @@
 # Changelog
 
-## [0.3.10](https://github.com/liblaf/lime/compare/v0.3.9...v0.3.10) (2025-10-26)
+## [0.3.10](https://github.com/liblaf/lime/compare/v0.3.9..v0.3.10) - 2025-10-26
 
+### ⬆️ Dependencies
 
-### 🐛 Bug Fixes
+- **deps:** update dependency liblaf-grapes to v6 (#85) - ([ee514da](https://github.com/liblaf/lime/commit/ee514da2e3f18e4afd56932dbe3f20c79f1dec3d))
 
-* **deps:** update dependency liblaf-grapes to v6 ([#85](https://github.com/liblaf/lime/issues/85)) ([ee514da](https://github.com/liblaf/lime/commit/ee514da2e3f18e4afd56932dbe3f20c79f1dec3d))
+### ❤️ New Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#89](https://github.com/liblaf/lime/pull/89)
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution
 
 ## [0.3.9](https://github.com/liblaf/lime/compare/v0.3.8..v0.3.9) - 2025-10-13
 
 ### ♻ Code Refactoring
 
 - **tools:** improve file filtering for binary and LFS files - ([68fd097](https://github.com/liblaf/lime/commit/68fd0970853b7189113023b8f123bc41560eed10))
-
-### ❤️ New Contributors
-
-- [@liblaf](https://github.com/liblaf) made their first contribution
 
 ## [0.3.8](https://github.com/liblaf/lime/compare/v0.3.7..v0.3.8) - 2025-10-13
 
@@ -306,4 +306,4 @@
 - [@release-please[bot]](https://github.com/apps/release-please) made their first contribution in [#10](https://github.com/liblaf/lime/pull/10)
 - [@liblaf](https://github.com/liblaf) made their first contribution
 - [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#8](https://github.com/liblaf/lime/pull/8)
-- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution
