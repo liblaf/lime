@@ -8,11 +8,20 @@ name: MegaLinter
 
 on:
   push:
+    branches-ignore:
+      - copier-update
+      - mega-linter-fix/**
+      - pre-commit-ci-update-config
+      - release-please--branches**
   pull_request:
   workflow_dispatch:
 
 env:
   FORCE_COLOR: 1
+
+concurrency:
+  group: ${{ github.workflow }} @ ${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   mega-linter:
@@ -20,15 +29,13 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    # skip PR from the same repo, they will be handled by `push` event
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
     environment:
       name: MegaLinter
     steps:
       - id: auth
         name: Auth
-        uses: liblaf/actions/auth@dist
+        uses: liblaf/actions/auth@v1
         with:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
@@ -36,7 +43,7 @@ jobs:
         uses: actions/checkout@v5
       - id: lint
         name: MegaLinter
-        uses: liblaf/actions/mega-linter@dist
+        uses: liblaf/actions/mega-linter@v1
         with:
           token: ${{ steps.auth.outputs.token }}
       - if: success() || failure()
@@ -67,7 +74,7 @@ jobs:
           reviewers: ${{ github.repository_owner }}
       - if: steps.lint.outputs.has-updated-sources > 0 && github.ref != 'refs/heads/main'
         name: Commit and Push Applied Linter Fixes
-        uses: liblaf/actions/commit@dist
+        uses: liblaf/actions/commit@v1
         with:
           add-options: --verbose --update
           message: "chore(mega-linter): apply linters automatic fixes"
