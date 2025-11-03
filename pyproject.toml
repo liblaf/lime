@@ -8,7 +8,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
 authors = [
-  { name = "liblaf", email = "30631553+liblaf@users.noreply.github.com" },
+  { name = "liblaf", email = "30631553+liblaf@users.noreply.github.com" }
 ]
 keywords = []
 classifiers = [
@@ -22,7 +22,7 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
-  "Typing :: Typed",
+  "Typing :: Typed"
 ]
 dependencies = [
   "cappa>=0.30,<0.31",
@@ -34,11 +34,11 @@ dependencies = [
   "litellm>=1,<2",
   "loguru>=0.7,<0.8",
   "platformdirs>=4,<5",
-  "pydantic-settings>=2,<3",
   "pydantic>=2,<3",
+  "pydantic-settings>=2,<3",
   "python-frontmatter>=1,<2",
   "questionary>=2,<3",
-  "rich>=14,<15",
+  "rich>=14,<15"
 ]
 dynamic = ["version"]
 
@@ -58,8 +58,8 @@ build = ["check-wheel-contents>=0.6,<0.7", "hatch>=1,<2", "twine>=6,<7"]
 dev = ["emoji>=2,<3", "githubkit>=0.13,<0.14", "icecream>=2,<3"]
 docs = [
   "liblaf-mkdocs-preset>=0.2,<0.3",
-  "mkdocs-gen-files>=0.5,<0.6",
   "mkdocs>=1,<2",
+  "mkdocs-gen-files>=0.5,<0.6"
 ]
 test = ["liblaf-pytest-preset>=0.1,<0.2", "pytest>=8,<9"]
 
@@ -96,7 +96,7 @@ addopts = [
   "--import-mode=importlib",
   "--showlocals",
   "--strict-config",
-  "--strict-markers",
+  "--strict-markers"
 ]
 testpaths = ["benches", "src", "tests"]
 
