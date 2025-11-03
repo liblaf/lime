@@ -11,39 +11,34 @@ on:
   pull_request:
   workflow_dispatch:
 
-jobs:
-  skip-duplicate:
-    name: Skip Duplicate
-    permissions:
-      actions: write
-    runs-on: ubuntu-latest
-    outputs:
-      should-skip: ${{ steps.skip-duplicate.outputs.should-skip }}
-    steps:
-      - id: skip-duplicate
-        name: Skip Duplicate
-        uses: liblaf/actions/skip-duplicate@dist
-        with:
-          cancel-others: true
+env:
+  FORCE_COLOR: 1
 
+jobs:
   mega-linter:
     name: MegaLinter
     permissions:
       contents: write
-      issues: write
       pull-requests: write
-    needs:
-      - skip-duplicate
-    if: needs.skip-duplicate.outputs.should-skip != 'true'
+    # skip PR from the same repo, they will be handled by `push` event
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
+    environment:
+      name: MegaLinter
     steps:
+      - id: auth
+        name: Auth
+        uses: liblaf/actions/auth@dist
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@v5
-        with:
-          ref: ${{ github.head_ref || github.ref }}
       - id: lint
         name: MegaLinter
         uses: liblaf/actions/mega-linter@dist
+        with:
+          token: ${{ steps.auth.outputs.token }}
       - if: success() || failure()
         name: Upload Reports
         uses: actions/upload-artifact@v5
@@ -67,9 +62,7 @@ jobs:
           sign-commits: true
           title: "chore(mega-linter): apply linters automatic fixes"
           body-path: ${{ runner.temp }}/megalinter-report.md
-          labels: |-
-            autofix
-            automerge
+          labels: automerge,bot
           assignees: ${{ github.repository_owner }}
           reviewers: ${{ github.repository_owner }}
       - if: steps.lint.outputs.has-updated-sources > 0 && github.ref != 'refs/heads/main'
