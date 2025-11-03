@@ -1,7 +1,7 @@
 # pyright: reportIncompatibleVariableOverride=none
 
 from collections.abc import Sequence
-from typing import override
+from typing import Any, override
 
 import litellm
 import platformdirs
@@ -33,6 +33,10 @@ class RouterConfig(litellm.RouterConfig, pydantic.BaseModel):
             ),
         ),
     ]
+    default_litellm_params: dict[str, Any] = {
+        "stream_timeout": 30.0,
+        "timeout": 300.0,
+    }
     context_window_fallbacks: list[dict[str, list[str]]] = [
         {"deepseek-chat": ["qwen3-coder-plus"]},
         {"deepseek-reasoner": ["qwen3-coder-plus"]},
