@@ -7,25 +7,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.12](https://github.com/liblaf/lime/releases/tag/v0.3.12) - 2025-11-10
+
+### 🐛 Bug Fixes
+
+- **deps:** update dependency liblaf-grapes to v7 (#95) - [9e3cdea](https://github.com/liblaf/lime/commit/9e3cdeac557e75af76e3a4a7409b6c00ebb9eb99) by [@renovate[bot]](https://github.com/apps/renovate) in [#95](https://github.com/liblaf/lime/pull/95)
+- **deps:** update dependency liblaf-grapes to v8 (#97) - [9a6ab4f](https://github.com/liblaf/lime/commit/9a6ab4f83a2a52d847674e6f4fc162216ab68143) by [@renovate[bot]](https://github.com/apps/renovate) in [#97](https://github.com/liblaf/lime/pull/97)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#93](https://github.com/liblaf/lime/pull/93)
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#94](https://github.com/liblaf/lime/pull/94)
+- [@copier-update[bot]](https://github.com/apps/copier-update) made their first contribution in [#90](https://github.com/liblaf/lime/pull/90)
+
 ## [0.3.11](https://github.com/liblaf/lime/releases/tag/v0.3.11) - 2025-11-03
 
 ### 🐛 Bug Fixes
 
-- **(build)** Update Python version and normalize pyproject.toml formatting - [dc85566](https://github.com/liblaf/lime/commit/dc85566e5100e5432ea2f744074efece0779ff91) by [@liblaf](https://github.com/liblaf)
+- **build:** Update Python version and normalize pyproject.toml formatting - [dc85566](https://github.com/liblaf/lime/commit/dc85566e5100e5432ea2f744074efece0779ff91) by [@liblaf](https://github.com/liblaf)
 
 ### ♻ Code Refactoring
 
-- **(llm/config)** Move default_litellm_params into RouterConfig - [bee18db](https://github.com/liblaf/lime/commit/bee18db00f7834593a682b3ea7e1a0a12ddad252) by [@liblaf](https://github.com/liblaf)
+- **llm/config:** Move default_litellm_params into RouterConfig - [bee18db](https://github.com/liblaf/lime/commit/bee18db00f7834593a682b3ea7e1a0a12ddad252) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
-- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@liblaf](https://github.com/liblaf)
 
 ## [0.3.10](https://github.com/liblaf/lime/releases/tag/v0.3.10) - 2025-11-02
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency liblaf-grapes to v6 (#85) - [ee514da](https://github.com/liblaf/lime/commit/ee514da2e3f18e4afd56932dbe3f20c79f1dec3d) by [@renovate[bot]](https://github.com/apps/renovate) in [#85](https://github.com/liblaf/lime/pull/85)
+- **deps:** update dependency liblaf-grapes to v6 (#85) - [ee514da](https://github.com/liblaf/lime/commit/ee514da2e3f18e4afd56932dbe3f20c79f1dec3d) by [@renovate[bot]](https://github.com/apps/renovate) in [#85](https://github.com/liblaf/lime/pull/85)
 
 ### ❤️ Contributors
 
@@ -36,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ♻ Code Refactoring
 
-- **(tools)** improve file filtering for binary and LFS files - [68fd097](https://github.com/liblaf/lime/commit/68fd0970853b7189113023b8f123bc41560eed10) by [@liblaf](https://github.com/liblaf)
+- **tools:** improve file filtering for binary and LFS files - [68fd097](https://github.com/liblaf/lime/commit/68fd0970853b7189113023b8f123bc41560eed10) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -47,7 +61,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(tools)** handle binary files in is_generated check - [ded1da8](https://github.com/liblaf/lime/commit/ded1da85f2fc0d9f42f790cfbaa6da8449ecc2d6) by [@liblaf](https://github.com/liblaf)
+- **tools:** handle binary files in is_generated check - [ded1da8](https://github.com/liblaf/lime/commit/ded1da85f2fc0d9f42f790cfbaa6da8449ecc2d6) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -58,7 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency liblaf-grapes to v5 (#81) - [519d8d5](https://github.com/liblaf/lime/commit/519d8d597d8fc479a0de9ad589205f2db4a39d95) by [@renovate[bot]](https://github.com/apps/renovate) in [#81](https://github.com/liblaf/lime/pull/81)
+- **deps:** update dependency liblaf-grapes to v5 (#81) - [519d8d5](https://github.com/liblaf/lime/commit/519d8d597d8fc479a0de9ad589205f2db4a39d95) by [@renovate[bot]](https://github.com/apps/renovate) in [#81](https://github.com/liblaf/lime/pull/81)
 
 ### ❤️ Contributors
 
@@ -69,8 +83,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency liblaf-grapes to v3 (#78) - [52de0ac](https://github.com/liblaf/lime/commit/52de0ac49d6fadaf884f748031ecf010afe30feb) by [@renovate[bot]](https://github.com/apps/renovate) in [#78](https://github.com/liblaf/lime/pull/78)
-- **(deps)** update dependency liblaf-grapes to v4 (#80) - [4e33504](https://github.com/liblaf/lime/commit/4e335042d29b3f89fb638ace3914b1dccc53fc6c) by [@renovate[bot]](https://github.com/apps/renovate) in [#80](https://github.com/liblaf/lime/pull/80)
+- **deps:** update dependency liblaf-grapes to v3 (#78) - [52de0ac](https://github.com/liblaf/lime/commit/52de0ac49d6fadaf884f748031ecf010afe30feb) by [@renovate[bot]](https://github.com/apps/renovate) in [#78](https://github.com/liblaf/lime/pull/78)
+- **deps:** update dependency liblaf-grapes to v4 (#80) - [4e33504](https://github.com/liblaf/lime/commit/4e335042d29b3f89fb638ace3914b1dccc53fc6c) by [@renovate[bot]](https://github.com/apps/renovate) in [#80](https://github.com/liblaf/lime/pull/80)
 
 ### ❤️ Contributors
 
@@ -81,7 +95,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(commit-types)** update descriptions and ordering to match conventional commit standard - [c9af707](https://github.com/liblaf/lime/commit/c9af70732eb7cfe80f8adebce4220d971a7b1513) by [@liblaf](https://github.com/liblaf)
+- **commit-types:** update descriptions and ordering to match conventional commit standard - [c9af707](https://github.com/liblaf/lime/commit/c9af70732eb7cfe80f8adebce4220d971a7b1513) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -96,7 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency prompt-toolkit to >=3,<3.0.53 (#71) - [33867cf](https://github.com/liblaf/lime/commit/33867cf3020689276fa6394ae23e97e62f3b700c) by [@renovate[bot]](https://github.com/apps/renovate) in [#71](https://github.com/liblaf/lime/pull/71)
+- **deps:** update dependency prompt-toolkit to >=3,<3.0.53 (#71) - [33867cf](https://github.com/liblaf/lime/commit/33867cf3020689276fa6394ae23e97e62f3b700c) by [@renovate[bot]](https://github.com/apps/renovate) in [#71](https://github.com/liblaf/lime/pull/71)
 
 ### 📝 Documentation
 
@@ -114,12 +128,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** pin openai dependency version - [ee522f0](https://github.com/liblaf/lime/commit/ee522f0a6f395c72f5bce48907f739b26938cd10) by [@liblaf](https://github.com/liblaf)
-- **(deps)** update dependency openai to <1.101 (#66) - [0eacfb7](https://github.com/liblaf/lime/commit/0eacfb7102841796f61a7fc5379866feeca747bf) by [@renovate[bot]](https://github.com/apps/renovate) in [#66](https://github.com/liblaf/lime/pull/66)
-- **(deps)** update dependency openai to <1.102 (#68) - [5e806f4](https://github.com/liblaf/lime/commit/5e806f4318e49be4a1572be0930cad97ee93f9df) by [@renovate[bot]](https://github.com/apps/renovate) in [#68](https://github.com/liblaf/lime/pull/68)
-- **(deps)** update dependency liblaf-grapes to v2 (#67) - [0acbebd](https://github.com/liblaf/lime/commit/0acbebd2de21a6d35d6bb20a58f0250aea00a608) by [@renovate[bot]](https://github.com/apps/renovate) in [#67](https://github.com/liblaf/lime/pull/67)
-- **(deps)** update dependency openai to <1.103 (#70) - [79eb45d](https://github.com/liblaf/lime/commit/79eb45d719e96731755a6f23cdb9139bc6f01dde) by [@renovate[bot]](https://github.com/apps/renovate) in [#70](https://github.com/liblaf/lime/pull/70)
-- **(deps)** update dependency constraints and tool configurations - [be0f03f](https://github.com/liblaf/lime/commit/be0f03f1852678e969a3fd510645bc6ce50941b1) by [@liblaf](https://github.com/liblaf)
+- **deps:** pin openai dependency version - [ee522f0](https://github.com/liblaf/lime/commit/ee522f0a6f395c72f5bce48907f739b26938cd10) by [@liblaf](https://github.com/liblaf)
+- **deps:** update dependency openai to <1.101 (#66) - [0eacfb7](https://github.com/liblaf/lime/commit/0eacfb7102841796f61a7fc5379866feeca747bf) by [@renovate[bot]](https://github.com/apps/renovate) in [#66](https://github.com/liblaf/lime/pull/66)
+- **deps:** update dependency openai to <1.102 (#68) - [5e806f4](https://github.com/liblaf/lime/commit/5e806f4318e49be4a1572be0930cad97ee93f9df) by [@renovate[bot]](https://github.com/apps/renovate) in [#68](https://github.com/liblaf/lime/pull/68)
+- **deps:** update dependency liblaf-grapes to v2 (#67) - [0acbebd](https://github.com/liblaf/lime/commit/0acbebd2de21a6d35d6bb20a58f0250aea00a608) by [@renovate[bot]](https://github.com/apps/renovate) in [#67](https://github.com/liblaf/lime/pull/67)
+- **deps:** update dependency openai to <1.103 (#70) - [79eb45d](https://github.com/liblaf/lime/commit/79eb45d719e96731755a6f23cdb9139bc6f01dde) by [@renovate[bot]](https://github.com/apps/renovate) in [#70](https://github.com/liblaf/lime/pull/70)
+- **deps:** update dependency constraints and tool configurations - [be0f03f](https://github.com/liblaf/lime/commit/be0f03f1852678e969a3fd510645bc6ce50941b1) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -131,7 +145,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(commit)** handle empty diff and improve error handling - [956af5a](https://github.com/liblaf/lime/commit/956af5abff95622c073a6847d67b7210851d71da) by [@liblaf](https://github.com/liblaf)
+- **commit:** handle empty diff and improve error handling - [956af5a](https://github.com/liblaf/lime/commit/956af5abff95622c073a6847d67b7210851d71da) by [@liblaf](https://github.com/liblaf)
 
 ### 📝 Documentation
 
@@ -150,7 +164,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(git)** correct generated file detection logic - [baa326f](https://github.com/liblaf/lime/commit/baa326fc0aa8b5600cba17d6a7b938e3013e8584) by [@liblaf](https://github.com/liblaf)
+- **git:** correct generated file detection logic - [baa326f](https://github.com/liblaf/lime/commit/baa326fc0aa8b5600cba17d6a7b938e3013e8584) by [@liblaf](https://github.com/liblaf)
 
 ### 📝 Documentation
 
@@ -158,13 +172,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 💄 Styles
 
-- **(cli)** enhance commit message panel styling - [c9e20fb](https://github.com/liblaf/lime/commit/c9e20fb8300f9bfca3123835b327c83d48505049) by [@liblaf](https://github.com/liblaf)
-- **(commit)** enhance output presentation with rich Panel - [0bf8f65](https://github.com/liblaf/lime/commit/0bf8f65996b79fb6ee3c2d32d6352159e3deb732) by [@liblaf](https://github.com/liblaf)
+- **cli:** enhance commit message panel styling - [c9e20fb](https://github.com/liblaf/lime/commit/c9e20fb8300f9bfca3123835b327c83d48505049) by [@liblaf](https://github.com/liblaf)
+- **commit:** enhance output presentation with rich Panel - [0bf8f65](https://github.com/liblaf/lime/commit/0bf8f65996b79fb6ee3c2d32d6352159e3deb732) by [@liblaf](https://github.com/liblaf)
 - Enhance LLM response display and commit prompt - [d2a7716](https://github.com/liblaf/lime/commit/d2a7716a0df4e8cb4f2cc448b91b35dd3eaff6a1) by [@liblaf](https://github.com/liblaf)
 
 ### ♻ Code Refactoring
 
-- **(commit)** decouple file listing from diff and repomix - [bcbd89d](https://github.com/liblaf/lime/commit/bcbd89d383d6f273ce1a398fa8237b8115d1285d) by [@liblaf](https://github.com/liblaf)
+- **commit:** decouple file listing from diff and repomix - [bcbd89d](https://github.com/liblaf/lime/commit/bcbd89d383d6f273ce1a398fa8237b8115d1285d) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -181,7 +195,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ✨ Features
 
-- **(commit)** add AI-powered commit message generation - [c398c92](https://github.com/liblaf/lime/commit/c398c923191196b57c025e7a32fece58f79f9ff2) by [@liblaf](https://github.com/liblaf)
+- **commit:** add AI-powered commit message generation - [c398c92](https://github.com/liblaf/lime/commit/c398c923191196b57c025e7a32fece58f79f9ff2) by [@liblaf](https://github.com/liblaf)
 
 ### ♻ Code Refactoring
 
@@ -197,7 +211,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency versions and handle binary files - [4d6f6cc](https://github.com/liblaf/lime/commit/4d6f6ccecc2944f668ed7fa3fd6a1767195fcb0c) by [@liblaf](https://github.com/liblaf)
+- **deps:** update dependency versions and handle binary files - [4d6f6cc](https://github.com/liblaf/lime/commit/4d6f6ccecc2944f668ed7fa3fd6a1767195fcb0c) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -208,7 +222,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency versions - [3dad007](https://github.com/liblaf/lime/commit/3dad0079ec0787eb31e138f2f1412e5963481311) by [@liblaf](https://github.com/liblaf)
+- **deps:** update dependency versions - [3dad007](https://github.com/liblaf/lime/commit/3dad0079ec0787eb31e138f2f1412e5963481311) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -219,7 +233,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(tools)** improve template file detection - [afc0bb6](https://github.com/liblaf/lime/commit/afc0bb687036f9dd103450b591dfef6ba80dadec) by [@liblaf](https://github.com/liblaf)
+- **tools:** improve template file detection - [afc0bb6](https://github.com/liblaf/lime/commit/afc0bb687036f9dd103450b591dfef6ba80dadec) by [@liblaf](https://github.com/liblaf)
 
 ### ❤️ Contributors
 
@@ -246,10 +260,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency liblaf-grapes to >=0.1.11,<0.1.12 (#37) - [153aa09](https://github.com/liblaf/lime/commit/153aa0931dc97e283c49afae27e30e380f3c785a) by [@renovate[bot]](https://github.com/apps/renovate) in [#37](https://github.com/liblaf/lime/pull/37)
-- **(deps)** update dependency liblaf-grapes to >=0.1.12,<0.1.13 (#39) - [e8666c0](https://github.com/liblaf/lime/commit/e8666c0621db8a97740558b8e5f2bbb81995cfe5) by [@renovate[bot]](https://github.com/apps/renovate) in [#39](https://github.com/liblaf/lime/pull/39)
-- **(deps)** update dependency liblaf-grapes to >=0.1.13,<0.1.14 (#40) - [1f5c59d](https://github.com/liblaf/lime/commit/1f5c59d5bb21bbbe5fbd92a5bd334ce82a93fe4d) by [@renovate[bot]](https://github.com/apps/renovate) in [#40](https://github.com/liblaf/lime/pull/40)
-- **(deps)** update dependency rich to v14 (#41) - [4121953](https://github.com/liblaf/lime/commit/41219534ac5396eec9b16e57ac1d9bf656ce6756) by [@renovate[bot]](https://github.com/apps/renovate) in [#41](https://github.com/liblaf/lime/pull/41)
+- **deps:** update dependency liblaf-grapes to >=0.1.11,<0.1.12 (#37) - [153aa09](https://github.com/liblaf/lime/commit/153aa0931dc97e283c49afae27e30e380f3c785a) by [@renovate[bot]](https://github.com/apps/renovate) in [#37](https://github.com/liblaf/lime/pull/37)
+- **deps:** update dependency liblaf-grapes to >=0.1.12,<0.1.13 (#39) - [e8666c0](https://github.com/liblaf/lime/commit/e8666c0621db8a97740558b8e5f2bbb81995cfe5) by [@renovate[bot]](https://github.com/apps/renovate) in [#39](https://github.com/liblaf/lime/pull/39)
+- **deps:** update dependency liblaf-grapes to >=0.1.13,<0.1.14 (#40) - [1f5c59d](https://github.com/liblaf/lime/commit/1f5c59d5bb21bbbe5fbd92a5bd334ce82a93fe4d) by [@renovate[bot]](https://github.com/apps/renovate) in [#40](https://github.com/liblaf/lime/pull/40)
+- **deps:** update dependency rich to v14 (#41) - [4121953](https://github.com/liblaf/lime/commit/41219534ac5396eec9b16e57ac1d9bf656ce6756) by [@renovate[bot]](https://github.com/apps/renovate) in [#41](https://github.com/liblaf/lime/pull/41)
 
 ### ❤️ Contributors
 
@@ -260,8 +274,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency liblaf-grapes to >=0.1.9,<0.1.10 (#34) - [c033501](https://github.com/liblaf/lime/commit/c033501a14b5f4b751dc5b80c85cbeb55e2b9163) by [@renovate[bot]](https://github.com/apps/renovate) in [#34](https://github.com/liblaf/lime/pull/34)
-- **(deps)** update dependency liblaf-grapes to >=0.1.10,<0.1.11 (#36) - [9a6462d](https://github.com/liblaf/lime/commit/9a6462d29590e4a1cf411c727b9cae496f0efe4a) by [@renovate[bot]](https://github.com/apps/renovate) in [#36](https://github.com/liblaf/lime/pull/36)
+- **deps:** update dependency liblaf-grapes to >=0.1.9,<0.1.10 (#34) - [c033501](https://github.com/liblaf/lime/commit/c033501a14b5f4b751dc5b80c85cbeb55e2b9163) by [@renovate[bot]](https://github.com/apps/renovate) in [#34](https://github.com/liblaf/lime/pull/34)
+- **deps:** update dependency liblaf-grapes to >=0.1.10,<0.1.11 (#36) - [9a6462d](https://github.com/liblaf/lime/commit/9a6462d29590e4a1cf411c727b9cae496f0efe4a) by [@renovate[bot]](https://github.com/apps/renovate) in [#36](https://github.com/liblaf/lime/pull/36)
 
 ### ❤️ Contributors
 
@@ -288,8 +302,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency liblaf-grapes to >=0.1.1,<0.1.2 (#29) - [35d702a](https://github.com/liblaf/lime/commit/35d702a68334f314ac60a71c3d3083af714f8a58) by [@renovate[bot]](https://github.com/apps/renovate) in [#29](https://github.com/liblaf/lime/pull/29)
-- **(deps)** update dependency liblaf-grapes to >=0.1.2,<0.1.3 (#31) - [4173062](https://github.com/liblaf/lime/commit/4173062f56dfe6e3b1f3ea677baafa548b2587eb) by [@renovate[bot]](https://github.com/apps/renovate) in [#31](https://github.com/liblaf/lime/pull/31)
+- **deps:** update dependency liblaf-grapes to >=0.1.1,<0.1.2 (#29) - [35d702a](https://github.com/liblaf/lime/commit/35d702a68334f314ac60a71c3d3083af714f8a58) by [@renovate[bot]](https://github.com/apps/renovate) in [#29](https://github.com/liblaf/lime/pull/29)
+- **deps:** update dependency liblaf-grapes to >=0.1.2,<0.1.3 (#31) - [4173062](https://github.com/liblaf/lime/commit/4173062f56dfe6e3b1f3ea677baafa548b2587eb) by [@renovate[bot]](https://github.com/apps/renovate) in [#31](https://github.com/liblaf/lime/pull/31)
 
 ### ❤️ Contributors
 
@@ -301,9 +315,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency liblaf-grapes to >=0.0.4,<0.0.5 (#25) - [49f1a5e](https://github.com/liblaf/lime/commit/49f1a5eda51fa4c75391394d149676594ca5d7f9) by [@renovate[bot]](https://github.com/apps/renovate) in [#25](https://github.com/liblaf/lime/pull/25)
-- **(deps)** update dependency liblaf-grapes to >=0.0.5,<0.0.6 (#27) - [39e41f9](https://github.com/liblaf/lime/commit/39e41f96013647c2d3f2975e56c28befa3e5e0dd) by [@renovate[bot]](https://github.com/apps/renovate) in [#27](https://github.com/liblaf/lime/pull/27)
-- **(deps)** update dependency liblaf-grapes to >=0.1.0,<0.1.1 (#28) - [db30289](https://github.com/liblaf/lime/commit/db302897a72d323ec07dd00393f545ca50e6d925) by [@renovate[bot]](https://github.com/apps/renovate) in [#28](https://github.com/liblaf/lime/pull/28)
+- **deps:** update dependency liblaf-grapes to >=0.0.4,<0.0.5 (#25) - [49f1a5e](https://github.com/liblaf/lime/commit/49f1a5eda51fa4c75391394d149676594ca5d7f9) by [@renovate[bot]](https://github.com/apps/renovate) in [#25](https://github.com/liblaf/lime/pull/25)
+- **deps:** update dependency liblaf-grapes to >=0.0.5,<0.0.6 (#27) - [39e41f9](https://github.com/liblaf/lime/commit/39e41f96013647c2d3f2975e56c28befa3e5e0dd) by [@renovate[bot]](https://github.com/apps/renovate) in [#27](https://github.com/liblaf/lime/pull/27)
+- **deps:** update dependency liblaf-grapes to >=0.1.0,<0.1.1 (#28) - [db30289](https://github.com/liblaf/lime/commit/db302897a72d323ec07dd00393f545ca50e6d925) by [@renovate[bot]](https://github.com/apps/renovate) in [#28](https://github.com/liblaf/lime/pull/28)
 
 ### ❤️ Contributors
 
@@ -315,7 +329,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency liblaf-grapes to >=0.0.3,<0.0.4 (#23) - [c9ec6ae](https://github.com/liblaf/lime/commit/c9ec6ae8c23ef22ecbec4553a1242fe15f1d7143) by [@renovate[bot]](https://github.com/apps/renovate) in [#23](https://github.com/liblaf/lime/pull/23)
+- **deps:** update dependency liblaf-grapes to >=0.0.3,<0.0.4 (#23) - [c9ec6ae](https://github.com/liblaf/lime/commit/c9ec6ae8c23ef22ecbec4553a1242fe15f1d7143) by [@renovate[bot]](https://github.com/apps/renovate) in [#23](https://github.com/liblaf/lime/pull/23)
 
 ### ❤️ Contributors
 
@@ -327,8 +341,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ✨ Features
 
-- **(cli)** add `--model` and `--add` options to repo commands - [842f5d1](https://github.com/liblaf/lime/commit/842f5d11ae4adc77b0cb0f8bb0e21217ad2a6c51) by [@liblaf](https://github.com/liblaf)
-- **(git)** add `ls_files` utility and update ignore patterns - [6a7f970](https://github.com/liblaf/lime/commit/6a7f97040eb4dfb4b7c235ef22a2d718fbbc0849) by [@liblaf](https://github.com/liblaf)
+- **cli:** add `--model` and `--add` options to repo commands - [842f5d1](https://github.com/liblaf/lime/commit/842f5d11ae4adc77b0cb0f8bb0e21217ad2a6c51) by [@liblaf](https://github.com/liblaf)
+- **git:** add `ls_files` utility and update ignore patterns - [6a7f970](https://github.com/liblaf/lime/commit/6a7f97040eb4dfb4b7c235ef22a2d718fbbc0849) by [@liblaf](https://github.com/liblaf)
 - add max-len and n-topics options for repo commands - [7953524](https://github.com/liblaf/lime/commit/79535242376f9175935d6f12472fe63862c64f7f) by [@liblaf](https://github.com/liblaf)
 - add commit message sanitizer - [b8cf795](https://github.com/liblaf/lime/commit/b8cf795c3eae7655ba2debbabd7c369ae9a3e572) by [@liblaf](https://github.com/liblaf)
 
@@ -372,14 +386,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ✨ Features
 
-- **(live)** add transient option to live action - [dfd597a](https://github.com/liblaf/lime/commit/dfd597ad4e7996b6060d37b92a19df5e54014df8) by [@liblaf](https://github.com/liblaf)
-- **(repo)** add GitHub repository description generation and update functionality - [28acafc](https://github.com/liblaf/lime/commit/28acafcdd5dcd2a814b34bfb3978ae390e00b8f7) by [@liblaf](https://github.com/liblaf)
+- **live:** add transient option to live action - [dfd597a](https://github.com/liblaf/lime/commit/dfd597ad4e7996b6060d37b92a19df5e54014df8) by [@liblaf](https://github.com/liblaf)
+- **repo:** add GitHub repository description generation and update functionality - [28acafc](https://github.com/liblaf/lime/commit/28acafcdd5dcd2a814b34bfb3978ae390e00b8f7) by [@liblaf](https://github.com/liblaf)
 - next (#15) - [99e128e](https://github.com/liblaf/lime/commit/99e128eefa52fa4b07ad9a404a892eca728b48a0) by [@liblaf](https://github.com/liblaf) in [#15](https://github.com/liblaf/lime/pull/15)
 - enhance README generation with AI-powered features and descriptions - [d9fe575](https://github.com/liblaf/lime/commit/d9fe575120335e3d020d539d8427173be328f55d) by [@liblaf](https://github.com/liblaf)
 
 ### 🐛 Bug Fixes
 
-- **(deps)** update dependency httpx to >=0.28.1,<0.29 (#16) - [922266a](https://github.com/liblaf/lime/commit/922266ab523672eabfc2d5a963fb36b5912cb7a9) by [@renovate[bot]](https://github.com/apps/renovate) in [#16](https://github.com/liblaf/lime/pull/16)
+- **deps:** update dependency httpx to >=0.28.1,<0.29 (#16) - [922266a](https://github.com/liblaf/lime/commit/922266ab523672eabfc2d5a963fb36b5912cb7a9) by [@renovate[bot]](https://github.com/apps/renovate) in [#16](https://github.com/liblaf/lime/pull/16)
 
 ### 📝 Documentation
 
