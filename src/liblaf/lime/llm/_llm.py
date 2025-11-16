@@ -92,10 +92,7 @@ class LLM:
 
     def _prepare_kwargs(self, **kwargs) -> dict[str, Any]:
         if not kwargs.get("model"):
-            kwargs["model"] = (
-                self.router.model_names[0] if self.model is None else self.model
-            )
-
+            kwargs["model"] = self.model
         messages: str | Sequence[litellm.AllMessageValues] = kwargs["messages"]
         if isinstance(messages, str):
             messages = [{"role": "user", "content": messages}]

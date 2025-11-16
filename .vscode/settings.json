@@ -2,23 +2,28 @@
   "files.exclude": {
     "**/__pycache__/": true,
     "**/.cache/": true,
+    "**/.codspeed/": true,
     "**/.coverage": true,
+    "**/.hypothesis/": true,
     "**/.pixi/": true,
     "**/.pytest_cache/": true,
     "**/.ruff_cache/": true,
     "**/.venv/": true,
-    "**/junit.xml": true
+    "**/dist/": true,
+    "**/junit.xml": true,
+    "**/site/": true
   },
   "python.analysis.diagnosticMode": "workspace",
   "python.testing.pytestArgs": [
     "--color=yes",
     "--cov",
-    "--benchmark-disable",
-    "--numprocesses=auto"
+    "--numprocesses",
+    "auto"
   ],
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
   "yaml.customTags": [
+    // ref: <https://squidfunk.github.io/mkdocs-material/creating-your-site/#minimal-configuration>
     "!ENV scalar",
     "!ENV sequence",
     "!relative scalar",

@@ -2,18 +2,25 @@ import asyncio
 import subprocess
 from collections.abc import Generator, Iterable, Sequence
 from pathlib import Path
-from typing import cast
+from typing import Protocol
 
 import attrs
 import cappa
 import git
 import gitmatch
-import giturlparse
 
-from liblaf import grapes
 from liblaf.lime.typing import PathLike, StrOrBytesPath
 
 from .constants import DEFAULT_IGNORES
+
+
+class GitInfo(Protocol):
+    @property
+    def domain(self) -> str: ...
+    @property
+    def owner(self) -> str: ...
+    @property
+    def repo(self) -> str: ...
 
 
 @attrs.define
@@ -21,11 +28,6 @@ class Git:
     repo: git.Repo = attrs.field(
         factory=lambda: git.Repo(search_parent_directories=True)
     )
-
-    @property
-    def info(self) -> grapes.git.GitInfo:
-        remote: git.Remote = self.repo.remote()
-        return cast("grapes.git.GitInfo", giturlparse.parse(remote.url))
 
     @property
     def root(self) -> Path:

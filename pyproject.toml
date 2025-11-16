@@ -28,15 +28,14 @@ dependencies = [
   "cappa>=0.30,<0.31",
   "gitmatch>=0.2,<0.3",
   "gitpython>=3,<4",
+  "giturlparse>=0.14,<0.15",
   "jinja2>=3,<4",
   "lazy-loader>=0.4,<0.5",
   "liblaf-grapes>=8,<9",
   "litellm>=1,<2",
-  "loguru>=0.7,<0.8",
   "platformdirs>=4,<5",
   "pydantic>=2,<3",
   "pydantic-settings>=2,<3",
-  "python-frontmatter>=1,<2",
   "questionary>=2,<3",
   "rich>=14,<15"
 ]
@@ -54,8 +53,8 @@ dynamic = ["version"]
 lime = "liblaf.lime.cli:main"
 
 [dependency-groups]
+dev = ["emoji>=2,<3", "githubkit>=0.13,<0.14"]
 build = ["check-wheel-contents>=0.6,<0.7", "hatch>=1,<2", "twine>=6,<7"]
-dev = ["emoji>=2,<3", "githubkit>=0.13,<0.14", "icecream>=2,<3"]
 docs = [
   "liblaf-mkdocs-preset>=0.2,<0.3",
   "mkdocs>=1,<2",
@@ -89,15 +88,15 @@ source = "vcs"
 [tool.pyright]
 extends = ".config/linters/pyrightconfig.json"
 
-[tool.pytest.ini_options]
+[tool.pytest]
 addopts = [
   "--doctest-modules",
   "--hypothesis-show-statistics",
   "--import-mode=importlib",
-  "--showlocals",
-  "--strict-config",
-  "--strict-markers"
+  "--showlocals"
 ]
+consider_namespace_packages = true
+strict = true
 testpaths = ["benches", "src", "tests"]
 
 [tool.ruff]
