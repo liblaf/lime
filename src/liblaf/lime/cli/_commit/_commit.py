@@ -1,16 +1,17 @@
 from pathlib import Path
-from typing import Self
+from typing import Annotated
 
 import attrs
 import jinja2
 import litellm
 import rich
+from cyclopts import Parameter
 from rich.panel import Panel
 from rich.text import Text
 
 from liblaf.lime import tools
-from liblaf.lime.cli.parse import Commit
 from liblaf.lime.llm import LLM
+from liblaf.lime.llm._parse import LLMArgs
 
 from ._commit_type import COMMIT_TYPES, CommitType
 from ._interactive import Action, prompt_action
@@ -22,24 +23,38 @@ class Inputs:
     scope: str | None = None
     breaking_change: bool | None = None
 
-    @classmethod
-    def from_args(cls, args: Commit) -> Self:
-        return cls(
-            type=COMMIT_TYPES[args.type] if args.type else None,
-            scope=args.scope,
-            breaking_change=args.breaking_change,
-        )
 
-
-async def commit(self: Commit) -> None:
+async def commit(
+    *,
+    breaking_change: Annotated[bool | None, Parameter(group="Commit")] = None,
+    scope: Annotated[str | None, Parameter(group="Commit")] = None,
+    temperature: Annotated[float, Parameter(group="LLM")] = 0.0,
+    type_: Annotated[str | None, Parameter("type", group="Commit")] = None,
+    llm_args: Annotated[LLMArgs | None, Parameter("*", group="LLM")] = None,
+    repomix_args: Annotated[
+        tools.RepomixArgs | None, Parameter("*", group="Repomix")
+    ] = None,
+) -> None:
+    if llm_args is None:
+        llm_args = LLMArgs(temperature=temperature)
+    else:
+        llm_args.temperature = temperature
+    if repomix_args is None:
+        repomix_args = tools.RepomixArgs()
     git: tools.Git = tools.Git()
-    inputs: Inputs = Inputs.from_args(self)
+    inputs: Inputs = Inputs(
+        type=COMMIT_TYPES[type_] if type_ else None,
+        scope=scope,
+        breaking_change=breaking_change,
+    )
     jinja: jinja2.Environment = tools.prompt_templates()
-    llm: LLM = LLM.from_args(self)
+    llm: LLM = LLM.from_args(llm_args)
     template: jinja2.Template = jinja.get_template("commit.md")
 
     files: list[Path] = list(
-        git.ls_files(ignore=self.ignore, default_ignore=self.default_ignore)
+        git.ls_files(
+            ignore=repomix_args.ignore, default_ignore=repomix_args.default_ignore
+        )
     )
     git_diff: str = git.diff(include=files)
     if not git_diff:
@@ -49,7 +64,7 @@ async def commit(self: Commit) -> None:
         commit_types=COMMIT_TYPES.values(), git_diff=git_diff, inputs=inputs
     )
     repomix: str = await tools.repomix(
-        self, include=files, instruction=instruction, root=git.root
+        repomix_args, include=files, instruction=instruction, root=git.root
     )
     response: litellm.ModelResponse = await llm.live(
         messages=[{"role": "user", "content": repomix}],

@@ -1,15 +1,4 @@
-import asyncio
-
-import cappa
-
-from liblaf.lime._version import __version__
-
-from .parse import Lime
-
-
-def main() -> None:
-    asyncio.run(cappa.invoke_async(Lime, version=__version__))
-
+from ._app import app
 
 if __name__ == "__main__":
-    main()
+    app.meta()

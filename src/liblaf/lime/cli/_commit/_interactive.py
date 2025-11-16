@@ -1,7 +1,7 @@
 import enum
+import sys
 from typing import Any
 
-import cappa
 import questionary
 
 
@@ -19,5 +19,5 @@ async def prompt_action() -> Action:
         ],
     ).ask_async()
     if answer is None:
-        raise cappa.Exit(code=1)
+        sys.exit(1)
     return Action(answer)

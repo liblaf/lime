@@ -1,12 +1,9 @@
-from typing import Annotated
-
 import attrs
-from cappa import Arg
 
 
-@attrs.define(slots=False)
+@attrs.define
 class LLMArgs:
-    model: Annotated[str | None, Arg(long=True, default=None, group="LLM")]
-    temperature: Annotated[float | None, Arg(long=True, default=None, group="LLM")]
-    base_url: Annotated[str | None, Arg(long=True, default=None, group="LLM")]
-    api_key: Annotated[str | None, Arg(long=True, default=None, group="LLM")]
+    model: str | None = None
+    temperature: float | None = None
+    base_url: str | None = None
+    api_key: str | None = None

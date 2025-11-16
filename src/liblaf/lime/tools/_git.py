@@ -1,11 +1,11 @@
 import asyncio
 import subprocess
+import sys
 from collections.abc import Generator, Iterable, Sequence
 from pathlib import Path
 from typing import Protocol
 
 import attrs
-import cappa
 import git
 import gitmatch
 
@@ -51,7 +51,7 @@ class Git:
         returncode: int = await process.wait()
         if returncode != 0:
             if exit_on_error:
-                raise cappa.Exit(code=returncode)
+                sys.exit(returncode)
             raise subprocess.CalledProcessError(returncode, cmd)
 
     def diff(self, include: Sequence[StrOrBytesPath] = []) -> str:

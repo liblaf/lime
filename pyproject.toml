@@ -25,7 +25,7 @@ classifiers = [
   "Typing :: Typed"
 ]
 dependencies = [
-  "cappa>=0.30,<0.31",
+  "cyclopts>=4,<5",
   "gitmatch>=0.2,<0.3",
   "gitpython>=3,<4",
   "giturlparse>=0.14,<0.15",
