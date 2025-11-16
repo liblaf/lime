@@ -5,7 +5,6 @@ import jinja2
 import litellm
 from cyclopts import Parameter
 
-from liblaf import grapes
 from liblaf.lime import tools
 from liblaf.lime.llm import LLM, LLMArgs
 
@@ -19,8 +18,6 @@ async def generate(
         tools.RepomixArgs | None, Parameter("*", group="Repomix")
     ] = None,
 ) -> None:
-    grapes.logging.init()
-    ic(llm_args, repomix_args)
     if llm_args is None:
         llm_args = LLMArgs()
     if repomix_args is None:
