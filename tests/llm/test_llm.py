@@ -11,6 +11,7 @@ async def test_llm() -> None:
     llm: LLM = LLM.from_args(LLMArgs())
     stream: litellm.CustomStreamWrapper = await llm.acompletion(
         [{"role": "user", "content": "Hello, world!"}],
+        model="gemini-2.5-flash",
         mock_response=MOCK_RESPONSE,
     )
     chunks: list[litellm.ModelResponseStream | None] = [chunk async for chunk in stream]
