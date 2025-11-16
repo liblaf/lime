@@ -158,6 +158,15 @@ wheels = [
 ]
 
 [[package]]
+name = "asttokens"
+version = "3.0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/be/a5/8e3f9b6771b0b408517c82d97aed8f2036509bc247d46114925e32fe33f0/asttokens-3.0.1.tar.gz", hash = "sha256:71a4ee5de0bde6a31d64f6b13f2293ac190344478f081c3d1bccfcf5eacb0cb7", size = 62308, upload-time = "2025-11-15T16:43:48.578Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d2/39/e7eaf1799466a4aef85b6a4fe7bd175ad2b1c6345066aa33f1f58d4b18d0/asttokens-3.0.1-py3-none-any.whl", hash = "sha256:15a3ebc0f43c2d0a50eeafea25e19046c68398e487b9f1f5b517f7c0f40f976a", size = 27047, upload-time = "2025-11-15T16:43:16.109Z" },
+]
+
+[[package]]
 name = "attrs"
 version = "25.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -750,6 +759,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/bf/89/780e11f9588d9e7128a3f87788354c7946a9cbb1401ad38a48c4db9a4f07/execnet-2.1.2.tar.gz", hash = "sha256:63d83bfdd9a23e35b9c6a3261412324f964c2ec8dcd8d3c6916ee9373e0befcd", size = 166622, upload-time = "2025-11-12T09:56:37.75Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ab/84/02fc1827e8cdded4aa65baef11296a9bbe595c474f0d6d758af082d849fd/execnet-2.1.2-py3-none-any.whl", hash = "sha256:67fba928dd5a544b783f6056f449e5e3931a5c378b128bc18501f7ea79e296ec", size = 40708, upload-time = "2025-11-12T09:56:36.333Z" },
+]
+
+[[package]]
+name = "executing"
+version = "2.2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cc/28/c14e053b6762b1044f34a13aab6859bbf40456d37d23aa286ac24cfd9a5d/executing-2.2.1.tar.gz", hash = "sha256:3632cc370565f6648cc328b32435bd120a1e4ebb20c77e3fdde9a13cd1e533c4", size = 1129488, upload-time = "2025-09-01T09:48:10.866Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/ea/53f2148663b321f21b5a606bd5f191517cf40b7072c0497d3c92c4a13b1e/executing-2.2.1-py2.py3-none-any.whl", hash = "sha256:760643d3452b4d777d295bb167ccc74c64a81df23fb5e08eff250c425a4b2017", size = 28317, upload-time = "2025-09-01T09:48:08.5Z" },
 ]
 
 [[package]]
@@ -1469,15 +1487,17 @@ wheels = [
 
 [[package]]
 name = "liblaf-grapes"
-version = "8.2.0"
+version = "8.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "about-time" },
+    { name = "asttokens" },
     { name = "attrs" },
     { name = "autoregistry" },
     { name = "cachetools" },
     { name = "cytoolz" },
     { name = "environs" },
+    { name = "executing" },
     { name = "fieldz" },
     { name = "joblib" },
     { name = "lazy-loader" },
@@ -1491,9 +1511,9 @@ dependencies = [
     { name = "wadler-lindig" },
     { name = "wrapt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a9/6e/06d45c130db4563e63ec64959b617dde5373e05ac570df9734077c41908e/liblaf_grapes-8.2.0.tar.gz", hash = "sha256:134d4f9cab9bd4f3ecf846f39d455f4b2bfc48e4a9bc4b809c4e3e302bb88300", size = 35387, upload-time = "2025-11-15T14:35:38.568Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/97/86/0d357781a28dba375b258494ea70b0eb6179a2d606d63b03c5e628409a68/liblaf_grapes-8.2.1.tar.gz", hash = "sha256:b9e42f8b344f3a7bdf57fa8d4d85a12977ed329202d2b7bb3e8f431aec3f8c35", size = 35400, upload-time = "2025-11-16T09:02:14.393Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1e/4f/acaef36514ef18c0cb48f703589e4f0c7c8dc959055745b44e012bcfb212/liblaf_grapes-8.2.0-py3-none-any.whl", hash = "sha256:03bfa9903519f8f3b1f5d5cd1d617eded97f063d0bce6b2dd9ad5daf6392826d", size = 77535, upload-time = "2025-11-15T14:35:36.981Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/68/41d829914b142b2b8a9977fdf9a086ec8a2012011e43c11463fd6fd4d79b/liblaf_grapes-8.2.1-py3-none-any.whl", hash = "sha256:6378dcd195c51078359eaea58619cbb3dc09c9bed989b5af1cd852550eba272a", size = 77549, upload-time = "2025-11-16T09:02:12.703Z" },
 ]
 
 [[package]]
