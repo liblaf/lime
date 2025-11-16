@@ -8,6 +8,7 @@ from liblaf import grapes
 from liblaf.lime._version import __version__
 
 app = cyclopts.App(name="lime", version=__version__)
+app.register_install_completion_command(add_to_startup=False)
 app.command("liblaf.lime.cli:commit")
 app.command("liblaf.lime.cli:generate")
 app.command("liblaf.lime.cli:repomix")
