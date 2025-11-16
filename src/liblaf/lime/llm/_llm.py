@@ -25,8 +25,11 @@ class LLM:
     @classmethod
     def from_args(cls, args: LLMArgs) -> Self:
         config = LLMConfig()
+        model: str = (
+            args.model or config.model or config.router.model_list[0].model_name
+        )
         return cls(
-            model=args.model or config.model,
+            model=model,
             router=config.router.build(),
             temperature=args.temperature,
             base_url=args.base_url,

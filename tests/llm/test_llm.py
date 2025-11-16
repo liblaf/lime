@@ -10,9 +10,7 @@ MOCK_RESPONSE: str = "Hi! My name is Claude."
 async def test_llm() -> None:
     llm: LLM = LLM.from_args(LLMArgs())
     stream: litellm.CustomStreamWrapper = await llm.acompletion(
-        [{"role": "user", "content": "Hello, world!"}],
-        model="gemini-2.5-flash",
-        mock_response=MOCK_RESPONSE,
+        [{"role": "user", "content": "Hello, world!"}], mock_response=MOCK_RESPONSE
     )
     chunks: list[litellm.ModelResponseStream | None] = [chunk async for chunk in stream]
     response: litellm.ModelResponse = litellm.stream_chunk_builder(chunks)  # pyright: ignore[reportAssignmentType]

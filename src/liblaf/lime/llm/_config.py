@@ -17,6 +17,20 @@ class ModelConfig(litellm.ModelConfig):
 class RouterConfig(litellm.RouterConfig, pydantic.BaseModel):
     model_list: list[ModelConfig] = [
         ModelConfig(
+            model_name="gemini-2.5-pro",
+            litellm_params=litellm.CompletionRequest(model="gemini/gemini-2.5-pro"),
+        ),
+        ModelConfig(
+            model_name="gemini-2.5-flash",
+            litellm_params=litellm.CompletionRequest(model="gemini/gemini-2.5-flash"),
+        ),
+        ModelConfig(
+            model_name="qwen3-coder-plus",
+            litellm_params=litellm.CompletionRequest(
+                model="dashscope/qwen3-coder-plus"
+            ),
+        ),
+        ModelConfig(
             model_name="deepseek-reasoner",
             litellm_params=litellm.CompletionRequest(
                 model="deepseek/deepseek-reasoner"
@@ -25,12 +39,6 @@ class RouterConfig(litellm.RouterConfig, pydantic.BaseModel):
         ModelConfig(
             model_name="deepseek-chat",
             litellm_params=litellm.CompletionRequest(model="deepseek/deepseek-chat"),
-        ),
-        ModelConfig(
-            model_name="qwen3-coder-plus",
-            litellm_params=litellm.CompletionRequest(
-                model="dashscope/qwen3-coder-plus"
-            ),
         ),
     ]
     default_litellm_params: dict[str, Any] = {
