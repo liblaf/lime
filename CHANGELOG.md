@@ -7,7 +7,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.12](https://github.com/liblaf/lime/releases/tag/v0.3.12) - 2025-11-10
+## [0.3.13](https://github.com/liblaf/lime/releases/tag/v0.3.13) - 2025-11-16
+
+### 🐛 Bug Fixes
+
+- **build:** Update Python version classifiers - [f543c45](https://github.com/liblaf/lime/commit/f543c45654d3fe56574555381c64d74e71514f28) by [@liblaf](https://github.com/liblaf)
+- **llm:** Ensure LLM always has a default model and update preferred model order - [6a8f564](https://github.com/liblaf/lime/commit/6a8f56446a1d8415bd1426e98df7cdaf1656b758) by [@liblaf](https://github.com/liblaf)
+- Refine project dependencies and development configurations - [f9b6ecb](https://github.com/liblaf/lime/commit/f9b6ecbedcbf290cf5e09c01a48d7fac9a47b129) by [@liblaf](https://github.com/liblaf)
+
+### ♻ Code Refactoring
+
+- **cli:** Migrate CLI framework from Cappa to Cyclopts - [cf386eb](https://github.com/liblaf/lime/commit/cf386eb1c1d23d0fb1a3e5df39a207563dbf7e91) by [@liblaf](https://github.com/liblaf)
+- **cli/generate:** Remove redundant logging and debugging calls - [802b52d](https://github.com/liblaf/lime/commit/802b52d6e806cc5dc0054f1bd04fb75b351fc830) by [@liblaf](https://github.com/liblaf)
+
+### ✅ Tests
+
+- **llm:** Add basic async test for LLM completion - [ee4d442](https://github.com/liblaf/lime/commit/ee4d44246c2cb5a04c10c0e44e0ab7be97c8c336) by [@liblaf](https://github.com/liblaf)
+- **llm:** Specify model in acompletion test call - [f015995](https://github.com/liblaf/lime/commit/f015995f4cb84245b1692ee089b51a227ac8c701) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#98](https://github.com/liblaf/lime/pull/98)
+
+## [0.3.12](https://github.com/liblaf/lime/releases/tag/v0.3.12) - 2025-11-16
 
 ### 🐛 Bug Fixes
 
@@ -16,8 +39,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#93](https://github.com/liblaf/lime/pull/93)
-- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#94](https://github.com/liblaf/lime/pull/94)
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
 - [@copier-update[bot]](https://github.com/apps/copier-update) made their first contribution in [#90](https://github.com/liblaf/lime/pull/90)
 
 ## [0.3.11](https://github.com/liblaf/lime/releases/tag/v0.3.11) - 2025-11-03
