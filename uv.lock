@@ -972,11 +972,11 @@ wheels = [
 
 [[package]]
 name = "gitmatch"
-version = "0.2.1"
+version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/fe/67/c57587329ad2c0be4ff6361e84989f4b9afb283c5d8fb18a9380ed39c9a0/gitmatch-0.2.1.tar.gz", hash = "sha256:46d2c5e25d579580ebed15632ceaaae696fa437f8b52634fb042d1b4fa432f52", size = 16379, upload-time = "2024-11-29T15:37:25.045Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/88/7e/fdbaa640ba205b7555c6d6312e9fe58633a515ffe63b04d18ee2af0a6cdd/gitmatch-0.3.0.tar.gz", hash = "sha256:f3da0fe64c1ee74b276e2aa61be8a6abf5a41eacf8d931b7953b2333d47138ce", size = 16664, upload-time = "2025-12-05T12:29:16.482Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/5c/18e5a3d3fed736692c7f33be646cd6ec3d1ae3214eb19b7ddc745c252641/gitmatch-0.2.1-py3-none-any.whl", hash = "sha256:c74b370d78356e587c87374ded757ce953c5dd84b458ddea7e65918d7cd11972", size = 8127, upload-time = "2024-11-29T15:37:08.684Z" },
+    { url = "https://files.pythonhosted.org/packages/72/f8/f00732b330d20662d7c573dd134a6489760c4ea3e91169f57071b004b2fb/gitmatch-0.3.0-py3-none-any.whl", hash = "sha256:ee33a6521e36008f330cb658227522af22c8e2c3bf19475483c009dec81ed9cd", size = 8120, upload-time = "2025-12-05T12:29:15.64Z" },
 ]
 
 [[package]]
@@ -1559,7 +1559,7 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "cyclopts", specifier = ">=4,<5" },
-    { name = "gitmatch", specifier = ">=0.2,<0.3" },
+    { name = "gitmatch", specifier = ">=0.3,<0.4" },
     { name = "gitpython", specifier = ">=3,<4" },
     { name = "giturlparse", specifier = ">=0.14,<0.15" },
     { name = "jinja2", specifier = ">=3,<4" },

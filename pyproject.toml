@@ -27,7 +27,7 @@ classifiers = [
 ]
 dependencies = [
   "cyclopts>=4,<5",
-  "gitmatch>=0.2,<0.3",
+  "gitmatch>=0.3,<0.4",
   "gitpython>=3,<4",
   "giturlparse>=0.14,<0.15",
   "jinja2>=3,<4",
