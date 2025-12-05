@@ -7,7 +7,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.14](https://github.com/liblaf/lime/releases/tag/v0.3.14) - 2025-11-16
+## [0.3.15](https://github.com/liblaf/lime/releases/tag/v0.3.15) - 2025-12-05
+
+### 🐛 Bug Fixes
+
+- **deps:** update dependency gitmatch to >=0.3,<0.4 (#107) - [6ed4771](https://github.com/liblaf/lime/commit/6ed477191158298bff7aa38e21249d4c7cdab1f6) by [@renovate[bot]](https://github.com/apps/renovate) in [#107](https://github.com/liblaf/lime/pull/107)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#107](https://github.com/liblaf/lime/pull/107)
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#105](https://github.com/liblaf/lime/pull/105)
+
+## [0.3.14](https://github.com/liblaf/lime/releases/tag/v0.3.14) - 2025-11-17
 
 ### ✨ Features
 
@@ -15,7 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@liblaf](https://github.com/liblaf)
 
 ## [0.3.13](https://github.com/liblaf/lime/releases/tag/v0.3.13) - 2025-11-16
 
