@@ -54,7 +54,7 @@ dynamic = ["version"]
 lime = "liblaf.lime.cli:main"
 
 [dependency-groups]
-dev = ["emoji>=2,<3", "githubkit>=0.13,<0.14"]
+dev = ["emoji>=2,<3", "githubkit>=0.14,<0.15"]
 build = ["check-wheel-contents>=0.6,<0.7", "hatch>=1,<2", "twine>=6,<7"]
 docs = [
   "liblaf-mkdocs-preset>=0.3,<0.4",
