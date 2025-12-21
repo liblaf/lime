@@ -72,6 +72,8 @@ jobs:
           ref: ${{ fromJson(needs.release-please.outputs.pr).headBranchName }}
           token: ${{ steps.auth.outputs.token }}
           fetch-depth: 0
+      - name: Prettier Manifest
+        run: npx prettier --write --no-config '.config/release-please/.manifest.json'
       - id: tag
         name: Get Tag
         run: |-
@@ -94,7 +96,7 @@ jobs:
       - name: Commit
         uses: liblaf/actions/commit@v1
         with:
-          add-options: --verbose 'CHANGELOG.md'
+          add-options: --verbose '.config/release-please/.manifest.json' 'CHANGELOG.md'
           force: true
           message: ${{ steps.message.outputs.message }}
           ref: ${{ fromJson(needs.release-please.outputs.pr).headBranchName }}
