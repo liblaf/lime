@@ -7,7 +7,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.15](https://github.com/liblaf/lime/releases/tag/v0.3.15) - 2025-12-05
+## [0.3.16](https://github.com/liblaf/lime/releases/tag/v0.3.16) - 2026-01-16
+
+### 🐛 Bug Fixes
+
+- **deps:** update dependency liblaf-grapes to v9 (#123) - [851b9f8](https://github.com/liblaf/lime/commit/851b9f809d13ce2cf7ae0c79fc3c7946fb1bc464) by [@renovate[bot]](https://github.com/apps/renovate) in [#123](https://github.com/liblaf/lime/pull/123)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#123](https://github.com/liblaf/lime/pull/123)
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#122](https://github.com/liblaf/lime/pull/122)
+
+## [0.3.15](https://github.com/liblaf/lime/releases/tag/v0.3.15) - 2025-12-07
 
 ### 🐛 Bug Fixes
 
@@ -15,8 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#107](https://github.com/liblaf/lime/pull/107)
-- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#105](https://github.com/liblaf/lime/pull/105)
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [0.3.14](https://github.com/liblaf/lime/releases/tag/v0.3.14) - 2025-11-17
 
