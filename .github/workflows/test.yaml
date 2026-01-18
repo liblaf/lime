@@ -16,8 +16,8 @@ env:
   FORCE_COLOR: 1
 
 jobs:
-  metadata:
-    name: Metadata
+  collect:
+    name: Collect
     runs-on: ubuntu-latest
     outputs:
       has-tests: ${{ steps.collect.outputs.has-tests }}
@@ -49,8 +49,8 @@ jobs:
     permissions:
       id-token: write
     needs:
-      - metadata
-    if: needs.metadata.outputs.has-tests == 'true'
+      - collect
+    if: needs.collect.outputs.has-tests == 'true'
     runs-on: ubuntu-latest
     env:
       EAGER_IMPORT: true # ref: <https://github.com/scientific-python/lazy-loader?tab=readme-ov-file#early-failure>
@@ -79,5 +79,5 @@ jobs:
           use_oidc: true
     strategy:
       matrix:
-        python-version: ${{ fromJson(needs.metadata.outputs.python-versions) }}
+        python-version: ${{ fromJson(needs.collect.outputs.python-versions) }}
       fail-fast: false
